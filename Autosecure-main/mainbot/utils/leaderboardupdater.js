@@ -152,7 +152,7 @@ async function startLeaderboardUpdater(client) {
         let updateInterval = null;
     await updateLeaderboardMessage(client);
 
-        updateInterval = setInterval(() => updateLeaderboardMessage(client), 3600000);
+        updateInterval = setInterval(() => updateLeaderboardMessage(client), 1800000);
 
     return async () => {
                 if (updateInterval) {
