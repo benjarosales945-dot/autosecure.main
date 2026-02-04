@@ -1,0 +1,61 @@
+{
+  "uid": "suhs0D660",
+  "processType": "secure",
+  "context": {},
+  "startTime": 1770160407837,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "secure_started",
+      "timestamp": 1770160407840,
+      "elapsed": 3,
+      "data": {
+        "hasHost": true,
+        "hasSettings": true,
+        "username": null,
+        "context": {}
+      }
+    },
+    {
+      "name": "initialize_start",
+      "timestamp": 1770160407844,
+      "elapsed": 7,
+      "data": {}
+    }
+  ],
+  "account": {
+    "oldName": "Couldn't find!",
+    "newName": "Couldn't change!",
+    "oldEmail": "Couldn't find",
+    "email": "Locked!",
+    "secEmail": "Locked!",
+    "password": "Locked!",
+    "recoveryCode": "Locked!",
+    "loginCookie": "11-M.C557_BAY.0.U.CgOnR7*GQQY9QZC0nJ6nNUd4637ihtAbwvgsNklaxXGxTZFAsWTmiCQXMxUJZlPo90Z*LUb!Emy!gBoTupkTITE5qYqFd*7jhF9Tukr0yia0vRD1y0n!Yl3xK8NMihuToiHnFhHm8ybwsZJ20TGHgE2ZrStIBU1vOujtym54T0Bq7uWwxmVpbEvzASPOSEC6wHHyQegnth0rLLr0ZUd4SBF9kngqpZQtdeTUZU3iPqfCTZXZvavRK2uHWgdBSRG!xaDbx4SiQsrlXn*!lQvPCIw$",
+    "status": "unknown",
+    "ban": "",
+    "banReason": "",
+    "timeTaken": 0,
+    "ssid": "Locked!",
+    "capes": [],
+    "gamertag": "Couldn't find!",
+    "secretkey": "Couldn't find!",
+    "mc": "False",
+    "gtg": "",
+    "xbl": "",
+    "xuid": "",
+    "uid": "",
+    "recoverydata": {
+      "email": null,
+      "recovery": null,
+      "secemail": null,
+      "password": null
+    },
+    "stats": {},
+    "lunar": {},
+    "aftersecure": false
+  },
+  "errors": [],
+  "endTime": 1770160408805,
+  "duration": 968
+}

@@ -1,0 +1,23 @@
+[2026-02-03T23:11:18.588Z] [SECURE_LOGGER] Started logging for UID: MK4C3USul, Type: fisher
+[2026-02-03T23:11:18.592Z] [STEP] fisher_auto_secure_started - {"email":"swelio57@gmail.com","mcname":"Record220","hasHost":true}
+[2026-02-03T23:11:18.592Z] [LOG] [DEBUG] submit.js: Calling secure()
+[2026-02-03T23:11:18.596Z] [LOG] [SECURE_LOGGER] Started logging for UID: MK4C3USul, Type: secure
+[2026-02-03T23:11:18.599Z] [LOG] [STEP] secure_started - {"hasHost":true,"hasSettings":true,"username":"Record220","context":{"botId":"1457030566477299846","serverName":"Lunar Client"}}
+[2026-02-03T23:11:18.599Z] [LOG] [RECODE_SECURE] Starting secure process for UID: MK4C3USul, username: Record220
+[2026-02-03T23:11:18.602Z] [LOG] [STEP] initialize_start - {}
+[2026-02-03T23:11:18.602Z] [LOG] [RECODE_SECURE] Initializing secure process...
+[2026-02-03T23:11:18.602Z] [LOG] [RECODE_SECURE] Account object created, login cookie set
+[2026-02-03T23:11:18.619Z] [LOG] [RECODE_SECURE] Axios instance initialized for UID: MK4C3USul
+[2026-02-03T23:11:18.626Z] [LOG] [RECODE_SECURE] Status updated: msauth for UID: MK4C3USul
+[2026-02-03T23:11:18.626Z] [LOG] Starting recode secure!
+[2026-02-03T23:11:18.626Z] [LOG] [RECODE_SECURE] Optional username provided: Record220
+[2026-02-03T23:11:18.627Z] [LOG] [RECODE_SECURE] Getting cookies and authentication...
+[2026-02-03T23:11:26.795Z] [LOG] [RECODE_SECURE] Cookies retrieved: apiCanary=true, amsc=true, canary=true
+[2026-02-03T23:11:26.796Z] [LOG] [RECODE_SECURE] Polishing host with amsc...
+[2026-02-03T23:11:27.164Z] [LOG] [RECODE_SECURE] Host polished, msauth result: success
+[2026-02-03T23:11:27.165Z] [LOG] [RECODE_SECURE] Account is locked!
+[2026-02-03T23:11:27.165Z] [LOG] [SECURE_LOGGER] Completing process...
+[2026-02-03T23:11:27.167Z] [LOG] [SECURE_LOGGER] Process completed in 8573ms
+[2026-02-03T23:11:27.169Z] [LOG] [DEBUG] submit.js: secure() returned
+[2026-02-03T23:11:27.172Z] [SECURE_LOGGER] Completing process...
+[2026-02-03T23:11:27.174Z] [SECURE_LOGGER] Process completed in 8589ms

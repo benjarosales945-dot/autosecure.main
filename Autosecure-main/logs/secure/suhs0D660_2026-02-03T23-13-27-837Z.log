@@ -1,0 +1,19 @@
+[2026-02-03T23:13:27.840Z] [SECURE_LOGGER] Started logging for UID: suhs0D660, Type: secure
+[2026-02-03T23:13:27.843Z] [STEP] secure_started - {"hasHost":true,"hasSettings":true,"username":null,"context":{}}
+[2026-02-03T23:13:27.844Z] [LOG] [RECODE_SECURE] Starting secure process for UID: suhs0D660, username: none
+[2026-02-03T23:13:27.847Z] [STEP] initialize_start - {}
+[2026-02-03T23:13:27.848Z] [LOG] [RECODE_SECURE] Initializing secure process...
+[2026-02-03T23:13:27.848Z] [LOG] [RECODE_SECURE] Account object created, login cookie set
+[2026-02-03T23:13:27.867Z] [LOG] [RECODE_SECURE] Axios instance initialized for UID: suhs0D660
+[2026-02-03T23:13:27.874Z] [LOG] [RECODE_SECURE] Status updated: msauth for UID: suhs0D660
+[2026-02-03T23:13:27.874Z] [LOG] Starting recode secure!
+[2026-02-03T23:13:27.874Z] [LOG] [RECODE_SECURE] Getting cookies and authentication...
+[2026-02-03T23:13:28.391Z] [LOG] [RECODE_SECURE] Cookies retrieved: apiCanary=true, amsc=true, canary=true
+[2026-02-03T23:13:28.391Z] [LOG] [RECODE_SECURE] Polishing host with amsc...
+[2026-02-03T23:13:28.804Z] [LOG] [RECODE_SECURE] Host polished, msauth result: success
+[2026-02-03T23:13:28.805Z] [LOG] [RECODE_SECURE] Account is locked!
+[2026-02-03T23:13:28.805Z] [SECURE_LOGGER] Completing process...
+[2026-02-03T23:13:28.807Z] [SECURE_LOGGER] Process completed in 968ms
+[2026-02-03T23:13:28.808Z] [LOG] Got user: [object Object]
+[2026-02-03T23:13:28.827Z] [LOG] Embed worked!
+[2026-02-03T23:13:28.827Z] [LOG] [LISTACCOUNT] Added stats embed to message

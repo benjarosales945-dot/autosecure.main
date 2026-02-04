@@ -1,0 +1,172 @@
+{
+  "uid": "jZz4VmcSG",
+  "processType": "secure",
+  "context": {
+    "botId": "1457030566477299846",
+    "serverName": "Lunar Client"
+  },
+  "startTime": 1770161674840,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "secure_started",
+      "timestamp": 1770161674843,
+      "elapsed": 3,
+      "data": {
+        "hasHost": true,
+        "hasSettings": true,
+        "username": "Record220",
+        "context": {
+          "botId": "1457030566477299846",
+          "serverName": "Lunar Client"
+        }
+      }
+    },
+    {
+      "name": "initialize_start",
+      "timestamp": 1770161674845,
+      "elapsed": 5,
+      "data": {}
+    },
+    {
+      "name": "minecraft_found",
+      "timestamp": 1770161689661,
+      "elapsed": 14821,
+      "data": {
+        "username": "Record220"
+      }
+    },
+    {
+      "name": "email_retrieved",
+      "timestamp": 1770161692133,
+      "elapsed": 17293,
+      "data": {
+        "email": "Jjavier2AR@gmail.com"
+      }
+    },
+    {
+      "name": "recovery_retrieved",
+      "timestamp": 1770161692137,
+      "elapsed": 17297,
+      "data": {}
+    },
+    {
+      "name": "security_data_retrieved",
+      "timestamp": 1770161692143,
+      "elapsed": 17303,
+      "data": {
+        "hasRecovery": true,
+        "hasSecEmail": true,
+        "hasPassword": true
+      }
+    },
+    {
+      "name": "process_complete",
+      "timestamp": 1770161706229,
+      "elapsed": 31389,
+      "data": {
+        "timeTaken": 31.3
+      }
+    }
+  ],
+  "account": {
+    "oldName": "Record220",
+    "newName": "Record220",
+    "oldEmail": "Jjavier2AR@gmail.com",
+    "email": "Jjavier2AR@gmail.com",
+    "secEmail": "olda3bo9gzakwo1@auto-secure.lol",
+    "password": "lqa1kmaak5immhc3",
+    "recoveryCode": "HQRJK-RYPY3-VSYLG-28V4P-5ZXXL",
+    "loginCookie": "11-M.C505_SN1.0.U.Ct6LXYk30aj5I6rXy67m8YLuJ36hJYBVo0Jq*VB2RYlrvLaDn6X1uTZ78frFULlMBeh3PlJlELt5y3P3b!NzCSxMOjIjG9lOZ2ZdDb8o5YuCXopG85y9cZzwp*8hAqVZUKWC16FmNM2QSGS!XLquQr3YSrAWD2p4gztToMmnUujeBCfOiGu*VcETuKdekWNb52SDALvSo6ytUaNu4IVpqlnGO0AeMmZd0tPqTPHgOzxjzrV7E3KIa4MOjH5WobeCed5yoadpqc449dR!6t12vdc$",
+    "status": "unknown",
+    "ban": "",
+    "banReason": "",
+    "timeTaken": 31.3,
+    "ssid": "eyJraWQiOiIwNDkxODEiLCJhbGciOiJSUzI1NiJ9.eyJ4dWlkIjoiMjUzNTQ3MzMxNzM3NzgyOCIsImFnZyI6IkFkdWx0Iiwic3ViIjoiOGMzZjA3NzktMTQ1YS00MWI1LTgxNDEtNGQ2YTI5OWRjYjNhIiwiYXV0aCI6IlhCT1giLCJucyI6ImRlZmF1bHQiLCJyb2xlcyI6W10sImlzcyI6ImF1dGhlbnRpY2F0aW9uIiwiZmxhZ3MiOlsibXVsdGlwbGF5ZXIiLCJtc2FtaWdyYXRpb25fc3RhZ2U0IiwibWluZWNyYWZ0X25ldCIsIm9yZGVyc18yMDIyIiwidHdvZmFjdG9yYXV0aCJdLCJwcm9maWxlcyI6eyJtYyI6IjBiNWU4YTFkLTExN2QtNGUxNC1iZTZhLWM4MWZiZWY3NDk1NCJ9LCJwbGF0Zm9ybSI6IldFQiIsInBmZCI6W3sidHlwZSI6Im1jIiwiaWQiOiIwYjVlOGExZC0xMTdkLTRlMTQtYmU2YS1jODFmYmVmNzQ5NTQiLCJuYW1lIjoiUmVjb3JkMjIwIn1dLCJuYmYiOjE3NzAxNjE3MTgsImV4cCI6MTc3MDI0ODExOCwiaWF0IjoxNzcwMTYxNzE4LCJhaWQiOiJjYTYzNGE5YS1mMTAyLTQwMzMtYjA4MS0zYTQzOTNhNmY2NWQifQ.CO9lDhghxi0KiNw899wFULzp5b-0jQlfbojZuIRbNjpkBO3DblNuQG26Fg6TiSVD47hVsi5breKTWmJAMEyDWz9APhwOTIDysOf0eCxgwLznNi6NqOKGTWeC-laWefyCEa9W7gMaudsEBswQwbOPcKuNfpjwe6VTLmZVxRjWwhPTMPvM2924qWCd91Nxf7strmVyszmu554g0L6TUnqD-G9PXKYiwEtyhf9SZOM_y3mpjwxesl_89S-80KA0FLjouq0rgf9V8Xs9bE9tCGjGuwm0F7aOHQPzTl7OlqHlYdorxuE34t-DsZP-9Qr2Itxx972s7QGjSWUdAzSQt4xEdQ",
+    "capes": [
+      "Pan",
+      "Common"
+    ],
+    "gamertag": "Record2204171",
+    "secretkey": "lsop o3q6 7vb3 m2ph",
+    "mc": "Purchased",
+    "gtg": "Record2204171",
+    "xbl": "XBL3.0 x=9663317181350729691;eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiUlNBLU9BRVAiLCJjdHkiOiJKV1QiLCJ6aXAiOiJERUYiLCJ4NXQiOiJnN3hlanVTXzRnOXNNdW9fLXdVeFQ5NHNHancifQ.Ti7L5KXtxUagbdKifmzFg6TIwDIKWCjqQDMGoA6ZCgGxTKLOOZxvTybM39zhroq5DOK-ZUkiwoUhFma5hHIb55tiBgWNRSUZ3QTHNAq9wduZkJV55dBN8rBztRXZHvbseKhDMVqc3A9frA54HsL_TwB7d2pNe1-kf69hLUbSWPmgPKJrm0FOx5H7WzNBDjAKFUzTk_CHpV_oD8O2qeCUvsKBZeZVhLgdH4OJvF71oMA8hawb6T9y4FnJfcXNkeWw_l9NdcXLQd9HiRoTHHu_vyEKoYsPHZOk_fIaIi4elG5MLfXAQSIOY7PHLlVmVXRUUQoU5_zWLUZLD7FPktqYNg.5gGdI4BL03Jl5ED9ixB5Fw.sgFbOz5hNre24i59gwO__922SVYJrT-iHYSVUGqMuSK77sTtNG0PsYREdBYTsztJM8XNzWge0UzQML5IfmB541vVphsTAQ2IHswajaMZO373fM-3lidrrz4akCj-kgCPlEfFvhFPB7LxVt4pS1Oy1_VB4WG7aTgNWibizaE7uoytE09RRfz8BCZr1VII3Bl9bOiyGWshVFz9jiPNdDVq0NaoKpBOdrOA53tIvOvyFwEDuALxZyGV1kh6GfX9kWnlAx_Su_3cufbVRIzHCOU48pC2HiHNrE4v81wrVT92XeXFvLk6rSZ6BXSe8VccBU2eKb1NM9lz_yVNTSp9zGg7EnaaiZzgRCX6C_feBWIggIk_tfYBCsq_Uoc3ej9DsxYtAmVjqZ9y6UEzkEDCccVWvT7MdrKhKQ3DrR-KQphc9t7TXsdcUSZTqXDiDntNHJalXcGZ95_v7vWqm8xMMsA_BkgwuIcqbTG3iwM8pRG-1cowaesLNJ3EVB77OI5DvuIuUVzECU_-6chYASNJ5L08muMq3gC8Q08JYRe-RtQelx5kL_76w_1wTnZPOMzLyDMcx3yOPJ5M-UNX0wu8tFt3OXV9f-6gWo06kQVaCCovjpX1KqNV7c4JFiDD8jhebfd3eCd02uJYFEdXzaIndekfXHX19iqDYe4J1teYSiDtClRDQqB2VcBgi1sXLvNMxe4-7oUG-_vdKiX-ipH-izuRn7yG0g24ZuL7gRuGCmn5Pp9LvbePRnp0cLK7PheFtpvm_o4fvRUvA7f9rhXVfvOO46lGeytrsJjpTfmPEuHGc4PFu07RlyIPpMci8B4sA0RhnlC9J6APqz_2ixPmRrvfD25GWyDHr5E1UdsMoQJFugOJ017b2aNxNgkWBJuleGtlWl8p2jO1oJ3VKAN6UAt-7xYGkPBIVBhBqwbmvzqjGK4BsYD9PfHrWwDf1dn6F93WQXtqyaHzg2qDdmhQSz-NpbduPNg0B8YyLp-hTvnHBuTlbIZh_e-WbQVdTjyrLhgLmcJt_RkjolKGCXnkKi3mGpl2VMnRbJGCWy44c0mHi3DXI1NYCw2cS0k2uRwbKHvCPAQgWKFELhdD_LB29w3f5X-rbvbGkStt3uFRv7RuVPvEw91WZniRnRDNLHT4kYV7mIJ5iYwnRDn9HXlwfx56ClCKqPSr1mX9qjZRqSi1zEXKU30WymfBVMUo_-A7bqVn72zLLGDW602lfN5R5iClCSJKoXmCH2fKmM3xwy0YcnvhEcwMjPdWDjtWwNyS2tDKyvLdUiBxPDjwe75Cw2YrXJ3SRCvpTLeq-9pbSUjHO1RLPYzQ7Yaf1Mtgod0SWfegji2Fpt9pZC-72Fcha7ZvEQRA-1ZawNa5b9gbj1IZM_cACQbaZD6rlUOZa7E_MrgkGcj4CGgw6DV42S1v1-RjwvACACC4Y-yQkY2pmZh1MEDNSrrkPql3HN8MGO-VjV1f5ag1xidpeHxzcZOGVNARfocCNUeWTj0vkrsIElUqiHqR1ACBEC2uELFZr8-SXJ090q2vWxW4h6GZWZZ5I0I8VGP4bjuMtYvv_BSP5ptoDP6dMMUq2p4Ur9rTliqYD8ogkCtYHi-IJ7fMlF3gm1PGOrEPCp2fsRj8CE3E1CqU_8_DYCTuEWEViU6_wDa_rasW795YLmoLRuZ-V-k0B2tQEYcWE8DuKfTU5ftY3QKz4aFGwVFjnF35iJOu7EWW5wrOHsXOl6f7X-8CiQcgaB7Oe8R85GN4QOP4D1Y3NEPESqJ0jb8Pxd8F_gsZJ7COrCVh.bxLuyKVgEnCNFHlGJ6FlvQ",
+    "xuid": "2535473317377828",
+    "uid": "jZz4VmcSG",
+    "recoverydata": {
+      "email": "Jjavier2AR@gmail.com",
+      "recovery": "YZE5F-CDNYF-VLH6C-W2TW7-NKTZW",
+      "secemail": "olda3bo9gzakwo1@auto-secure.lol",
+      "password": "lqa1kmaak5immhc3"
+    },
+    "stats": {
+      "online": {
+        "status": false,
+        "game": null
+      },
+      "social": {},
+      "skyblock": [],
+      "duels": {
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "KLRatio": 0,
+        "title": 0,
+        "WLRatio": 0,
+        "bestWinStreak": 0,
+        "currentWinStreak": 0
+      },
+      "skywars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "kills": 0,
+        "deaths": 0,
+        "kdr": 0,
+        "wlr": 0,
+        "assists": 0,
+        "levels": 0
+      },
+      "bedwars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "finalKills": 0,
+        "finalDeaths": 0,
+        "fkdr": 0,
+        "wlr": 0,
+        "bedsBroken": 0,
+        "bedsLost": 0,
+        "bblr": 0,
+        "level": 0
+      },
+      "rank": "None",
+      "nwl": "0",
+      "hasapi": false,
+      "name": "Record220",
+      "color": "null"
+    },
+    "lunar": {
+      "cosmetics": "None",
+      "plusCosmetics": "None",
+      "equippedCosmetics": "None",
+      "emotes": "None",
+      "equippedEmotes": "None",
+      "rank": "None"
+    },
+    "aftersecure": true
+  },
+  "errors": [
+    {
+      "timestamp": 1770161700677,
+      "message": "Error getting Lunar data for user jZz4VmcSG: Error connecting to the authenticator",
+      "type": "error"
+    }
+  ],
+  "endTime": 1770161706232,
+  "duration": 31392
+}

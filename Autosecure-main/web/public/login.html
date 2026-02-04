@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="pastel">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoSecure Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-app: linear-gradient(135deg, #1e1b4b 0%, #450a0a 100%);
+            --bg-card: rgba(239, 68, 68, 0.08);
+            --glass-border: rgba(59, 130, 246, 0.25);
+            --text-main: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --primary-red: #ef4444;
+            --primary-blue: #3b82f6;
+            --sidebar-bg: rgba(30, 27, 75, 0.4);
+            --accent-green: #10b981;
+            --accent-purple: #8b5cf6;
+            --accent-orange: #f59e0b;
+            --accent-pink: #ec4899;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #1e1b4b 0%, #450a0a 100%);
+            color: var(--text-main);
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Ambient background glows */
+        body::before {
+            content: '';
+            position: fixed;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, var(--primary-red) 0%, transparent 60%);
+            opacity: 0.15;
+            bottom: -300px;
+            left: -200px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, var(--primary-blue) 0%, transparent 60%);
+            opacity: 0.12;
+            top: -200px;
+            right: -150px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* ========== LOGIN PAGE ========== */
+        .login-container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .login-card {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(59, 130, 246, 0.15) 100%);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            padding: 3rem;
+            border-radius: 32px;
+            width: 100%;
+            max-width: 440px;
+            box-shadow: 0 40px 80px -12px rgba(239, 68, 68, 0.4), 
+                        0 20px 40px -10px rgba(59, 130, 246, 0.3);
+            text-align: center;
+            position: relative;
+            z-index: 10;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .login-header {
+            margin-bottom: 2.5rem;
+        }
+        
+        .icon-glow {
+            width: 72px; 
+            height: 72px;
+            background: linear-gradient(135deg, var(--primary-red), var(--primary-blue));
+            border-radius: 20px;
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            margin: 0 auto 1.5rem auto;
+            box-shadow: 0 10px 25px rgba(239, 68, 68, 0.4);
+        }
+        
+        .login-header h1 { 
+            font-size: 1.75rem; 
+            margin-bottom: 0.5rem; 
+            font-weight: 700; 
+            letter-spacing: -0.5px; 
+        }
+        
+        .login-header p { 
+            color: var(--text-secondary); 
+            font-size: 0.95rem; 
+            line-height: 1.5; 
+        }
+
+        .discord-btn {
+            width: 100%;
+            background: #5865F2;
+            color: white;
+            border: none;
+            padding: 1rem 1.25rem;
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 1rem;
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between;
+            cursor: pointer;
+            box-shadow: 0 8px 20px -4px rgba(88, 101, 242, 0.4);
+            margin-bottom: 2rem;
+            transition: all 0.2s;
+        }
+        
+        .btn-content { 
+            display: flex; 
+            align-items: center; 
+        }
+        
+        .discord-btn:hover { 
+            background: #4752c4; 
+            box-shadow: 0 12px 24px -4px rgba(88, 101, 242, 0.5); 
+            transform: translateY(-2px);
+        }
+        
+        .chevron { 
+            opacity: 0.5; 
+        }
+
+        .divider {
+            display: flex; 
+            align-items: center;
+            margin: 0 0 2rem 0;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+        }
+        
+        .divider::before, .divider::after {
+            content: ''; 
+            flex: 1; 
+            height: 1px; 
+            background: rgba(59, 130, 246, 0.3);
+        }
+        
+        .divider span { 
+            padding: 0 1rem; 
+        }
+
+        .totp-form { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 1rem; 
+        }
+        
+        .totp-form input {
+            padding: 1rem;
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 12px;
+            color: var(--text-main);
+            font-size: 0.95rem;
+            transition: all 0.2s;
+        }
+        
+        .totp-form input:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+        
+        .totp-form input::placeholder {
+            color: var(--text-muted);
+        }
+        
+        .totp-form button {
+            padding: 1rem;
+            background: linear-gradient(135deg, var(--primary-red), var(--primary-blue));
+            border: none;
+            border-radius: 12px;
+            color: white;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 8px 20px -4px rgba(239, 68, 68, 0.4);
+        }
+        
+        .totp-form button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px -4px rgba(239, 68, 68, 0.5);
+        }
+        
+        .totp-form button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Login Page -->
+    <div id="loginPage" class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <div class="icon-glow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                    </svg>
+                </div>
+                <h1>Welcome to AutoSecure</h1>
+                <p>Secure your accounts with advanced protection</p>
+            </div>
+
+            <button class="discord-btn" onclick="loginWithDiscord()">
+                <div class="btn-content">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 0.75rem;">
+                        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"></path>
+                    </svg>
+                    <span>Continue with Discord</span>
+                </div>
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m9 18 6-6-6-6"></path>
+                </svg>
+            </button>
+
+            <div class="divider">
+                <span>OR USE KEY</span>
+            </div>
+
+            <form class="totp-form" onsubmit="loginWithKey(event)">
+                <input 
+                    type="text" 
+                    id="keyInput"
+                    placeholder="Enter your access key"
+                    autocomplete="off"
+                />
+                <button type="submit" id="keySubmitBtn" disabled>
+                    Access Dashboard
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Input validation for login
+        const keyInput = document.getElementById('keyInput');
+        const keySubmitBtn = document.getElementById('keySubmitBtn');
+
+        keyInput.addEventListener('input', function(e) {
+            keySubmitBtn.disabled = this.value.trim().length === 0;
+        });
+
+        // Login functions
+        function loginWithDiscord() {
+            window.location.href = '/auth/discord';
+        }
+
+        function loginWithKey(event) {
+            event.preventDefault();
+            const key = keyInput.value;
+            if (key.trim()) {
+                fetch('/api/validate-license', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ key })
+                })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.success) {
+                        localStorage.setItem('auth_token', data.token);
+                        window.location.href = '/dashboard';
+                    } else {
+                        alert(data.message || 'Invalid key');
+                        keySubmitBtn.disabled = false;
+                    }
+                })
+                .catch(err => {
+                    console.error(err);
+                    alert('Error validating key');
+                });
+            }
+        }
+    </script>
+</body>
+</html>

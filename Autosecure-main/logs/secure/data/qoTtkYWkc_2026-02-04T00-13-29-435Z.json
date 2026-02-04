@@ -1,0 +1,117 @@
+{
+  "uid": "qoTtkYWkc",
+  "processType": "fisher",
+  "context": {
+    "botId": "1450558279238422763",
+    "serverName": "Hypixel"
+  },
+  "startTime": 1770164009435,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "fisher_auto_secure_started",
+      "timestamp": 1770164009438,
+      "elapsed": 3,
+      "data": {
+        "email": "pablo.gonzalez.chavez@gmail.com",
+        "mcname": "Emigonz",
+        "hasHost": true
+      }
+    }
+  ],
+  "account": {
+    "oldName": "Couldn't find!",
+    "newName": "Couldn't find!",
+    "oldEmail": "pablo.gonzalez.chavez@gmail.com",
+    "email": "pablo.gonzalez.chavez@gmail.com",
+    "secEmail": "olduibtxs830cjn@auto-secure.lol",
+    "password": "s8x3srtqfif2odei",
+    "recoveryCode": "CXM6D-RD4EK-RAPDR-AD2SA-GQ2VC",
+    "loginCookie": "11-M.C504_SN1.0.U.CmIVL6yaCuGABKDDDNVhDNluuEJtIWnCVqkxF5UCI*1nllGnLR6zaoTcKJcXeRF8DNUQL1mNp5SjVXvUmcVYZnlifetGNozgGFPJO8Y8Z5J1*9pYgjGcuKaaf9bMNV6!gCvmWwfbOimkRhESYPYKd9L4vSZ*STX711Y*84uut2TEPSQeFWIneNp6GYFFcWOihQPoRSZ!AFCtp2VNsEeYN6P0LA1Z1vfERlw8KyttkgWFY0zoraqgtzYKZwryy4cjAJtnFW9CpyjZC8uWtHcQ4lMUKxFPNTACfK!sYJdY8WD2",
+    "status": "unknown",
+    "ban": "",
+    "banReason": "",
+    "timeTaken": 36.7,
+    "ssid": "Couldn't Get!",
+    "capes": [],
+    "gamertag": "Couldn't find!",
+    "secretkey": "mhg2 o6hq 2etj n4yg",
+    "mc": "XBL Failed",
+    "gtg": "",
+    "xbl": "",
+    "xuid": "",
+    "uid": "qoTtkYWkc",
+    "recoverydata": {
+      "email": "pablo.gonzalez.chavez@gmail.com",
+      "recovery": "3FCXE-F9TKX-CCVNX-6L9CZ-Z4PDQ",
+      "secemail": "olduibtxs830cjn@auto-secure.lol",
+      "password": "s8x3srtqfif2odei"
+    },
+    "stats": {
+      "online": {
+        "status": false,
+        "game": null
+      },
+      "social": {},
+      "skyblock": [],
+      "duels": {
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "KLRatio": 0,
+        "title": 0,
+        "WLRatio": 0,
+        "bestWinStreak": 0,
+        "currentWinStreak": 0
+      },
+      "skywars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "kills": 0,
+        "deaths": 0,
+        "kdr": 0,
+        "wlr": 0,
+        "assists": 0,
+        "levels": 0
+      },
+      "bedwars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "finalKills": 0,
+        "finalDeaths": 0,
+        "fkdr": 0,
+        "wlr": 0,
+        "bedsBroken": 0,
+        "bedsLost": 0,
+        "bblr": 0,
+        "level": 0
+      },
+      "rank": "None",
+      "nwl": "0",
+      "hasapi": true
+    },
+    "lunar": {
+      "cosmetics": "None",
+      "plusCosmetics": "None",
+      "equippedCosmetics": "None",
+      "emotes": "None",
+      "equippedEmotes": "None",
+      "rank": "None"
+    },
+    "aftersecure": true
+  },
+  "errors": [
+    {
+      "timestamp": 1770164052833,
+      "message": "[getUUID] Could not find UUID for Couldn't find! from any source",
+      "type": "error"
+    }
+  ],
+  "endTime": 1770164046174,
+  "duration": 36739
+}

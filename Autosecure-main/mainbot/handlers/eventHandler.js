@@ -1,0 +1,35 @@
+const path = require("path")
+const getAllFiles = require("../utils/getFiles")
+const getButtons = require("../utils/getButtons")
+const getModals = require("../utils/getModals")
+
+module.exports = (client, token) => {
+  client.buttons = getButtons(__dirname, [], true)
+  client.modals = getModals(__dirname, [], true)
+
+  const eventFolders = getAllFiles(path.join(__dirname, '..', 'events'), true)
+  for (const eventFolder of eventFolders) {
+    const eventFiles = getAllFiles(eventFolder)
+    eventFiles.sort((a, b) => a.localeCompare(b))
+    const eventName = eventFolder.replace(/\\/g, '/').split('/').pop()
+    
+    client.on(eventName, async (arg) => {
+      for (const eventFile of eventFiles) {
+          const eventFunction = require(eventFile)
+          if (typeof eventFunction !== "function") {
+            console.error(`Invalid event file: ${eventFile} does not export a function.`)
+            continue
+          }
+          try {
+            await eventFunction(client, arg, token)
+          } catch (err) {
+            console.error(`Error in event ${eventFile}:`, err && err.stack ? err.stack : err);
+            // If it's a Discord Unknown Interaction, don't crash the process.
+            if (err && err.code === 10062) {
+              console.warn('Ignored Unknown interaction (10062).');
+            }
+          }
+        }
+    })
+  }
+}

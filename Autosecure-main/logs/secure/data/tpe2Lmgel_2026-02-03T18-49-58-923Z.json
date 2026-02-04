@@ -1,0 +1,132 @@
+{
+  "uid": "tpe2Lmgel",
+  "processType": "fisher",
+  "context": {
+    "botId": "1450558279238422763",
+    "serverName": "Hypixel"
+  },
+  "startTime": 1770144598920,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "fisher_auto_secure_started",
+      "timestamp": 1770144598963,
+      "elapsed": 43,
+      "data": {
+        "email": "marcogomezfabian217@gmail.com",
+        "mcname": "marcoanyelo",
+        "hasHost": true
+      }
+    }
+  ],
+  "account": {
+    "oldName": "Couldn't find!",
+    "newName": "Couldn't find!",
+    "oldEmail": "marcogomezfabian217@gmail.com",
+    "email": "marcogomezfabian217@gmail.com",
+    "secEmail": "oldv427j5cdcffg@auto-secure.lol",
+    "password": "snykg415iuf20bei",
+    "recoveryCode": "24L7H-BL3WL-RT7RN-HVBAW-9WJ2W",
+    "loginCookie": "11-M.C505_BAY.0.U.Cs5bWLSmA2KGJzo7!Sp0UB5HicAz4B!Ww6jIm32dbTUt11QmMXuh2asH!DWIWa*0NKk6S*aXiGwIp8j1JNixLDNulKqIK!jYw4vYwxWVnIS3oFp4uG5*qwVB!NH3ebF3S*XZyhPAyWPzAXGUyucun47XoHnXzopsGfeOep39y1nj970GhhyGj!xrVVT0dXGZXvNWVqVDAOZy69rC*l!ac6tFfDF2EEFRo!lFRuauxV2kfj*iNbgYbqorYqJ*bOvfTUadsrE0bJ2n!8GrdrAyYPHnL1xwye93Um2BwF65D7kZ",
+    "status": "unknown",
+    "ban": "",
+    "banReason": "",
+    "timeTaken": 39,
+    "ssid": "Couldn't Get!",
+    "capes": [],
+    "gamertag": "Couldn't find!",
+    "secretkey": "7nxw uzgs dvyc fdjw",
+    "mc": "XBL Failed",
+    "gtg": "",
+    "xbl": "",
+    "xuid": "",
+    "uid": "tpe2Lmgel",
+    "recoverydata": {
+      "email": "marcogomezfabian217@gmail.com",
+      "recovery": "78Q7P-HS8QM-LQWMP-8AQ7P-4H6NJ",
+      "secemail": "oldv427j5cdcffg@auto-secure.lol",
+      "password": "snykg415iuf20bei"
+    },
+    "stats": {
+      "online": {
+        "status": false,
+        "game": null
+      },
+      "social": {},
+      "skyblock": [],
+      "duels": {
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "KLRatio": 0,
+        "title": 0,
+        "WLRatio": 0,
+        "bestWinStreak": 0,
+        "currentWinStreak": 0
+      },
+      "skywars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "kills": 0,
+        "deaths": 0,
+        "kdr": 0,
+        "wlr": 0,
+        "assists": 0,
+        "levels": 0
+      },
+      "bedwars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "finalKills": 0,
+        "finalDeaths": 0,
+        "fkdr": 0,
+        "wlr": 0,
+        "bedsBroken": 0,
+        "bedsLost": 0,
+        "bblr": 0,
+        "level": 0
+      },
+      "rank": "None",
+      "nwl": "0",
+      "hasapi": true
+    },
+    "lunar": {
+      "cosmetics": "None",
+      "plusCosmetics": "None",
+      "equippedCosmetics": "None",
+      "emotes": "None",
+      "equippedEmotes": "None",
+      "rank": "None"
+    },
+    "aftersecure": true
+  },
+  "errors": [
+    {
+      "timestamp": 1770144632230,
+      "message": "{\n  \"requestBody\": {\n    \"json\": {\n      \"type\": 9,\n      \"data\": {\n        \"custom_id\": \"SplitVerification\",\n        \"title\": \"Username\",\n        \"components\": [\n          {\n            \"type\": 1,\n            \"components\": [\n              {\n                \"type\": 4,\n                \"custom_id\": \"onlyusername\",\n                \"max_length\": 16,\n                \"min_length\": 1,\n                \"required\": true,\n                \"label\": \"Username\",\n                \"placeholder\": \"Username\",\n                \"style\": 1\n              }\n            ]\n          }\n        ]\n      }\n    }\n  },\n  \"rawError\": {\n    \"message\": \"Unknown interaction\",\n    \"code\": 10062\n  },\n  \"code\": 10062,\n  \"status\": 404,\n  \"method\": \"POST\",\n  \"url\": \"https://discord.com/api/v10/interactions/1468317852900790365/aW50ZXJhY3Rpb246MTQ2ODMxNzg1MjkwMDc5MDM2NTpwTHpSRlg0RXdLSHluOFNuTmU5VEFNckJnNUVEMmh1UUdNekgzTXdEeTJuQTdhNVRVeW1GU3ZnRkZSNWlzSVVCc0VqMndmcVZpdTZISEFvSG5XZDAxMTA5b08ySDNYTTR5Q1IyUk5NYUxhMjRLeHN1QmdySTFCejNLSThVSTc0Vg/callback?with_response=false\"\n}",
+      "type": "error"
+    },
+    {
+      "timestamp": 1770144633745,
+      "message": "[getUUID] Could not find UUID for Couldn't find! from any source",
+      "type": "error"
+    },
+    {
+      "timestamp": 1770144646582,
+      "message": "[getUUID] Could not find UUID for Couldn't find! from any source",
+      "type": "error"
+    },
+    {
+      "timestamp": 1770147031033,
+      "message": "[IMAP] connection error: Timed out while authenticating with server",
+      "type": "error"
+    }
+  ],
+  "endTime": 1770144638089,
+  "duration": 39169
+}

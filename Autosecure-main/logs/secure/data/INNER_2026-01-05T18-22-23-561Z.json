@@ -1,0 +1,16 @@
+{
+  "uid": "INNER",
+  "processType": "secure",
+  "context": {
+    "test": true
+  },
+  "startTime": 1767637343560,
+  "status": "completed",
+  "steps": [],
+  "account": {
+    "status": "inner_done"
+  },
+  "errors": [],
+  "endTime": 1767637343567,
+  "duration": 7
+}

@@ -1,0 +1,167 @@
+{
+  "uid": "dgoiTbPW6",
+  "processType": "fisher",
+  "context": {
+    "botId": "1450558279238422763",
+    "serverName": "Hypixel"
+  },
+  "startTime": 1770166511300,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "fisher_auto_secure_started",
+      "timestamp": 1770166511307,
+      "elapsed": 7,
+      "data": {
+        "email": "androxus201905@gmail.com",
+        "mcname": "AndroXus2019",
+        "hasHost": true
+      }
+    }
+  ],
+  "account": {
+    "oldName": "AndroXus2019",
+    "newName": "AndroXus2019",
+    "oldEmail": "Androxus201905@gmail.com",
+    "email": "Androxus201905@gmail.com",
+    "secEmail": "AndroXus2019.4020@auto-secure.lol",
+    "password": "hl8e4l6514ixhsgh",
+    "recoveryCode": "J53VD-MAYN3-P6AUT-C9ATR-CUZMA",
+    "loginCookie": "11-M.C504_BL2.0.U.CunCZGpiR5HQS4SqjfGieeDS3L**Fd9qHGw!PihrxbP9s99gxRxOQpcgL*FzD!dnVxAeuq46p18y61EWdNLs5shYZmoFvhb5pBbXuWYXZlYAmZftQiYBVWZCg4np5dYRMaWPIz8hgp22r3osAQ08fbmJ!KC83CTX8qWP91TlQySIsYSZDrMehpRlAHrv9mIpLLW12VZ1aPkMeoc*ZmIlYjRNRtfkx0T60tJYP1jxd4fBRSgkUWARNFsou23R2WOnqoBnQrZRafCJV*gWzTespTc$",
+    "status": "unknown",
+    "ban": "",
+    "banReason": "",
+    "timeTaken": 47.9,
+    "ssid": "eyJraWQiOiIwNDkxODEiLCJhbGciOiJSUzI1NiJ9.eyJ4dWlkIjoiMjUzNTQxOTcxMzkyODIyMyIsImFnZyI6IkFkdWx0Iiwic3ViIjoiNzMwOWMwMDktZWZlZS00ZDE4LWI4MTEtYzE4ZmUyMWEyNDMzIiwiYXV0aCI6IlhCT1giLCJucyI6ImRlZmF1bHQiLCJyb2xlcyI6W10sImlzcyI6ImF1dGhlbnRpY2F0aW9uIiwiZmxhZ3MiOlsibXVsdGlwbGF5ZXIiLCJtc2FtaWdyYXRpb25fc3RhZ2U0IiwibWluZWNyYWZ0X25ldCIsIm9yZGVyc18yMDIyIiwidHdvZmFjdG9yYXV0aCJdLCJwcm9maWxlcyI6eyJtYyI6ImQxZDUwNmU3LTYyMzgtNGViOS1hYzgwLTdkNGUzYjVlMjQzYSJ9LCJwbGF0Zm9ybSI6IldFQiIsInBmZCI6W3sidHlwZSI6Im1jIiwiaWQiOiJkMWQ1MDZlNy02MjM4LTRlYjktYWM4MC03ZDRlM2I1ZTI0M2EiLCJuYW1lIjoiQW5kcm9YdXMyMDE5In1dLCJuYmYiOjE3NzAxNjY1NTUsImV4cCI6MTc3MDI1Mjk1NSwiaWF0IjoxNzcwMTY2NTU1LCJhaWQiOiJjYTYzNGE5YS1mMTAyLTQwMzMtYjA4MS0zYTQzOTNhNmY2NWQifQ.wsbx_efrpUf9cj9G26nhsTSsM7CHroH7CnH5NyXX2A3wieLsF27EgEF8UgVUhsfxxBAV32jLmvIO4hU8uaoqmEcpLxYen7NkSQx1PNkrkgElpkn6UbSL7Vpq5PvfXRnv5guPFCz-ICotVGm-f3OnHXYCv_7L8LPKTY1fkqYwjDsZudvRKeKLSdudcXfoK1NtWWIiFNYrviasoHZXihgrPSHKouyu23N7SH6Ok6OrfPkRTW8_lP29ZGqj5fTsR-Z2fRoXuQor5EEpnNx5zVkZDVEUr4i3ti89wDzVjFjlV7VhVIIwJIxZgR808l5qngGEP8lq3xJZN8iX07wJVKVz6g",
+    "capes": [
+      "Pan",
+      "Common"
+    ],
+    "gamertag": "AndroXus2019",
+    "secretkey": "oa5l cq4w t6jd bztg",
+    "mc": "Gamepass",
+    "gtg": "AndroXus2019",
+    "xbl": "XBL3.0 x=17107437083257918076;eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiUlNBLU9BRVAiLCJjdHkiOiJKV1QiLCJ6aXAiOiJERUYiLCJ4NXQiOiJnN3hlanVTXzRnOXNNdW9fLXdVeFQ5NHNHancifQ.YuvyNHag-gegcrQsXPh5UqMWtoWyx20QqHDbox1t1wAiBAHwbouIn7U30rdtNUfnVdwOReh6axpPD83v79L3LjFcJW2IBrLSkMrfbWxkgX67_H-ILJiHE7a-cASLBNxNxchgxvWydJ-KiqfXGWySiqMLagJknzH5c9h1-TWpumzzTrME0oU9S4TdruekLIGB-REXVJvahwsBmyus39wGr1--JTmGKMOqHg3-1qbsaYRwjEg5DkDQgBaDemOePIckO_zJyAKgCBVFEM7UqwOKQOk0yL5IqQ-fRYylCVwmzzsNNxzYNvGowlqcJE9EZ7fdYlYQkJhA_NWQIprPoEg14w.p5yiyoIZTDIvEHQTyTo51Q.Yc6WTUkfpyiYdG-j2NbIAOlgssyPFaHBTNEKNO5aluFXeK42SGE5kcFdwwU1BDDvKbC0MzBvwZ8ny8dcAxZObHs0BofaUfozPShyonBo39KPO3dnljWsbmyCsxE0w6RATAVHhkzxC4SB4a7-1lUKxBQ3lS34BwBg0wDEFqmki0l7jAufPQ23lj8gGXImig6U1gNnzkDxiU1Nf69jJYmKTPS36P4xh4zioTjf5Nceqr2i8Z_Kyo4GJ0t_CXzBwR5ZVq3JuueA-CfVfPgSER9lqkxbZrZgACWeAqitApqZscgpocaJi8OjKRcnXfrS7iZtEm3iOI6UbaQlZ1IYlNICMgkSfGs3H1Hxd72ylrDXBC1Xxt2TMktQlz5SssbLaWpPlMlyOzEV4JrVHl8k_c8wt37gq_lGVBx-Z6PUC0ebHAl2Ck3GJKeutlZpBVnslZJWcb2NCjIvJQ1quH7tHB2jD-5WpWxTgsmmB1qA1IVoMeyZ77PSqoRKwV_IDsZD0XuJbtuskKDaR5TjA7HRv8mlGAAQn0Rijh45k3tneweEmVox57MxOvZF7o1m-GdAY3fs2BqSsLGrSrmx2kK4mGbZKSSSoQXXHJVODzVfOmNNQWoipeZXFF7ZxR3XjI9Ig6ynL0repeo4JtT0s1CmV6K0S3mCaxUV_SLv97eCvc1efykcw_hoeO71mcMo61ME-fiGxAQn-QyHKvYbP7n8bGjilJUiAUlxrd2CfiuWSeJX2N8LM-lzgNbywylq31tlfUr_e6ZqgIyi7_RfElyy9fd67GNlKpIE3Zj8Wt2jtUEz1Bzd68sC2j6U7JyV_8KSltcU-lBFQpSqcLgaPPus7nGmJ_ge7Izia1BNQvxUzPLBPZWTkZZaFvOBVF98wKEDTXqFDRQuE59UXmjEy0212-tAHl6qqKnucuqkPCD3saqqIdsXj3kDvPxlwCJSJBkgydotXtF54ii4CFragmc62Bw0pd5Qx6pOcVxceU-MEgbnz5Jh7sTeAGjVCJxrNK35NvHpF55v_5cfA9VV-xBEflwJMlrbg-8Ub3t9SYNSXxRbmB8o2AJO0BEtzl0QfzONAmcxOpZFuqXQcmpRffzUjxlsJICZQBnniS2P2A2Yu01fkZ-btxvLFD5Pdhi9iFGPZ0jKgQL7bbUWkMdMfRX-RBxlfbTcIBnOMUmcPdtmMiktCn-7H8djgs_aJWv1HJa4JhlkNi0zL3iy3IwKaYUiuYTclIE7uS7gKCCLphMzZXeqLnqz_XA0vhgEXzEW9EegTQ7T4O4D8NIvsHIOP_fZklACRgiM3ffD3SKIMJCQ1YVAHBPfUXYYLIvjVPbWMLr5eC4fZMf-IHSfE7GtgIt7cWRgWDA89_1pjDiKsNamx55Bu_CbbsBK9tw847RhRdsCm8J7nLK4uZNIiy-j5EuJxMuXR2WftFPLI4PDslt6_jTb-oJfJqo1_Ebe60lpNhELQ1dW5aha03aS5VAF8R5Rfgsyer2ksMW9HLcYT8HWtZyk41x6FOcxoAwavedWtYCj5k9OgZ7UV-U2pLRB4LLypC35TjSUGGiWw--Hgc5v3YsP-RVJrHnGvzCtofbFyFPU8HSTGnVQQI0ZfHm2GlQo855tWYGSMOPE1JjoRVle9soF_IbkcxExMxJ___n4ffPMtrthTEF8F5uRkmzlRd7Bz8yN0XG6tRbBmikvhlfjX_IXLsAOdIPfpOKF6B_hJikmO_HxUlw6TBHIgIVUo0J50zy2ycGiWZ3qtSi7gXgsifTaDYxrxg-OZs6EiddZq1t4JMRHru54JiL_St-MLIfw2pALzQ.4syFjgQ2UxkUM8npx8rzRw",
+    "xuid": "2535419713928223",
+    "uid": "dgoiTbPW6",
+    "recoverydata": {
+      "email": "Androxus201905@gmail.com",
+      "recovery": "LCFDW-TATR9-ME7YQ-NMGYY-UJZQZ",
+      "secemail": "AndroXus2019.4020@auto-secure.lol",
+      "password": "hl8e4l6514ixhsgh"
+    },
+    "stats": {
+      "online": {
+        "status": false,
+        "game": null
+      },
+      "social": {},
+      "skyblock": [],
+      "duels": {
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "KLRatio": 0,
+        "title": 0,
+        "WLRatio": 0,
+        "bestWinStreak": 0,
+        "currentWinStreak": 0
+      },
+      "skywars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "kills": 0,
+        "deaths": 0,
+        "kdr": 0,
+        "wlr": 0,
+        "assists": 0,
+        "levels": 0
+      },
+      "bedwars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "finalKills": 0,
+        "finalDeaths": 0,
+        "fkdr": 0,
+        "wlr": 0,
+        "bedsBroken": 0,
+        "bedsLost": 0,
+        "bblr": 0,
+        "level": 0
+      },
+      "rank": "None",
+      "nwl": "0",
+      "hasapi": false,
+      "name": "AndroXus2019",
+      "color": "null"
+    },
+    "lunar": {
+      "cosmetics": "None",
+      "plusCosmetics": "None",
+      "equippedCosmetics": "None",
+      "emotes": "None",
+      "equippedEmotes": "None",
+      "rank": "None"
+    },
+    "aftersecure": true
+  },
+  "errors": [
+    {
+      "timestamp": 1770166545702,
+      "message": "Error getting Lunar data for user dgoiTbPW6: Error connecting to the authenticator",
+      "type": "error"
+    },
+    {
+      "timestamp": 1770166638737,
+      "message": "Error applying permissions on addUser: {\n  \"code\": \"ModalSubmitInteractionFieldNotFound\"\n}",
+      "type": "error"
+    },
+    {
+      "timestamp": 1770166678402,
+      "message": "[UnhandledRejection] Unhandled promise rejection: {\n  \"requestBody\": {\n    \"files\": [],\n    \"json\": {\n      \"type\": 4,\n      \"data\": {\n        \"content\": \"Couldn't find an OptiFine Cape for this user.\",\n        \"tts\": false,\n        \"enforce_nonce\": false,\n        \"flags\": 64\n      }\n    }\n  },\n  \"rawError\": {\n    \"message\": \"Unknown interaction\",\n    \"code\": 10062\n  },\n  \"code\": 10062,\n  \"status\": 404,\n  \"method\": \"POST\",\n  \"url\": \"https://discord.com/api/v10/interactions/1468410329863159860/aW50ZXJhY3Rpb246MTQ2ODQxMDMyOTg2MzE1OTg2MDoyYUZqMGo5UElqaGRrRVYxZlR6aTcwVGZMSU15Wjk4YWVQVjVkUGloMlBXWExWVWc0akM4M3pVd0RlYTZRVmxyazRlQlZBT1VyZUJNdHRtcUlNeEQ2TVh2TlFpTzJRYzBqOFYxemxVdjRrWjlNQUhVZHdoUlhqTE1tZzFyMDV5Qw/callback?with_response=false\"\n}",
+      "type": "error"
+    },
+    {
+      "timestamp": 1770166905684,
+      "message": "[IMAP] connection error: Timed out while authenticating with server",
+      "type": "error"
+    },
+    {
+      "timestamp": 1770166935626,
+      "message": "[IMAP] connection error: Timed out while authenticating with server",
+      "type": "error"
+    },
+    {
+      "timestamp": 1770167320626,
+      "message": "[getUUID] Could not find UUID for Desk 69 from any source",
+      "type": "error"
+    },
+    {
+      "timestamp": 1770167321459,
+      "message": "Error in invalidatedMessager!: {\n  \"requestBody\": {\n    \"files\": [],\n    \"json\": {\n      \"tts\": false,\n      \"enforce_nonce\": false,\n      \"embeds\": [\n        {\n          \"color\": 13773611,\n          \"fields\": [\n            {\n              \"name\": \"Username | Status | Reason\",\n              \"value\": \"```Desk 69 | Failed to pass username check | No Minecraft Profile.```\"\n            }\n          ],\n          \"author\": {\n            \"name\": \"cheems_9565 | 1159961148729327656\"\n          },\n          \"thumbnail\": {\n            \"url\": \"https://visage.surgeplay.com/bust/Desk 69.png?y=-40&quality=lossless\"\n          }\n        }\n      ],\n      \"components\": [\n        {\n          \"type\": 1,\n          \"components\": [\n            {\n              \"type\": 2,\n              \"custom_id\": \"ban|1159961148729327656\",\n              \"label\": \"Ban\",\n              \"style\": 4\n            },\n            {\n              \"type\": 2,\n              \"custom_id\": \"kick|1159961148729327656\",\n              \"label\": \"Kick\",\n              \"style\": 4\n            },\n            {\n              \"type\": 2,\n              \"custom_id\": \"blacklist|1159961148729327656\",\n              \"label\": \"Blacklist\",\n              \"style\": 4\n            },\n            {\n              \"type\": 2,\n              \"custom_id\": \"unban|1159961148729327656\",\n              \"label\": \"Unban\",\n              \"style\": 1\n            },\n            {\n              \"type\": 2,\n              \"custom_id\": \"unblacklist|1159961148729327656\",\n              \"label\": \"Unblacklist\",\n              \"style\": 1\n            }\n          ]\n        }\n      ]\n    }\n  },\n  \"rawError\": {\n    \"message\": \"Invalid Form Body\",\n    \"code\": 50035,\n    \"errors\": {\n      \"embeds\": {\n        \"0\": {\n          \"thumbnail\": {\n            \"url\": {\n              \"_errors\": [\n                {\n                  \"code\": \"URL_TYPE_INVALID_URL\",\n                  \"message\": \"Not a well formed URL.\"\n                }\n              ]\n            }\n          }\n        }\n      }\n    }\n  },\n  \"code\": 50035,\n  \"status\": 400,\n  \"method\": \"POST\",\n  \"url\": \"https://discord.com/api/v10/channels/1461348527937421413/messages\"\n}",
+      "type": "error"
+    },
+    {
+      "timestamp": 1770167321698,
+      "message": "Failed to send to channel 1461348506454200342: {\n  \"requestBody\": {\n    \"files\": [],\n    \"json\": {\n      \"tts\": false,\n      \"enforce_nonce\": false,\n      \"embeds\": [\n        {\n          \"color\": 13773611,\n          \"fields\": [\n            {\n              \"name\": \"Username | Status | Reason\",\n              \"value\": \"```D*****9 | Failed to pass username check | No Minecraft Profile.```\"\n            }\n          ],\n          \"author\": {\n            \"name\": \"User | User ID\"\n          },\n          \"thumbnail\": {\n            \"url\": \"https://visage.surgeplay.com/bust/Desk 69.png?y=-40&quality=lossless\"\n          }\n        }\n      ],\n      \"components\": [\n        {\n          \"type\": 1,\n          \"components\": [\n            {\n              \"type\": 2,\n              \"emoji\": {\n                \"id\": \"1295278858064498709\"\n              },\n              \"custom_id\": \"duels2|Desk 69\",\n              \"label\": \"Duels\",\n              \"style\": 2\n            },\n            {\n              \"type\": 2,\n              \"emoji\": {\n                \"id\": \"1418589836398297261\"\n              },\n              \"custom_id\": \"skywars2|Desk 69\",\n              \"label\": \"Skywars\",\n              \"style\": 2\n            },\n            {\n              \"type\": 2,\n              \"emoji\": {\n                \"id\": \"1418590280390807704\"\n              },\n              \"custom_id\": \"skyblock2|Desk 69\",\n              \"label\": \"Skyblock\",\n              \"style\": 2\n            },\n            {\n              \"type\": 2,\n              \"emoji\": {\n                \"id\": \"1416130064608657572\"\n              },\n              \"custom_id\": \"bedwars2|Desk 69\",\n              \"label\": \"Bedwars\",\n              \"style\": 2\n            }\n          ]\n        }\n      ]\n    }\n  },\n  \"rawError\": {\n    \"message\": \"Invalid Form Body\",\n    \"code\": 50035,\n    \"errors\": {\n      \"embeds\": {\n        \"0\": {\n          \"thumbnail\": {\n            \"url\": {\n              \"_errors\": [\n                {\n                  \"code\": \"URL_TYPE_INVALID_URL\",\n                  \"message\": \"Not a well formed URL.\"\n                }\n              ]\n            }\n          }\n        }\n      }\n    }\n  },\n  \"code\": 50035,\n  \"status\": 400,\n  \"method\": \"POST\",\n  \"url\": \"https://discord.com/api/v10/channels/1461348506454200342/messages\"\n}",
+      "type": "error"
+    },
+    {
+      "timestamp": 1770167352701,
+      "message": "[getUUID] Could not find UUID for cheems_9565 from any source",
+      "type": "error"
+    },
+    {
+      "timestamp": 1770167444736,
+      "message": "Error getting Lunar data for user jjRVqcdrL: Error connecting to the authenticator",
+      "type": "error"
+    }
+  ],
+  "endTime": 1770166559258,
+  "duration": 47958
+}

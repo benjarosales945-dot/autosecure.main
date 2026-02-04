@@ -1,0 +1,19 @@
+[2026-02-03T23:16:04.188Z] [SECURE_LOGGER] Started logging for UID: K8zBAcPj2, Type: secure
+[2026-02-03T23:16:04.191Z] [STEP] secure_started - {"hasHost":true,"hasSettings":true,"username":null,"context":{}}
+[2026-02-03T23:16:04.191Z] [LOG] [RECODE_SECURE] Starting secure process for UID: K8zBAcPj2, username: none
+[2026-02-03T23:16:04.194Z] [STEP] initialize_start - {}
+[2026-02-03T23:16:04.194Z] [LOG] [RECODE_SECURE] Initializing secure process...
+[2026-02-03T23:16:04.194Z] [LOG] [RECODE_SECURE] Account object created, login cookie set
+[2026-02-03T23:16:04.210Z] [LOG] [RECODE_SECURE] Axios instance initialized for UID: K8zBAcPj2
+[2026-02-03T23:16:04.215Z] [LOG] [RECODE_SECURE] Status updated: msauth for UID: K8zBAcPj2
+[2026-02-03T23:16:04.216Z] [LOG] Starting recode secure!
+[2026-02-03T23:16:04.216Z] [LOG] [RECODE_SECURE] Getting cookies and authentication...
+[2026-02-03T23:16:05.064Z] [LOG] [RECODE_SECURE] Cookies retrieved: apiCanary=true, amsc=true, canary=true
+[2026-02-03T23:16:05.064Z] [LOG] [RECODE_SECURE] Polishing host with amsc...
+[2026-02-03T23:16:08.343Z] [LOG] [SKYHELPER-NETWORTH] A MAJOR update is available! Current version: 1.27.3, Latest version: 2.7.0. NOTE: This update may contain BREAKING changes.
+[2026-02-03T23:16:09.148Z] [LOG] API key expired. Refreshing...
+[2026-02-03T23:16:09.149Z] [WARN] VPS mode disabled (novps=true). API key refresh skipped. Using current key.
+[2026-02-03T23:16:10.084Z] [LOG] [POLISHHOST] Error occurred: timeout of 15000ms exceeded
+[2026-02-03T23:16:10.084Z] [LOG] [POLISHHOST] Network timeout or connection reset
+[2026-02-03T23:16:10.084Z] [LOG] [RECODE_SECURE] Error polishing host: Network timeout during authentication
+[2026-02-03T23:16:10.090Z] [SECURE_LOGGER] Process failed: Network timeout during authentication

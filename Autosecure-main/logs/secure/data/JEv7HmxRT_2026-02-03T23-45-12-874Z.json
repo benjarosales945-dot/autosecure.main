@@ -1,0 +1,61 @@
+{
+  "uid": "JEv7HmxRT",
+  "processType": "secure",
+  "context": {},
+  "startTime": 1770162312873,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "secure_started",
+      "timestamp": 1770162312877,
+      "elapsed": 4,
+      "data": {
+        "hasHost": true,
+        "hasSettings": true,
+        "username": null,
+        "context": {}
+      }
+    },
+    {
+      "name": "initialize_start",
+      "timestamp": 1770162312879,
+      "elapsed": 6,
+      "data": {}
+    }
+  ],
+  "account": {
+    "oldName": "Couldn't find!",
+    "newName": "Couldn't change!",
+    "oldEmail": "Couldn't find",
+    "email": "unauthed",
+    "secEmail": "unauthed",
+    "password": "unauthed",
+    "recoveryCode": "unauthed",
+    "loginCookie": "11-M.C522_BL2.0.U.CuHGzIPTlc1UsfEJiWop6hMO6gE61QYRuxEPqm8VyBJtOzjFsBdVjQwEUWypmCk4K8JCQnjRuW05OzdTgl3YLs*O9btV2mkyvOyY0zOlARYu**UiWkDp9o2R9ez!NFuj0bzZPy58nkvQAMx5AGisr!HCHMwV0teiJEDpBSXnqjuxhZWSxXfH!Qu3NkvyF3quCn2F3vuDEW4*u9qKS2lahQzIwRwkBF8GZ68ZKYjCX81AlOKeRjxhlAyttTruCtP1QYb7mbbdY2FdQir142Oyx1lk72AtMzckagOFtOagt106",
+    "status": "unauthed",
+    "ban": "",
+    "banReason": "",
+    "timeTaken": 0,
+    "ssid": "Couldn't Get!",
+    "capes": [],
+    "gamertag": "Couldn't find!",
+    "secretkey": "Couldn't find!",
+    "mc": "False",
+    "gtg": "",
+    "xbl": "",
+    "xuid": "",
+    "uid": "",
+    "recoverydata": {
+      "email": null,
+      "recovery": null,
+      "secemail": null,
+      "password": null
+    },
+    "stats": {},
+    "lunar": {},
+    "aftersecure": false
+  },
+  "errors": [],
+  "endTime": 1770162328528,
+  "duration": 15655
+}

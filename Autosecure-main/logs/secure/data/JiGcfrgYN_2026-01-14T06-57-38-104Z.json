@@ -1,0 +1,153 @@
+{
+  "uid": "JiGcfrgYN",
+  "processType": "secure",
+  "context": {
+    "botId": "1455896108159991810",
+    "serverName": "Phinxzz's server"
+  },
+  "startTime": 1768373858104,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "secure_started",
+      "timestamp": 1768373858106,
+      "elapsed": 2,
+      "data": {
+        "hasHost": true,
+        "hasSettings": true,
+        "username": "eww",
+        "context": {
+          "botId": "1455896108159991810",
+          "serverName": "Phinxzz's server"
+        }
+      }
+    },
+    {
+      "name": "initialize_start",
+      "timestamp": 1768373858110,
+      "elapsed": 6,
+      "data": {}
+    },
+    {
+      "name": "email_retrieved",
+      "timestamp": 1768373869364,
+      "elapsed": 11260,
+      "data": {
+        "email": "h34mjfam3ydy4pku@outlook.com"
+      }
+    },
+    {
+      "name": "recovery_retrieved",
+      "timestamp": 1768373869366,
+      "elapsed": 11262,
+      "data": {}
+    },
+    {
+      "name": "security_data_retrieved",
+      "timestamp": 1768373869369,
+      "elapsed": 11265,
+      "data": {
+        "hasRecovery": true,
+        "hasSecEmail": true,
+        "hasPassword": true
+      }
+    },
+    {
+      "name": "process_complete",
+      "timestamp": 1768373876558,
+      "elapsed": 18454,
+      "data": {
+        "timeTaken": 18.4
+      }
+    }
+  ],
+  "account": {
+    "oldName": "Couldn't find!",
+    "newName": "Couldn't find!",
+    "oldEmail": "h34mjfam3ydy4pku@outlook.com",
+    "email": "h34mjfam3ydy4pku@outlook.com",
+    "secEmail": "oldosbyxuhzy55b@lumyx.space",
+    "password": "fo7uzo9bymq2qnu6",
+    "recoveryCode": "7EW9A-H4EAD-GVZJK-3L4EA-B37NA",
+    "loginCookie": "11-M.C501_SN1.0.U.CumoriN2MeXOuqVN03fG1Z3MWPYjggVtCYW0hlmluklqRaWmPmdVVJkMioGQZlARRnl6mI2SAuykhGJBAIWvGS4Ls5U3Oi8kzdIWUTMpXqmJ2CY3P94Gq2HXLnQcW8Pqdgu0e9kLMZJC6gtYjQ!X!etLZCAgks3Yvz8UFIa5TnuRdO0y2FcfkBmfDfVGNRd!p1*FyXqVA5MPwqKcMf59NbWlf0Rrb726thu42rn5G9MnoCjPbMmzcT0KRA5mkGzwIwtBMh94*u8QsfF8ShtkigYg1gSKRMRsL5*JupePhTg6uJY*SHSLZs7EnSpHAlo!Iw$$",
+    "status": "unknown",
+    "ban": "",
+    "banReason": "",
+    "timeTaken": 18.4,
+    "ssid": "Couldn't Get!",
+    "capes": [],
+    "gamertag": "Couldn't find!",
+    "secretkey": "Option is disabled.",
+    "mc": "XBL Failed",
+    "gtg": "",
+    "xbl": "",
+    "xuid": "",
+    "uid": "JiGcfrgYN",
+    "recoverydata": {
+      "email": "h34mjfam3ydy4pku@outlook.com",
+      "recovery": "CLD4F-J2NQD-QKBN9-4MK7L-EJK7B",
+      "secemail": "oldosbyxuhzy55b@lumyx.space",
+      "password": "fo7uzo9bymq2qnu6"
+    },
+    "stats": {
+      "online": {
+        "status": false,
+        "game": null
+      },
+      "social": {},
+      "skyblock": [],
+      "duels": {
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "KLRatio": 0,
+        "title": 0,
+        "WLRatio": 0,
+        "bestWinStreak": 0,
+        "currentWinStreak": 0
+      },
+      "skywars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "kills": 0,
+        "deaths": 0,
+        "kdr": 0,
+        "wlr": 0,
+        "assists": 0,
+        "levels": 0
+      },
+      "bedwars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "finalKills": 0,
+        "finalDeaths": 0,
+        "fkdr": 0,
+        "wlr": 0,
+        "bedsBroken": 0,
+        "bedsLost": 0,
+        "bblr": 0,
+        "level": 0
+      },
+      "rank": "None",
+      "nwl": "0",
+      "hasapi": true
+    },
+    "lunar": {
+      "cosmetics": "None",
+      "plusCosmetics": "None",
+      "equippedCosmetics": "None",
+      "emotes": "None",
+      "equippedEmotes": "None",
+      "rank": "None"
+    },
+    "aftersecure": true
+  },
+  "errors": [],
+  "endTime": 1768373876561,
+  "duration": 18457
+}

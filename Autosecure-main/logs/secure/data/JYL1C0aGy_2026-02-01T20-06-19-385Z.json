@@ -1,0 +1,181 @@
+{
+  "uid": "JYL1C0aGy",
+  "processType": "secure",
+  "context": {
+    "botId": "1465856973919486128",
+    "serverName": "Hypixell"
+  },
+  "startTime": 1769976379385,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "secure_started",
+      "timestamp": 1769976379387,
+      "elapsed": 2,
+      "data": {
+        "hasHost": true,
+        "hasSettings": true,
+        "username": "asd",
+        "context": {
+          "botId": "1465856973919486128",
+          "serverName": "Hypixell"
+        }
+      }
+    },
+    {
+      "name": "initialize_start",
+      "timestamp": 1769976379391,
+      "elapsed": 6,
+      "data": {}
+    },
+    {
+      "name": "minecraft_found",
+      "timestamp": 1769976394160,
+      "elapsed": 14775,
+      "data": {
+        "username": "BrayanTG0"
+      }
+    },
+    {
+      "name": "email_retrieved",
+      "timestamp": 1769976395871,
+      "elapsed": 16486,
+      "data": {
+        "email": "stunjo086@gmail.com"
+      }
+    },
+    {
+      "name": "recovery_retrieved",
+      "timestamp": 1769976395873,
+      "elapsed": 16488,
+      "data": {}
+    },
+    {
+      "name": "security_data_retrieved",
+      "timestamp": 1769976395877,
+      "elapsed": 16492,
+      "data": {
+        "hasRecovery": true,
+        "hasSecEmail": true,
+        "hasPassword": true
+      }
+    },
+    {
+      "name": "process_complete",
+      "timestamp": 1769976429818,
+      "elapsed": 50433,
+      "data": {
+        "timeTaken": 50.4
+      }
+    }
+  ],
+  "account": {
+    "oldName": "BrayanTG0",
+    "newName": "BrayanTG0",
+    "oldEmail": "stunjo086@gmail.com",
+    "email": "stunjo086@gmail.com",
+    "secEmail": "oldn6bxxc6rzghj@auto-secure.lol",
+    "password": "lo7sgocxzhh2o122",
+    "recoveryCode": "PW2UV-WB8NA-KV56L-YPXSR-2L5BL",
+    "loginCookie": "11-M.C526_SN1.0.U.CmUVn!djVS8Gl1eGtTVtLPspXX3vn8uZVp1h8pDB*rihrCPhwynWxJlLmricu3ks7U9Uk48nc2wC5oZ!zpPqIQ*rwPIbemAuFkojJcLoqddodyNIiQAyAplBelNX0qMmmio3iiNpgYLeAQu90p1oDPSPIpptPR11htkN1qNd6IlbBCaOJTYkhGmJ7qu0qiXytnd*ZF14te9XL86WuhAcbHou*ZvQibJRcQrK8sTjFVHw6U!8KAQI7uv44yU2b!cNWeYoGIWTlxFBz*jlxtSv1i*9V2KBbK!xJTLXuDv*XEci",
+    "status": "unknown",
+    "ban": "",
+    "banReason": "",
+    "timeTaken": 50.4,
+    "ssid": "eyJraWQiOiIwNDkxODEiLCJhbGciOiJSUzI1NiJ9.eyJ4dWlkIjoiMjUzNTQzMzM0NDI3NTAwMyIsImFnZyI6IkFkdWx0Iiwic3ViIjoiMTYwZWFlZjAtMmY2MS01NWU5LWIzZGQtZmRkZjhlMmM0ZmU2IiwiYXV0aCI6IlhCT1giLCJucyI6ImRlZmF1bHQiLCJyb2xlcyI6W10sImlzcyI6ImF1dGhlbnRpY2F0aW9uIiwiZmxhZ3MiOlsibWluZWNyYWZ0X25ldCIsIm9yZGVyc18yMDIyIiwidHdvZmFjdG9yYXV0aCIsIm11bHRpcGxheWVyIiwibXNhbWlncmF0aW9uX3N0YWdlNCJdLCJwcm9maWxlcyI6eyJtYyI6ImFkZmViYWYxLTAyMTktNDFkYS05ZTU1LWJmMWZjMGRhYmU4ZCJ9LCJwbGF0Zm9ybSI6IldFQiIsInBmZCI6W3sidHlwZSI6Im1jIiwiaWQiOiJhZGZlYmFmMS0wMjE5LTQxZGEtOWU1NS1iZjFmYzBkYWJlOGQiLCJuYW1lIjoiQnJheWFuVEcwIn1dLCJuYmYiOjE3Njk5NzY0MTgsImV4cCI6MTc3MDA2MjgxOCwiaWF0IjoxNzY5OTc2NDE4LCJhaWQiOiJjYTYzNGE5YS1mMTAyLTQwMzMtYjA4MS0zYTQzOTNhNmY2NWQifQ.SFvmti1--CExImS0mx49pFFBtBr0hguEYscP8tClRBsaImyCi0_QQ61_PskDLTlpLMlekzOBvI5nz0lL8LVjy7ZZSJDVP503OonEEqodUuqYxDJo4zM5PBvfIk8NJyw99pvl_dXaBNqGcV3EzkQi5bTKQZsFxTCu5FGnfIe7rtKtXLwGj93BZp-FnCFy4brlVG7G6tdYHrRlYZsz9Nr4yqlHDAa5EnmRvhGvCsWKrpNqX4ZRoKrPYG4ZizPQzabkebiDlnOhaYIJ3cbfXqpBR5OFHKZFjNdipXWd3twdy4oT96XMjHk_bBXc1qRM-wKheqA8nwmfD5r4ic2Envsrqg",
+    "capes": [
+      "Pan"
+    ],
+    "gamertag": "SantiagoG1524",
+    "secretkey": "dpim qsuw fob2 eslz",
+    "mc": "Gamepass",
+    "gtg": "SantiagoG1524",
+    "xbl": "XBL3.0 x=16813327611174554120;eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiUlNBLU9BRVAiLCJjdHkiOiJKV1QiLCJ6aXAiOiJERUYiLCJ4NXQiOiJnN3hlanVTXzRnOXNNdW9fLXdVeFQ5NHNHancifQ.OpSRVXEk26qyAQW_lDBp95jcBhFG_43Nl1o8hD3rrEHqvnoziojZhVgMJ2siX-ru1R90HehR35HMFiWH5LP_NUOZF7xc990E2XP_Vd9JXNKSsMb6SnOQelYs2DSwqDSI4BNmRjjHVbGthiDudtYq8LnFIv3R7uD1PmbXhrx3_aKDHfJ3upYev7XlL99qPJ4vJS9yB4d2CqGd7-VBeJyfbE-YxLi11mDGHGQxUQTV0TrWJl78q4BPvoldb4mM7G1EWOZXFAPqKABr0g_aCEV-07MzuCzg2C3-RqmQOnGZoxWBm8nQ3L0sbfKVNJVlNTsVm7XXMPXVFaXxpyYMhIIzBw.CLZHPFUJLz6bHKK3UmQNFA.vShzZt_6q8loZwvxDan34t4JUmVYXN77jgz0prtmLlB4z5ixCN8Sm5RYXtpJfFkUUN-UOfrdcGGzFj1epD3b9MBTAT60o_Ansvrdpe2KLWOGL3Va4mPla0wloqB1EeTdg6mraeWbMj0BBrrsKTYhW_35XpJ9n-HcMzzYlEcI2O5p80qH6_grHW5hv4EaMvMCUIaJRR8pZB9_n_zdkj9WXGERZz2wDr0yIKy8H6LOs9924TzPvb6b5D9IguyR7UaK46YKd0RkpfzhsKe7fCH56fGIZ3ZlkIptshqFTrv9OQkGrSszFbAGqXlOr33OmEGJP50m67G-iX55E-gXCCOik3CNxaYxR8bZgNK76IcZ7YYW9ihPmtG67FaagdPeSxQfI5jdrcWULR-XuRENnDr0CNJb_jyzNbJpPUXmp3wXNEOo0dLRvb6GrutcnNuob9XSc_WlglTwbUX1Sc8O4Jir4doWUsPyCKyS4OgdMhAXjqoWFUlj4QmC4gsf84n-sUm4EaPqdiD6CP-6COh19p6o42-NEK6f_bJ1ylO1ilVeTkPNwyye4COkR8MTqXCgkgm6pJ1vITiC4D9QvW0LW7uX4BazV9bnA9Js3v44NgzDVPwPwVVFbRPVmsR2QnMszUTeLEYKnwPCZaxc_5f_OD5ecR_2k7AjoAq-dqQybejQC6dlbxPnfnXDcHRfU8AfEQmDzobrzttU9LpAWAAUVtPOdCDCX-281tCTOl87jFncf9shBtKS4PE2zPzMQBYASahOX6J6OAe5gEGYYdZYOlcoKqeAh5me0AekTHCGY-YK1M2ai2MInsiVgQ4fa1WEvqyPXF73zbWVyXpeFsFJbE0ZhgZGoMaD2G-C8u-eE48zjCNEk9bip5PuEYHRm_y3uh-FhlujHRVNkJjfkcY0ij5owT7Jebx6wdMrBmOXHv2baQtlmsZb1a9WkHe61EcDAvkloTAdAMlo9tjppA5lyfQ32CFEW3fhlfcgLjlE942i3XlsC_tMFTcZvMuMP3hiDWtcTS9p6O2K_4x85hFvnRV2jUPPlO_CyaXH8fKF6wIPrr9ODeCw7bS5xWxXXXSSjtzMZmtZ_Vq2xieMjjvYAKX1b3haja4c17HfTxk4WgoBiaPvAL3iKZZTp4ZJ0471DpwXiZKck8R2IdIMEVdS9tF5nNtn9xfkJNf1dAqqEDcDCzt8sYVHzMURe_oFvurBEikdfTFjRy8ZXTRric3NEhK3HNICws-xCxg2hG66IaIgdn2PRh2sofPdfY_IoTOU2cfmaQff0CmOKRlLJRU_mTcxg6wIJ6YaRnMNDfUgAB9O1xES9_hbnWlSnPf69NDoo27WLOcDR8twSUYLUjFjZCTTSUY70YTyyXnnihkMRg48L73_tus4cKn6PWzNMQ0BpXb_9mOeRWzwsGBcxaikntGhOtD084JDwmenD7aGEPKl9P97iKLfHp75bivZPSR06pHHt7PQEFUvaSpzpB3-aw2hAWnW-f_xmzLA4ZUi3CIMHlNgOnw1pab9GpHiY2ImTcmWmn2svnxRJFpwS3xy2mTcEGQ6Qai29E_fihjpUF2VJUP5Yj7G66vNS1FpLdujt26Lpkan-kIcFNeXXt2vvfPxdcZpSxuSFGVQmjRGzb-zAidzBIfNNpK7bbbvH2ov8ur7zcCwxx2hyUnwcAjYWQpxppB8LTVM-9fPQIM3FEVHvvY65ChJbyoUu5Mg7-DNb6yeC3bN-pW-nG37KKG5uYiZ9SGee3xcjdBKu71JvFpOkDOzFfOsJoUrw8SLt0eFUe81ZX-RvWywvxJdQLXil0nDFdkp7zHYacGNWkANYE5gbLI.Eyh23N-4z1sAs7h3_tzjVg",
+    "xuid": "2535433344275003",
+    "uid": "JYL1C0aGy",
+    "recoverydata": {
+      "email": "stunjo086@gmail.com",
+      "recovery": "4GDQZ-KCAT3-YDBVV-FKG7P-JUZ7X",
+      "secemail": "oldn6bxxc6rzghj@auto-secure.lol",
+      "password": "lo7sgocxzhh2o122"
+    },
+    "stats": {
+      "online": {
+        "status": false,
+        "game": null
+      },
+      "social": {},
+      "skyblock": [],
+      "duels": {
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "KLRatio": 0,
+        "title": 0,
+        "WLRatio": 0,
+        "bestWinStreak": 0,
+        "currentWinStreak": 0
+      },
+      "skywars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "kills": 0,
+        "deaths": 0,
+        "kdr": 0,
+        "wlr": 0,
+        "assists": 0,
+        "levels": 0
+      },
+      "bedwars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "finalKills": 0,
+        "finalDeaths": 0,
+        "fkdr": 0,
+        "wlr": 0,
+        "bedsBroken": 0,
+        "bedsLost": 0,
+        "bblr": 0,
+        "level": 0
+      },
+      "rank": "None",
+      "nwl": "0",
+      "hasapi": false,
+      "name": "BrayanTG0",
+      "color": "null"
+    },
+    "lunar": {
+      "cosmetics": "None",
+      "plusCosmetics": "None",
+      "equippedCosmetics": "None",
+      "emotes": "None",
+      "equippedEmotes": "None",
+      "rank": "None"
+    },
+    "aftersecure": true
+  },
+  "errors": [
+    {
+      "timestamp": 1769976404014,
+      "message": "Error getting Lunar data for user JYL1C0aGy: Error connecting to the authenticator",
+      "type": "error"
+    },
+    {
+      "timestamp": 1769976420267,
+      "message": "[X] Error removing alias 573019595421: timeout of 10000ms exceeded",
+      "type": "error"
+    },
+    {
+      "timestamp": 1769976420406,
+      "message": "[X] Error removing alias 573248787399: timeout of 10000ms exceeded",
+      "type": "error"
+    }
+  ],
+  "endTime": 1769976429821,
+  "duration": 50436
+}

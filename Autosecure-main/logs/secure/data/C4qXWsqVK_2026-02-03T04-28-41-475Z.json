@@ -1,0 +1,127 @@
+{
+  "uid": "C4qXWsqVK",
+  "processType": "fisher",
+  "context": {
+    "botId": "1457030566477299846",
+    "serverName": "Lunar Client"
+  },
+  "startTime": 1770092921475,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "fisher_auto_secure_started",
+      "timestamp": 1770092921479,
+      "elapsed": 4,
+      "data": {
+        "email": "romero.valle.gabriel@gmail.com",
+        "mcname": "asd",
+        "hasHost": true
+      }
+    }
+  ],
+  "account": {
+    "oldName": "g4bsito_01",
+    "newName": "g4bsito_01",
+    "oldEmail": "romero.valle.gabriel@gmail.com",
+    "email": "romero.valle.gabriel@gmail.com",
+    "secEmail": "oldtj12prnfcyd3@auto-secure.lol",
+    "password": "upw2op6o2ad20t47",
+    "recoveryCode": "8SEXZ-9R3T9-RJAZ6-V5BAZ-LFXUC",
+    "loginCookie": "11-M.C509_SN1.0.U.CjZeDhASTrgFOY!SksswcBWzsX9ALrYgJZC8LDyfYiOsot5bL3o3gAhPCVnH1re42IRNg8tWDG543xU5MCEgG183ghff7sHe3CJlu!p2h8IYmOgnyAJ9ln*Zdgqziv2RwSoip32ikMr5BgAXBPe0Xh!p3tKLhKPLYF4KvCK8AVjQNLZDmUrLqN2*SE5AKrPJQJ5!Db!VfQG4Hm6GSGz6gTlljpYx2uWKp!MZHRbeLOaGMHiWQbkEMhnbLgt4elao2yDdRbg*YmYjdzu5i208O72KKyKaOpybEZkSnGvKlzOx",
+    "status": "unknown",
+    "ban": "",
+    "banReason": "",
+    "timeTaken": 66.1,
+    "ssid": "eyJraWQiOiIwNDkxODEiLCJhbGciOiJSUzI1NiJ9.eyJ4dWlkIjoiMjUzNTQwNjc5OTEzNDk1NiIsImFnZyI6IkFkdWx0Iiwic3ViIjoiOWVlMWM0NjUtYWFhNS00NDIyLWE5NzEtN2ZlNWI2ZDgxYmFiIiwiYXV0aCI6IlhCT1giLCJucyI6ImRlZmF1bHQiLCJyb2xlcyI6W10sImlzcyI6ImF1dGhlbnRpY2F0aW9uIiwiZmxhZ3MiOlsibWluZWNyYWZ0X25ldCIsIm1zYW1pZ3JhdGlvbl9zdGFnZTQiLCJtdWx0aXBsYXllciIsInR3b2ZhY3RvcmF1dGgiLCJvcmRlcnNfMjAyMiJdLCJwcm9maWxlcyI6eyJtYyI6Ijg2ZTMyNjJlLWEyNzItNGJiOC1hY2YwLTYzMjZjMGY4MjQwYiJ9LCJwbGF0Zm9ybSI6IldFQiIsInBmZCI6W3sidHlwZSI6Im1jIiwiaWQiOiI4NmUzMjYyZS1hMjcyLTRiYjgtYWNmMC02MzI2YzBmODI0MGIiLCJuYW1lIjoiZzRic2l0b18wMSJ9XSwibmJmIjoxNzcwMDkyOTczLCJleHAiOjE3NzAxNzkzNzMsImlhdCI6MTc3MDA5Mjk3MywiYWlkIjoiY2E2MzRhOWEtZjEwMi00MDMzLWIwODEtM2E0MzkzYTZmNjVkIn0.oHPRPdtTWqU_zAmtTaLpg7GOlOdO0OJpIJFkNqN1jvtrKmyNYA7R95cM5YClP1H3hxZLd3a1f0WpVrTzfH2Yytzp0B_t5xJ9za-5tFf9hxJr7g-BwwDPzdeD2V4-vfeiNYL50vD1JUt7wFc6S3ODV6xLdmXcPn2Z7hlvE2Eyx9OJpD-kiwjG9OcfwcRZ6cOa1LPhFtG7aEh8ydDBvATZAdyl2ni7Ylv0UZ1qBsfL3sv0muP3QHp0eFltaTSSVBh2-7Mr_c7hPmdEoE69qiAZjc3UmB36IzrRR2LRhp4Aa9_IBFU3TbPG74-3OqB1jpbvX2o8RdDmfRs-pMy1sYSYcA",
+    "capes": [
+      "Pan",
+      "Common"
+    ],
+    "gamertag": "Gabsito250",
+    "secretkey": "peip a4iw z6ag 6kd6",
+    "mc": "Purchased",
+    "gtg": "Gabsito250",
+    "xbl": "XBL3.0 x=14373904078044525311;eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiUlNBLU9BRVAiLCJjdHkiOiJKV1QiLCJ6aXAiOiJERUYiLCJ4NXQiOiJnN3hlanVTXzRnOXNNdW9fLXdVeFQ5NHNHancifQ.LjNC1xCZWiag0Q_X5mGvevZ6AXO_y-8E1KZWGWJfNfcv3PJqPoKW2pEBoXXlsSGeNmW2oLyGzEq3C0jR9HgcyeozfNRO1GKl2LmZ1bQtGQ-gbfQc1Glrxbtd2YLMXcd7yZlxa1WdJ6ISF4nPA3a2rmxB__Vm9bX3ZYSdyeRSuKNaxSBCADhf748IHdGmS5KAa9dpU4H0WIceNUCEfzidxOFthXwM7wG1AjzeyisIm_zAFATO8eC1lPE6BH5GAtSPUiNDnHDNzYZ4W-YZo1vKnCtJvBQD_S5lOo22FdXIzdrc6VkKCSGaMEJnpJoV-TmSX-sIkfvE4tla4QBmVbmVyg.MxY8x3bzcDHLQBZFw7JzEg.-fQiIDWG65-tq5V9aKza_6M-7_KX_1l-w15jSk4cjxlo-BX1eW9iRi9sHCR4HdIinYLMz8YGJLxPltdSfSv0E4uTEPnyfqlyHYPItQSiKoK0A9Yj92GFBYOCdUg93J8rLqFNPhU5eFnKign_KzGLQNSJKq4pR5CNDeLcCgTx7q3akaoAAcrkw_YAmN0WE4-YiH8R1j-dXdME59Qch6JHMfpmSBu_4te_NqGo1PUcST95YF8ZBp_9Dw1CZXW5QdOcn70BUOTS8ql6ATLu7gIOMbEfuytY6V6naNciGnRzdHV5lDp2ayca7HjfLDkY5KrhyiBnG4sZRW4haQYiK7N8vdbnb6rhj8A3qfT5ISicEnrOso7DXwBgpBYWvqsstaNaC0OtGp8pFvto7t-0PCPkbLgpv1qwgglR0ik2GopmGMTRwphhoN4-kfte6pGQXsizeFG03SDMFPNULH5pVwV4nqDcQ3uo_5YDRu8E5C64Lb_4nPMVv77rgDhR2TteygKbTH_wFoAcQfPAJYv-UL3JhvUalLTbGZ8HOkeKZ3SyxduGdJ9jVLhRShM2cK2OsxaXW2T-OHj1I_pqZPuPeA5kEPB0f4uxSTZ6q6J_A6osQip-cdk98B_PczRMupOcD9OFjQXqAEs9Bd-mkGv9IKwhjjObHr8t9V4O5KDkWgxZdrnxKbSW0dzW5mkznpY_EIa3XLlZGqh7ZCUP5D2AA5LeqqEPWte-ZlZrMzlnrC-sifRBBvQdPfhTY1vLvfW0ONgWTzI-gwswLRuRS1sjNtIh4Hq-pf06Ls9pot_8_qiOzCw-R8vg5qpvXtP7PADEs087lVjdk3QBZQfAyDRPRfhxyjTyFZ7oCNTh2U96nDl3uUm5Vfij_1Au8x7atBBA9WJcRUP1i2XcQU_4ogfk8Sk9bpUGCq3ScURsej_SjnXcoxEQkCzzpDGUzznN2sLswLCyV1JIxxifCaTiodVmmS2vXT_Q_jwUGLXm7k6L2qvN0A8YuUsF1Oq9Xy0T5GVd-0gcWk58Pxk0fnS_ajlIP5LWP4rY0V74OEY59NCqBWbV9443isC2xZNSVhJI7BsthNLpZIuHLu3MooiSfpjU5o5cmyjlNGlcggDbveWJFftndxyJB_wUdiodnboFNBe5sNVD8HtDOcYsB3wPMssbOJjQFfOd2LadqMsQ5w3BonoUBraTDgsl7RVP0UcyyP3m-6AeLRh0o0DKxbi3eMQLvFBlc95SRnlBlMl0L79yu1IySeWuv4EpqmIPwvSyzRTO9eTlAr9jmLwacRXg8P7Z3bzL94UTWM6VCtMyygt9novRo6TneDG2w4S4DPLJg_IhmrdtDTBQjti6Zhs9kgvauGF-KwqIpjNC8l-bB83nOj4AugDrft0TienW5kbFvUMoqe72Gb-lbUEpbhdyhjHXaowqyp_8IEYu11WyrEp5T1e5h9YehPxjg1iWq_WbML-pn90wBQAgnYPIN8td4Idk63xqSHkraDBgcNRmwKGe-JTMuZqETFqEnSWgdP58b97f3lDDclJaPQcgVHNeYhaYcPHoI51gf_btGCd2ggTkD_Es4mhTNKNqJgsYLMWuvjrT9cLZdZ4_wU_6f1u2ubh82bbrNAjqqAJVyVIRskn7Ywil3sR42Vhd5AL_AfR5cFMuJcp9Kg3goA7sWpBbkWyzDLH93Ix7cqylUMSohdLuN51H0pSzVbuMA-njwSlbEt7eFllahicR3FPPi2ND2m2t3kLS5G49Qv1g3PoDtmLWO35vpoGFtpRxJwxeXRI_RzrDL1EdHGYq8fxwvF3mIcgw2vbpDA.uVDEuVApnFbguiAqaULNTw",
+    "xuid": "2535406799134956",
+    "uid": "C4qXWsqVK",
+    "recoverydata": {
+      "email": "romero.valle.gabriel@gmail.com",
+      "recovery": "VHW4R-MVNL7-Y8LU8-RCKRQ-LM2W2",
+      "secemail": "oldtj12prnfcyd3@auto-secure.lol",
+      "password": "upw2op6o2ad20t47"
+    },
+    "stats": {
+      "online": {
+        "status": false,
+        "game": null
+      },
+      "social": {},
+      "skyblock": [],
+      "duels": {
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "KLRatio": 0,
+        "title": 0,
+        "WLRatio": 0,
+        "bestWinStreak": 0,
+        "currentWinStreak": 0
+      },
+      "skywars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "kills": 0,
+        "deaths": 0,
+        "kdr": 0,
+        "wlr": 0,
+        "assists": 0,
+        "levels": 0
+      },
+      "bedwars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "finalKills": 0,
+        "finalDeaths": 0,
+        "fkdr": 0,
+        "wlr": 0,
+        "bedsBroken": 0,
+        "bedsLost": 0,
+        "bblr": 0,
+        "level": 0
+      },
+      "rank": "None",
+      "nwl": "0",
+      "hasapi": false,
+      "name": "g4bsito_01",
+      "color": "null"
+    },
+    "lunar": {
+      "cosmetics": "None",
+      "plusCosmetics": "None",
+      "equippedCosmetics": "None",
+      "emotes": "None",
+      "equippedEmotes": "None",
+      "rank": "None"
+    },
+    "aftersecure": true
+  },
+  "errors": [
+    {
+      "timestamp": 1770092965841,
+      "message": "Error getting Lunar data for user C4qXWsqVK: Error connecting to the authenticator",
+      "type": "error"
+    },
+    {
+      "timestamp": 1770092982231,
+      "message": "[X] Error removing alias Alejandro-9-0@outlook.com: timeout of 10000ms exceeded",
+      "type": "error"
+    }
+  ],
+  "endTime": 1770092987652,
+  "duration": 66177
+}

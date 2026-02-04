@@ -1,0 +1,172 @@
+{
+  "uid": "Tcq1YQzxQ",
+  "processType": "secure",
+  "context": {
+    "botId": "1457030566477299846",
+    "serverName": "Lunar Client"
+  },
+  "startTime": 1770087969337,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "secure_started",
+      "timestamp": 1770087969340,
+      "elapsed": 3,
+      "data": {
+        "hasHost": true,
+        "hasSettings": true,
+        "username": "asd",
+        "context": {
+          "botId": "1457030566477299846",
+          "serverName": "Lunar Client"
+        }
+      }
+    },
+    {
+      "name": "initialize_start",
+      "timestamp": 1770087969344,
+      "elapsed": 7,
+      "data": {}
+    },
+    {
+      "name": "minecraft_found",
+      "timestamp": 1770087993420,
+      "elapsed": 24083,
+      "data": {
+        "username": "dustin7185"
+      }
+    },
+    {
+      "name": "email_retrieved",
+      "timestamp": 1770088003485,
+      "elapsed": 34148,
+      "data": {
+        "email": "mematasmas@outlook.com"
+      }
+    },
+    {
+      "name": "recovery_retrieved",
+      "timestamp": 1770088003487,
+      "elapsed": 34150,
+      "data": {}
+    },
+    {
+      "name": "security_data_retrieved",
+      "timestamp": 1770088003492,
+      "elapsed": 34155,
+      "data": {
+        "hasRecovery": true,
+        "hasSecEmail": true,
+        "hasPassword": true
+      }
+    },
+    {
+      "name": "process_complete",
+      "timestamp": 1770088021267,
+      "elapsed": 51930,
+      "data": {
+        "timeTaken": 51.9
+      }
+    }
+  ],
+  "account": {
+    "oldName": "dustin7185",
+    "newName": "dustin7185",
+    "oldEmail": "mematasmas@outlook.com",
+    "email": "mematasmas@outlook.com",
+    "secEmail": "oldkentql45gjhx@auto-secure.lol",
+    "password": "lbsr2z228vc6v7td",
+    "recoveryCode": "L3229-X66DW-PN4FX-FP3CH-TPCBP",
+    "loginCookie": "11-M.C548_SN1.0.U.CvH3raMH1F6oee5ptKUw97ISRIhTuaD4oYPNN9FW7btAOdE2ctf!XYFjylep*IYAz0wa9Ux1CdhxGzEF9jgI4FUvAMqNHSJhdyLnTJISqhGXsmgsg*JoWPzPY0yx9PxG2IsAz*uX4qo!HEDpIXfLh4aRvh30xXNrm29PhW5TdtT!AT*4HuigioTeEd7WwrGj3ctE5nvqAxNp6HWlUNoR7tKtac8T2aoSyA0j9oAuj11MAH02fhLYVHswgCsKhY1iOwa8c6fhYa*EUrlKTmUqZG8Uoa8bsuKB9zPc0UbW6uiJVJbvs03XoMAvw8yCnjjsKw$$",
+    "status": "unknown",
+    "ban": "",
+    "banReason": "",
+    "timeTaken": 51.9,
+    "ssid": "eyJraWQiOiIwNDkxODEiLCJhbGciOiJSUzI1NiJ9.eyJ4dWlkIjoiMjUzNTQxODI4MTU4ODg3OCIsImFnZyI6IkFkdWx0Iiwic3ViIjoiNjMyNzVjNTgtYWU2OC00MjljLWFmM2UtM2ZiYzc2NDhhZjM4IiwiYXV0aCI6IlhCT1giLCJucyI6ImRlZmF1bHQiLCJyb2xlcyI6W10sImlzcyI6ImF1dGhlbnRpY2F0aW9uIiwiZmxhZ3MiOlsibWluZWNyYWZ0X25ldCIsIm9yZGVyc18yMDIyIiwidHdvZmFjdG9yYXV0aCIsIm11bHRpcGxheWVyIiwibXNhbWlncmF0aW9uX3N0YWdlNCJdLCJwcm9maWxlcyI6eyJtYyI6IjAzNjFlYTZiLWQxNzUtNDM5NC1iNDE2LTY2NTQ5OWVlNjdiMCJ9LCJwbGF0Zm9ybSI6IldFQiIsInBmZCI6W3sidHlwZSI6Im1jIiwiaWQiOiIwMzYxZWE2Yi1kMTc1LTQzOTQtYjQxNi02NjU0OTllZTY3YjAiLCJuYW1lIjoiZHVzdGluNzE4NSJ9XSwibmJmIjoxNzcwMDg4MDE4LCJleHAiOjE3NzAxNzQ0MTgsImlhdCI6MTc3MDA4ODAxOCwiYWlkIjoiY2E2MzRhOWEtZjEwMi00MDMzLWIwODEtM2E0MzkzYTZmNjVkIn0.VC5zfnNxe06EafQC1CDhJLWRXRG91aon_UqnSH7B5P-Li-PVwT1zjZTM-2O8LXSFKXp79fGYjWSBnWws9BCiE5RLxFEM22x2lN30x29rFO-V1q_4Klfs6E5KtoUF5BbdL0qs4sgn9pf7OwpPSa_l7Y7TwK9PAalLRtAYS6gjlYSB7sGF2mSJnqeXOREO6T-6h1z3i6DrBwvXvRrVTTC-4KJSsRgNsEZG6D2yYFaAKsWGg2X690j7sfCPHhnusLqKRhCLZ7r3CPopsGzX8T5RXbcN8v0ZwbyGRYk5Q8ZHnlTnS3zYh4np3usVSawfAeJdjaytyMq0tBiICm62eUMsBg",
+    "capes": [
+      "Pan",
+      "Common"
+    ],
+    "gamertag": "Dusty7185",
+    "secretkey": "i6vi gdhe qnyx encf",
+    "mc": "Purchased",
+    "gtg": "Dusty7185",
+    "xbl": "XBL3.0 x=5486479951974465282;eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiUlNBLU9BRVAiLCJjdHkiOiJKV1QiLCJ6aXAiOiJERUYiLCJ4NXQiOiJnN3hlanVTXzRnOXNNdW9fLXdVeFQ5NHNHancifQ.VkALG6dkHGp6D0WthrsbuFXVN2zNPkz3z94mkRdMi8p3-WmdvYSIOI1Afg8G7WdgThqpmDFFkk-LaaxKsB8grbMv9h-kW5F7YbSOl7TgU2iqT3GQ-yASWqdZOx94-PSMdqMPIujqiNobSIhGKjDDiGHUieyP-Hy0-aTgQ3sMA8BwdH1k89PrXG_nQ2vzswKsdYZTMPsnDrAvMS3zpHeY6156vJ5AtQTXafz1bg-lR1Z3kgnmETJ3JEEVVFUgo3IRd4f6lO84TDtqveaJmIncuDOInLjD0Jk6194w04I_M-uv1gssQCfkK_CSUxzL1Jojn2BcBfZ7KyQrDiWWIyv2-w.iJRWBzko4WKXc6jmmUpZ6A.0rAa4lIgD4yxT4CIX9CFuPNWMX_8JpZDrqkzZ5E3X7b2HBE0RT6_-C5wA3hKMomcjNvkfq9TCsPY0vVyLlTTL0lbpjbCPkcCJVxVe0dD2Ti-fX8fIPn7eBx34Gv4xzgLxqZJr992U5U4EsffRxw1MWtvFhOBZ7M2ig35Bo4zIaXGNMc0cXKW1p2UVDgxWN_HX7AKqjMMiFgljeBqqI3N6z4vdf4HrHOuieBv4Pslb_KrD-w9QnOkB8TQEZv9_xNrCn_HMU5kUsBSRwJ_pwQ1oRg8RQ2_B3ySA4pk0Scve3l1ieyeSBxLcqVQM4eBGu0GTIjR-Kbwd_0AU_-KvTcJZhblcIYlWUR91S1UNd9AFGOThL50RNpOvJq3j1MWNZNq6CQBbcWIFsH2eUrLeObvg9YO3FKH0QWYJFONItzLZaGUPz0Mejrsxw1urMXl_cUZoXH339KewdB5jja7-1wqdavoEAbYq1loL6vvTQ2BrBknyhTQXLPrpupZrJ9KP1kraslcI-m6zPzpyTfhzbka6O5xFYAtKbnV9LHvcp8FpZJYKlCEh4H3yB8YlwGj73pSgNrZDWPnsmtut1svi6pc1t2Zhx3IrTSY40S4B7obGZucBRTIzDu-FxiWfdDlo_8ukuis_sFtluZcHUdNjy9ncbmTGURThHSS8IDxIvz-f0GoY2T9JhBrEep8sWGTi6NA1Kkk8Wu68PGUA7Sw6KiE_nA9DKFlh3XoTOqWwVaAP0jDre4FOpx4MgC5vzZ3YaVTB7-4OuQFwqU_WcQ2UqVQxnT9RIX8B4aoFjrcUrMy7sma8xbu9mxAkavliPQmSO5hzWUXwS9rn9Pofclz4rYR935QipLpTlNaY6fVCvKqrGlh1FsCRSZFjWib3PBIoMsLRFJmBCsiChvgZGXUGuXCXWM23_eMZTs8IgNpKw2dNAUQyHqF7p6AiqMf4DLfZNopwd6aYfa3BSY-VmmQ21qUagsOPVgeaaRxA_3elWgIyX9MXnCcorIqLFb7iSqRoE27FfABcPTS6HRBKqn1xxG9mhekAcXbunvX_AbWupTuJVTHyYwc4SgE6_EMzF9vgQiAX5j82AXfqv_9AiPmGWtvtqSpIG6N99YDylUX0650KtezInO6MflmXyHsGbbHfJgF7yN6a1S3-m1hEcw7iDDWF4Tvm-W4mXdgXpXz1nm4FB09If-ngqZ32Jwcwi-IYaoANplqZgqtb9mDaaE7DmZPJpFKl8InWIN8o67ADLWIqx_-op1GuYE3nKmfhThoBDQKuhSeTpQsL76Pdr8b25iBqpfUgzdYJacx7V2T_1n8pSoaGXd1Q4QHKib3MtvzzKoVwYjeMV9EiJ3gbPCOC3lvfQ9qq03HaaMWYjEpIl519r1Q5d9pf3PBJRoruPFeip1w4fBzRMRH48xWbQVNy3wch4IPVqOl_o3Xaf32PAbrIftqvcaG1RYU1EFKG2hFet8sCkLLeX9vXFwKhk_OyxyHYJ3xAvF2Vx761CjpsEIoHI2U6kGumrlrT6MTgFg3s2YFmk5cS_dwXqV-XetLel271scKkd18GhoAh7Qy7Si_pS0bFU-42iF5mCWdbGH4dBz_8hqw0-CXOJK7VnWoeZc4l6eZqHoX4ZSiXa2_u_o3WCLMYiVSWiO4m52QSN3bfuy6pkLqjh14Tw2EgM0dOKtzwZu8zC89pIULiLt3b19_yM4oU-lu3rYWNwve35PdD_0TO0rSUb-t2JrHUl7qJcKHdWDiQ-wn8GO9FbP4WYrtG67IilsmMwFtvyhftRi5SjAoDBm6u-fcE4YvEu7H4Kln0w.Q9sJXajL8cha8tquUkxuNg",
+    "xuid": "2535418281588878",
+    "uid": "Tcq1YQzxQ",
+    "recoverydata": {
+      "email": "mematasmas@outlook.com",
+      "recovery": "8APLL-2QNF3-CSZJ3-DV9BY-EWAJB",
+      "secemail": "oldkentql45gjhx@auto-secure.lol",
+      "password": "lbsr2z228vc6v7td"
+    },
+    "stats": {
+      "online": {
+        "status": false,
+        "game": null
+      },
+      "social": {},
+      "skyblock": [],
+      "duels": {
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "KLRatio": 0,
+        "title": 0,
+        "WLRatio": 0,
+        "bestWinStreak": 0,
+        "currentWinStreak": 0
+      },
+      "skywars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "kills": 0,
+        "deaths": 0,
+        "kdr": 0,
+        "wlr": 0,
+        "assists": 0,
+        "levels": 0
+      },
+      "bedwars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "finalKills": 0,
+        "finalDeaths": 0,
+        "fkdr": 0,
+        "wlr": 0,
+        "bedsBroken": 0,
+        "bedsLost": 0,
+        "bblr": 0,
+        "level": 0
+      },
+      "rank": "None",
+      "nwl": "0",
+      "hasapi": false,
+      "name": "dustin7185",
+      "color": "null"
+    },
+    "lunar": {
+      "cosmetics": "None",
+      "plusCosmetics": "None",
+      "equippedCosmetics": "None",
+      "emotes": "None",
+      "equippedEmotes": "None",
+      "rank": "None"
+    },
+    "aftersecure": true
+  },
+  "errors": [
+    {
+      "timestamp": 1770088011656,
+      "message": "Error getting Lunar data for user Tcq1YQzxQ: Error connecting to the authenticator",
+      "type": "error"
+    }
+  ],
+  "endTime": 1770088021270,
+  "duration": 51933
+}

@@ -1,0 +1,48 @@
+[2026-02-03T23:45:12.877Z] [SECURE_LOGGER] Started logging for UID: JEv7HmxRT, Type: secure
+[2026-02-03T23:45:12.879Z] [STEP] secure_started - {"hasHost":true,"hasSettings":true,"username":null,"context":{}}
+[2026-02-03T23:45:12.879Z] [LOG] [RECODE_SECURE] Starting secure process for UID: JEv7HmxRT, username: none
+[2026-02-03T23:45:12.882Z] [STEP] initialize_start - {}
+[2026-02-03T23:45:12.882Z] [LOG] [RECODE_SECURE] Initializing secure process...
+[2026-02-03T23:45:12.882Z] [LOG] [RECODE_SECURE] Account object created, login cookie set
+[2026-02-03T23:45:12.896Z] [LOG] [RECODE_SECURE] Axios instance initialized for UID: JEv7HmxRT
+[2026-02-03T23:45:12.901Z] [LOG] [RECODE_SECURE] Status updated: msauth for UID: JEv7HmxRT
+[2026-02-03T23:45:12.901Z] [LOG] Starting recode secure!
+[2026-02-03T23:45:12.901Z] [LOG] [RECODE_SECURE] Getting cookies and authentication...
+[2026-02-03T23:45:21.436Z] [LOG] [RECODE_SECURE] Cookies retrieved: apiCanary=true, amsc=true, canary=true
+[2026-02-03T23:45:21.437Z] [LOG] [RECODE_SECURE] Polishing host with amsc...
+[2026-02-03T23:45:21.925Z] [LOG] [RECODE_SECURE] Host polished, msauth result: success
+[2026-02-03T23:45:21.925Z] [LOG] [RECODE_SECURE] Setting login cookies...
+[2026-02-03T23:45:21.925Z] [LOG] [RECODE_SECURE] Login cookies set successfully
+[2026-02-03T23:45:21.925Z] [LOG] [RECODE_SECURE] Starting login authentication...
+[2026-02-03T23:45:21.925Z] [LOG] Helping with login!
+[2026-02-03T23:45:22.153Z] [LOG] No link!
+[2026-02-03T23:45:22.154Z] [LOG] [RECODE_SECURE] Login helper result: authed
+[2026-02-03T23:45:22.154Z] [LOG] [RECODE_SECURE] Login successful, proceeding with authentication...
+[2026-02-03T23:45:22.154Z] [LOG] Logged in fully authed, should be able to get amrp now!
+[2026-02-03T23:45:22.154Z] [LOG] [THROTTLE] Waiting 1550ms before parallel auth requests...
+[2026-02-03T23:45:23.705Z] [LOG] Got loginCookie: 11-M.C522_BL2.0.U.CuHGzIPTlc1UsfEJiWop6hMO6gE61QYRuxEPqm8VyBJtOzjFsBdVjQwEUWypmCk4K8JCQnjRuW05OzdTgl3YLs*O9btV2mkyvOyY0zOlARYu**UiWkDp9o2R9ez!NFuj0bzZPy58nkvQAMx5AGisr!HCHMwV0teiJEDpBSXnqjuxhZWSxXfH!Qu3NkvyF3quCn2F3vuDEW4*u9qKS2lahQzIwRwkBF8GZ68ZKYjCX81AlOKeRjxhlAyttTruCtP1QYb7mbbdY2FdQir142Oyx1lk72AtMzckagOFtOagt106
+[2026-02-03T23:45:23.705Z] [LOG] Trying to get XBL! Retry: 0
+[2026-02-03T23:45:23.706Z] [LOG] [AMRP] Attempt 1/3
+[2026-02-03T23:45:23.706Z] [LOG] [AMC] Attempt 1/3
+[2026-02-03T23:45:24.041Z] [LOG] [AMC] Failed to extract T token from response
+[2026-02-03T23:45:24.057Z] [LOG] [AMRP] Failed to extract T token from response
+[2026-02-03T23:45:24.595Z] [LOG] Error: Second access token redirect did not return a 302 status.
+[2026-02-03T23:45:24.595Z] [LOG] Trying to get XBL! Retry: 1
+[2026-02-03T23:45:25.042Z] [LOG] [AMC] Attempt 2/3
+[2026-02-03T23:45:25.043Z] [LOG] Error: Second access token redirect did not return a 302 status.
+[2026-02-03T23:45:25.060Z] [LOG] [AMRP] Attempt 2/3
+[2026-02-03T23:45:25.210Z] [LOG] [AMC] Failed to extract T token from response
+[2026-02-03T23:45:25.419Z] [LOG] [AMRP] Failed to extract T token from response
+[2026-02-03T23:45:27.210Z] [LOG] [AMC] Attempt 3/3
+[2026-02-03T23:45:27.416Z] [LOG] [AMC] Failed to extract T token from response
+[2026-02-03T23:45:27.422Z] [LOG] [AMRP] Attempt 3/3
+[2026-02-03T23:45:27.665Z] [LOG] [AMRP] Failed to extract T token from response
+[2026-02-03T23:45:28.527Z] [LOG] Failed to get AMRP
+[2026-02-03T23:45:28.527Z] [LOG] Failed to get AMC
+[2026-02-03T23:45:28.527Z] [LOG] Failed to get AMCJWT
+[2026-02-03T23:45:28.527Z] [LOG] Don't have AMC & AMRP!
+[2026-02-03T23:45:28.528Z] [SECURE_LOGGER] Completing process...
+[2026-02-03T23:45:28.530Z] [SECURE_LOGGER] Process completed in 15655ms
+[2026-02-03T23:45:28.532Z] [LOG] Got user: [object Object]
+[2026-02-03T23:45:28.550Z] [LOG] Embed worked!
+[2026-02-03T23:45:28.550Z] [LOG] [LISTACCOUNT] Added stats embed to message

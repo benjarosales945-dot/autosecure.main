@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+  <style>
+    .bg{fill:#0f1724}
+    .card{fill:#0b1220; stroke:#1f2937; stroke-width:1; rx:10}
+    .title{fill:#dbeafe; font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:700}
+    .desc{fill:#a7c1d6; font-family:Arial, Helvetica, sans-serif; font-size:13px}
+    .field-title{fill:#cfe9f8; font-family:Arial, Helvetica, sans-serif; font-size:13px; font-weight:700}
+    .field-val{fill:#e6f2fb; font-family:Arial, Helvetica, sans-serif; font-size:13px}
+    .muted{fill:#8297a8; font-family:Arial, Helvetica, sans-serif; font-size:12px}
+    .progress-bg{fill:#10232e}
+    .progress-bar{fill:#2dd4bf}
+    .thumbnail{fill:#0b1220; stroke:#23303a}
+    .code{fill:#cfe9f8; font-family:monospace; font-size:12px}
+  </style>
+  <rect class="bg" x="0" y="0" width="900" height="420"/>
+
+  <!-- Card -->
+  <rect x="30" y="20" width="840" height="360" rx="12" fill="#0b1220" stroke="#1f2937"/>
+
+  <!-- Left: thumbnail and title -->
+  <g transform="translate(56,40)">
+    <rect x="0" y="0" width="80" height="80" rx="8" fill="#08121a" stroke="#18232b"/>
+    <image x="0" y="0" width="80" height="80" href="https://visage.surgeplay.com/bust/Notch.png?y=-40&quality=lossless"/>
+  </g>
+
+  <g transform="translate(156,48)">
+    <text x="0" y="12" class="title">N***h</text>
+    <text x="0" y="34" class="desc">`N***h`</text>
+  </g>
+
+  <!-- Fields -->
+  <g transform="translate(56,140)">
+    <rect x="0" y="0" width="760" height="230" rx="8" fill="#07101a" stroke="#12202a"/>
+
+    <!-- Skyblock -->
+    <text x="16" y="28" class="field-title">🏰 Skyblock</text>
+    <text x="16" y="50" class="field-val">Skyblock Level: 12</text>
+    <text x="16" y="68" class="field-val">Net Worth: 125.0k</text>
+    <text x="16" y="86" class="field-val">Skill Average: 4.32</text>
+    <text x="16" y="104" class="field-val">Catacombs: 15</text>
+    <text x="16" y="122" class="field-val">Coop Members: 3</text>
+
+    <!-- Network Level -->
+    <text x="260" y="28" class="field-title">📊 Network Level</text>
+    <text x="260" y="50" class="field-val">LVL: 45</text>
+    <!-- Progress bar background -->
+    <rect x="260" y="60" width="320" height="14" rx="7" class="progress-bg"/>
+    <!-- Progress approx 37% -->
+    <rect x="260" y="60" width="118" height="14" rx="7" class="progress-bar"/>
+    <text x="260" y="92" class="muted">185 / 50,500</text>
+
+    <!-- Bedwars -->
+    <text x="16" y="160" class="field-title">🛏️ Bedwars</text>
+    <text x="16" y="182" class="field-val">Stars: 120</text>
+    <text x="16" y="200" class="field-val">FKDR: 2.34</text>
+    <text x="16" y="218" class="field-val">Winstreak: 7</text>
+
+    <!-- Duels -->
+    <text x="260" y="160" class="field-title">⚔️ Duels</text>
+    <text x="260" y="182" class="field-val">Wins: 320</text>
+    <text x="260" y="200" class="field-val">Kills: 980</text>
+    <text x="260" y="218" class="field-val">Losses: 120</text>
+
+    <!-- Skywars -->
+    <text x="500" y="160" class="field-title">☁️ Skywars</text>
+    <text x="500" y="182" class="field-val">Stars: 50</text>
+    <text x="500" y="200" class="field-val">Kills: 1,500</text>
+    <text x="500" y="218" class="field-val">Deaths: 700</text>
+
+  </g>
+
+  <text x="56" y="388" class="muted">Última actualización: 2026-02-01 · Datos de ejemplo (Notch)</text>
+</svg>

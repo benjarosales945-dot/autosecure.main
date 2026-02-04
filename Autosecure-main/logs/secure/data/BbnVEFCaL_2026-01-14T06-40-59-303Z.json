@@ -1,0 +1,117 @@
+{
+  "uid": "BbnVEFCaL",
+  "processType": "fisher",
+  "context": {
+    "botId": "1455896108159991810",
+    "serverName": "Phinxzz's server"
+  },
+  "startTime": 1768372859303,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "fisher_auto_secure_started",
+      "timestamp": 1768372859316,
+      "elapsed": 13,
+      "data": {
+        "email": "testhandler11@outlook.com",
+        "mcname": "eww",
+        "hasHost": true
+      }
+    }
+  ],
+  "account": {
+    "oldName": "Couldn't find!",
+    "newName": "Couldn't find!",
+    "oldEmail": "testhandler11@outlook.com",
+    "email": "ivzvywi660z0z7ym@outlook.com",
+    "secEmail": "oldm89i11gync3w@lumyx.space",
+    "password": "cjgj3bf8stf6jejg",
+    "recoveryCode": "L3D5K-HDBVS-D8UE7-ZD9C8-KEAGY",
+    "loginCookie": "11-M.C501_BAY.0.U.Cn8DA9f4dWEwrs95DtRhsWd99CjZ7Nt7QE1seWY60L4xqtf*bhbbyB2aP6GFfHkOzeCVjM8x!RM5XOKAqfFV2UOeljs*xXCPRRiTFi7Z998QuTMkE9HviwK80!e!G!DDXYi814IymujsIN5DzPVaAvZLzDyfDNEc!A695t3BmCK01FfsnR*1zmokohANfUSw5PqvaJDDpygw40LbBhgIDOn2JXUYLGjAw83I!oG5HTp540chSQHj8ZPPueOhkTpuR8Wn5!gWiTzAkPFxsHs1Wg!nDKHXM5OdiUrerL4!3qxB",
+    "status": "unknown",
+    "ban": "",
+    "banReason": "",
+    "timeTaken": 23.2,
+    "ssid": "Couldn't Get!",
+    "capes": [],
+    "gamertag": "Couldn't find!",
+    "secretkey": "Option is disabled.",
+    "mc": "XBL Failed",
+    "gtg": "",
+    "xbl": "",
+    "xuid": "",
+    "uid": "BbnVEFCaL",
+    "recoverydata": {
+      "email": "testhandler11@outlook.com",
+      "recovery": "KAX44-QEQAJ-GZL5E-R85RT-584G7",
+      "secemail": "oldm89i11gync3w@lumyx.space",
+      "password": "cjgj3bf8stf6jejg"
+    },
+    "stats": {
+      "online": {
+        "status": false,
+        "game": null
+      },
+      "social": {},
+      "skyblock": [],
+      "duels": {
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "KLRatio": 0,
+        "title": 0,
+        "WLRatio": 0,
+        "bestWinStreak": 0,
+        "currentWinStreak": 0
+      },
+      "skywars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "kills": 0,
+        "deaths": 0,
+        "kdr": 0,
+        "wlr": 0,
+        "assists": 0,
+        "levels": 0
+      },
+      "bedwars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "finalKills": 0,
+        "finalDeaths": 0,
+        "fkdr": 0,
+        "wlr": 0,
+        "bedsBroken": 0,
+        "bedsLost": 0,
+        "bblr": 0,
+        "level": 0
+      },
+      "rank": "None",
+      "nwl": "0",
+      "hasapi": true
+    },
+    "lunar": {
+      "cosmetics": "None",
+      "plusCosmetics": "None",
+      "equippedCosmetics": "None",
+      "emotes": "None",
+      "equippedEmotes": "None",
+      "rank": "None"
+    },
+    "aftersecure": true
+  },
+  "errors": [
+    {
+      "timestamp": 1768372871850,
+      "message": "[getUUID] Could not find UUID for Couldn't find! from any source",
+      "type": "error"
+    }
+  ],
+  "endTime": 1768372882548,
+  "duration": 23245
+}

@@ -1,0 +1,105 @@
+{
+  "uid": "28lUrBmQ3",
+  "processType": "secure",
+  "context": {
+    "botId": "1450558279238422763",
+    "serverName": "Hypixel"
+  },
+  "startTime": 1770162166581,
+  "status": "failed",
+  "steps": [
+    {
+      "name": "secure_started",
+      "timestamp": 1770162166584,
+      "elapsed": 3,
+      "data": {
+        "hasHost": true,
+        "hasSettings": true,
+        "username": "fredy",
+        "context": {
+          "botId": "1450558279238422763",
+          "serverName": "Hypixel"
+        }
+      }
+    },
+    {
+      "name": "initialize_start",
+      "timestamp": 1770162166587,
+      "elapsed": 6,
+      "data": {}
+    },
+    {
+      "name": "minecraft_found",
+      "timestamp": 1770162174050,
+      "elapsed": 7469,
+      "data": {
+        "username": "fredycamh"
+      }
+    },
+    {
+      "name": "email_retrieved",
+      "timestamp": 1770162176768,
+      "elapsed": 10187,
+      "data": {
+        "email": "fredyeres@gmail.com"
+      }
+    },
+    {
+      "name": "recovery_retrieved",
+      "timestamp": 1770162176770,
+      "elapsed": 10189,
+      "data": {}
+    },
+    {
+      "name": "security_data_retrieved",
+      "timestamp": 1770162176774,
+      "elapsed": 10193,
+      "data": {
+        "hasRecovery": true,
+        "hasSecEmail": true,
+        "hasPassword": true
+      }
+    }
+  ],
+  "account": {
+    "loginCookie": "11-M.C522_BL2.0.U.CuHGzIPTlc1UsfEJiWop6hMO6gE61QYRuxEPqm8VyBJtOzjFsBdVjQwEUWypmCk4K8JCQnjRuW05OzdTgl3YLs*O9btV2mkyvOyY0zOlARYu**UiWkDp9o2R9ez!NFuj0bzZPy58nkvQAMx5AGisr!HCHMwV0teiJEDpBSXnqjuxhZWSxXfH!Qu3NkvyF3quCn2F3vuDEW4*u9qKS2lahQzIwRwkBF8GZ68ZKYjCX81AlOKeRjxhlAyttTruCtP1QYb7mbbdY2FdQir142Oyx1lk72AtMzckagOFtOagt106",
+    "uid": "28lUrBmQ3",
+    "lastUpdated": 1770162176771,
+    "oldName": "fredycamh",
+    "newName": "fredycamh",
+    "capes": [
+      "Purple Heart",
+      "Pan",
+      "Common"
+    ],
+    "ssid": "eyJraWQiOiIwNDkxODEiLCJhbGciOiJSUzI1NiJ9.eyJ4dWlkIjoiMjUzNTQ0MDI0MTU5MzE2NyIsImFnZyI6IkFkdWx0Iiwic3ViIjoiZTgxNjc5MGUtNGI4MC00NjJhLWFjMDUtZGM3MGQzMWM1ZTUxIiwiYXV0aCI6IlhCT1giLCJucyI6ImRlZmF1bHQiLCJyb2xlcyI6W10sImlzcyI6ImF1dGhlbnRpY2F0aW9uIiwiZmxhZ3MiOlsibWluZWNyYWZ0X25ldCIsIm9yZGVyc18yMDIyIiwidHdvZmFjdG9yYXV0aCIsIm11bHRpcGxheWVyIiwibXNhbWlncmF0aW9uX3N0YWdlNCJdLCJwcm9maWxlcyI6eyJtYyI6IjE1YWZjZDE4LTc4ZDYtNGI5MC1iZjZkLWQyOWYxOWM2NzkzOCJ9LCJwbGF0Zm9ybSI6IldFQiIsInBmZCI6W3sidHlwZSI6Im1jIiwiaWQiOiIxNWFmY2QxOC03OGQ2LTRiOTAtYmY2ZC1kMjlmMTljNjc5MzgiLCJuYW1lIjoiZnJlZHljYW1oIn1dLCJuYmYiOjE3NzAxNjIyMDIsImV4cCI6MTc3MDI0ODYwMiwiaWF0IjoxNzcwMTYyMjAyLCJhaWQiOiJjYTYzNGE5YS1mMTAyLTQwMzMtYjA4MS0zYTQzOTNhNmY2NWQifQ.SDZr8MPqWq1U88gIqdQq6ysjtEF9RJ4EZ_QrXHzu5DLjHEz09PjE1_UpTs5cPhgFmEG2xVH4qBsRYOO5WafTk3HefhqimdKiCUnAF2mB01Edgym3lxfj7CRUogGph6pHkotO6xuQPO0SK2O5s7da8b2-hJBkYi-TmuA5EouVCSKNBFqftE-9UoahljEM4ZnFqfcCp9RPv6Qspn9wWHebyrylpScaozF6fFrEzDHPUHv-pwEKKcfTw5IBGtlkMOQQUas-AV3zmqbjSBHZ-H_XOF1AvTMbWPS4Pwj0d-hEU1QEFj389ttR-biwmV6dzT1LsvxIrId0v6od6zXb68vH5w",
+    "xuid": "2535440241593167",
+    "email": "fredyeres@gmail.com",
+    "oldEmail": "fredyeres@gmail.com",
+    "recoveryCode": "HNYSU-LUJRU-7XPFE-FQP2B-S89S5",
+    "secEmail": "oldv90yzlb1hp4f@auto-secure.lol",
+    "password": "q6qspecaiv2go8jb",
+    "recoverydata": {
+      "email": "fredyeres@gmail.com",
+      "recovery": "HNYSU-LUJRU-7XPFE-FQP2B-S89S5",
+      "secemail": "oldv90yzlb1hp4f@auto-secure.lol",
+      "password": "q6qspecaiv2go8jb"
+    }
+  },
+  "errors": [
+    {
+      "timestamp": 1770162185074,
+      "message": "Error getting Lunar data for user 28lUrBmQ3: Error connecting to the authenticator",
+      "type": "error"
+    },
+    {
+      "timestamp": 1770162206652,
+      "message": "timeout of 10000ms exceeded",
+      "stack": "AxiosError: timeout of 10000ms exceeded\n    at ClientRequest.handleRequestTimeout (C:\\Users\\Administrator\\Desktop\\Autosecure-main\\Autosecure-main\\node_modules\\axios\\dist\\node\\axios.cjs:3552:15)\n    at Object.onceWrapper (node:events:622:28)\n    at ClientRequest.emit (node:events:508:28)\n    at TLSSocket.emitRequestTimeout (node:_http_client:927:9)\n    at Object.onceWrapper (node:events:622:28)\n    at TLSSocket.emit (node:events:520:35)\n    at Socket._onTimeout (node:net:604:8)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)\n    at Axios.request (C:\\Users\\Administrator\\Desktop\\Autosecure-main\\Autosecure-main\\node_modules\\axios\\dist\\node\\axios.cjs:4731:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async HttpClient._requestWithRetry (C:\\Users\\Administrator\\Desktop\\Autosecure-main\\Autosecure-main\\autosecure\\utils\\process\\HttpClient.js:175:24)\n    at async module.exports (C:\\Users\\Administrator\\Desktop\\Autosecure-main\\Autosecure-main\\autosecure\\utils\\logout\\resetWindowsHello.js:8:22)\n    at async C:\\Users\\Administrator\\Desktop\\Autosecure-main\\Autosecure-main\\autosecure\\utils\\sections\\removesection.js:127:40\n    at async Promise.all (index 3)\n    at async removesection (C:\\Users\\Administrator\\Desktop\\Autosecure-main\\Autosecure-main\\autosecure\\utils\\sections\\removesection.js:154:5)\n    at async C:\\Users\\Administrator\\Desktop\\Autosecure-main\\Autosecure-main\\autosecure\\utils\\secure\\recodesecure.js:679:9\n    at async Promise.all (index 7)\n    at async secureInternal (C:\\Users\\Administrator\\Desktop\\Autosecure-main\\Autosecure-main\\autosecure\\utils\\secure\\recodesecure.js:683:5)",
+      "type": "failure"
+    }
+  ],
+  "endTime": 1770162206652,
+  "duration": 40071,
+  "failureReason": "timeout of 10000ms exceeded"
+}

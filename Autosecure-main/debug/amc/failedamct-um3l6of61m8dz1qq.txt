@@ -1,0 +1,25 @@
+Status: 302
+Headers: {
+  "cache-control": "no-store, no-cache",
+  "pragma": "no-cache",
+  "content-type": "text/html; charset=utf-8",
+  "expires": "Tue, 03 Feb 2026 23:44:56 GMT",
+  "location": "https://account.microsoft.com/auth/complete-silent-signin?ru=https://account.microsoft.com/?lang=en-US&refd=account.live.com&refp=landing&mkt=EN-US&f=255&MSPPError=-2147217396",
+  "p3p": "CP=\"DSP CUR OTPi IND OTRi ONL FIN\"",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "x-ms-route-info": "C522_BAY",
+  "x-ms-request-id": "736e495e-5c99-41dd-9a7f-ca568b242a04",
+  "ppserver": "PPV: 30 H: PH1PEPF00011EF0 V: 0",
+  "x-content-type-options": "nosniff",
+  "strict-transport-security": "max-age=31536000",
+  "x-xss-protection": "1; mode=block",
+  "set-cookie": [
+    "uaid=1fa1bb67127d49f49b8f9a10a617ff3b; domain=login.live.com; Secure; path=/; SameSite=None; HttpOnly",
+    "MSPRequ=id=292666&lt=1770162356&co=0; domain=login.live.com; Secure; path=/; SameSite=None; HttpOnly",
+    "OParams=11O.DjFc1bM3hL2172Q13bwV0WB4nHrXFl0b24zr68h!Lqv5PCdRwaumxnYqzM0!zHDPh2XGElfao2Pf13Xa2Ekxfsqr!eEogYdH0A4VvdOuRG!f64BsAhpIptYN7KHyE1TEK!VSZAhkVgFPwTqSzUkhZCWn!36wGPm8jdQjF0huDVG9PLZ5vzW9I9efwzQPdQ!G*UR!ENDiOvhe7eQT!*FUtzaRnTDDrN8vSMcDm8dDDnwoW5oMYapywBI7LAifi1tePaL288vgWPnqgZpGu9NKfNero9K*SHtNvSsFZ3jP!k63ktoOHhHGHQGd6Eq!xLNC1h3oxNzOUW4BryGMiNpFQjazLJmfEaP8OrF9yRioPwZ2QtxZpUo*CoWQVOiggA94yimJUEcTysMurkl8qY5menUNse0eZ7O**O3lZYwe6VV9l3LRUuunrVYI1c0kwxYAmBofLcBNVF38B6WnjClDsQN3mezaa5mZeaP2YUHDq6LZ3a7q2pUCaDdS09YHDvJnGzr!Z6fQ55lFD!ltQ0qgPiBalFYgLhlg*wzNpoKcw9LFIMF6IzTx5c!ldDdNdvO8MZR7LW1hxK9DmJDem!efnTPSuE*lo8XeWpORTc8zIWH1hMl6lcMaEcwMPTimuAkQYw$$; domain=login.live.com; Secure; path=/; SameSite=None; HttpOnly"
+  ],
+  "date": "Tue, 03 Feb 2026 23:45:56 GMT",
+  "content-length": "0"
+}
+
+Body:

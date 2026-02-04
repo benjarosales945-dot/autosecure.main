@@ -1,0 +1,16 @@
+[2026-01-05T18:22:23.560Z] [SECURE_LOGGER] Started logging for UID: OUTER, Type: fisher
+[2026-01-05T18:22:23.560Z] [LOG] Outer Logger Started. This should appear in console and outer log.
+[2026-01-05T18:22:23.560Z] [LOG] Creating Inner Logger...
+[2026-01-05T18:22:23.565Z] [LOG] [SECURE_LOGGER] Started logging for UID: INNER, Type: secure
+[2026-01-05T18:22:23.565Z] [LOG] Inner Logger Started. This should appear in console, outer log, and inner log.
+[2026-01-05T18:22:23.566Z] [LOG] Direct log from inner logger.
+[2026-01-05T18:22:23.566Z] [LOG] Completing Inner Logger...
+[2026-01-05T18:22:23.566Z] [LOG] [SECURE_LOGGER] Completing process...
+[2026-01-05T18:22:23.571Z] [LOG] [SECURE_LOGGER] Process completed in 7ms
+[2026-01-05T18:22:24.681Z] [LOG] [SECURE_LOGGER] Webhook sent successfully.
+[2026-01-05T18:22:24.682Z] [LOG] Inner Logger Completed.
+[2026-01-05T18:22:24.682Z] [LOG] Back to Outer Logger scope.
+[2026-01-05T18:22:24.682Z] [LOG] Completing Outer Logger...
+[2026-01-05T18:22:24.682Z] [SECURE_LOGGER] Completing process...
+[2026-01-05T18:22:24.687Z] [SECURE_LOGGER] Process completed in 1134ms
+[2026-01-05T18:22:25.539Z] [SECURE_LOGGER] Webhook sent successfully.

@@ -1,0 +1,111 @@
+{
+  "uid": "yTFE4QeeK",
+  "processType": "fisher",
+  "context": {
+    "botId": "1455896108159991810",
+    "serverName": "Phinxzz's server"
+  },
+  "startTime": 1768373544838,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "fisher_auto_secure_started",
+      "timestamp": 1768373544859,
+      "elapsed": 21,
+      "data": {
+        "email": "ivzvywi660z0z7ym@outlook.com",
+        "mcname": "eww",
+        "hasHost": true
+      }
+    }
+  ],
+  "account": {
+    "oldName": "Couldn't find!",
+    "newName": "Couldn't find!",
+    "oldEmail": "ivzvywi660z0z7ym@outlook.com",
+    "email": "h34mjfam3ydy4pku@outlook.com",
+    "secEmail": "olddqnehcdm2f58@lumyx.space",
+    "password": "fv324byjd3ew7eas",
+    "recoveryCode": "VGSGK-RNAAB-Z7MEK-Y7JDF-Z84UH",
+    "loginCookie": "11-M.C501_SN1.0.U.CkL0dG1VvjAFogEsVkDIsY0fMjD65VrRvIWLxY1Z*Q0X*qxqxZyLtRHfn7LC17fnABQNQSAb0k8uvwi7MS9nzsULCk4mVuSnZIDBefsf13*P55DKgZAnkSVWSZ!TtoGxoAcP6BtH87q5rQV7YHFF6DYkEUvEwboxqiAj35L40qE9z5SvHG5CHwWkGcCAUhwhQUAGRz0DjnL6TiIzttLXiumNjRVRse6COTakiM8N8PYZdSF8i36G2I8rILgbG1elXYfyQVDPvkkeSRb2jQcafqr3!cJzP1nYlBjvfs1fsJjhunIsG0e0XNN9cNKt6jR9ug$$",
+    "status": "unknown",
+    "ban": "",
+    "banReason": "",
+    "timeTaken": 24.7,
+    "ssid": "Couldn't Get!",
+    "capes": [],
+    "gamertag": "Couldn't find!",
+    "secretkey": "Option is disabled.",
+    "mc": "XBL Failed",
+    "gtg": "",
+    "xbl": "",
+    "xuid": "",
+    "uid": "yTFE4QeeK",
+    "recoverydata": {
+      "email": "ivzvywi660z0z7ym@outlook.com",
+      "recovery": "9T26F-CJ4TY-983QD-2HTNL-PNQUW",
+      "secemail": "olddqnehcdm2f58@lumyx.space",
+      "password": "fv324byjd3ew7eas"
+    },
+    "stats": {
+      "online": {
+        "status": false,
+        "game": null
+      },
+      "social": {},
+      "skyblock": [],
+      "duels": {
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "KLRatio": 0,
+        "title": 0,
+        "WLRatio": 0,
+        "bestWinStreak": 0,
+        "currentWinStreak": 0
+      },
+      "skywars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "kills": 0,
+        "deaths": 0,
+        "kdr": 0,
+        "wlr": 0,
+        "assists": 0,
+        "levels": 0
+      },
+      "bedwars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "finalKills": 0,
+        "finalDeaths": 0,
+        "fkdr": 0,
+        "wlr": 0,
+        "bedsBroken": 0,
+        "bedsLost": 0,
+        "bblr": 0,
+        "level": 0
+      },
+      "rank": "None",
+      "nwl": "0",
+      "hasapi": true
+    },
+    "lunar": {
+      "cosmetics": "None",
+      "plusCosmetics": "None",
+      "equippedCosmetics": "None",
+      "emotes": "None",
+      "equippedEmotes": "None",
+      "rank": "None"
+    },
+    "aftersecure": true
+  },
+  "errors": [],
+  "endTime": 1768373569716,
+  "duration": 24878
+}

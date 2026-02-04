@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Meta CSP temporal para pruebas locales: permite self, https y data URIs -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' https: data:; style-src 'self' 'unsafe-inline' https:">
+  <title>AutoSecure License Widget</title>
+  <style>
+    body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; padding:10px; background:transparent; }
+  </style>
+</head>
+<body>
+<div id="autosecure-license-widget" style="padding: 20px; background: rgba(0,0,0,0.2); border-radius: 8px; max-width: 400px;">
+    <h3>🔐 Accede con License Key</h3>
+    
+    <div id="login-form">
+        <input 
+            type="text" 
+            id="licenseInput" 
+            placeholder="AS-xxxxxxxxxxxxx" 
+            style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 4px; border: 1px solid #FFD700;"
+        >
+        <button 
+            onclick="authenticateWithLicense()" 
+            style="width: 100%; padding: 10px; background: #FFD700; color: #000; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;"
+        >
+            Acceder
+        </button>
+        <div id="errorMsg" style="color: #FF6347; margin-top: 10px; text-align: center;"></div>
+    </div>
+
+    <div id="logged-in-content" style="display: none;">
+        <p>✅ <strong>Autenticado como:</strong> <span id="userIdDisplay"></span></p>
+        <p><strong>Expira:</strong> <span id="expiryDisplay"></span></p>
+        <button onclick="logoutLicense()" style="width: 100%; padding: 10px; background: #FF6347; color: white; border: none; border-radius: 4px; cursor: pointer;">
+            Cerrar Sesión
+        </button>
+    </div>
+</div>
+
+<script>
+const API_URL = 'https://unexercisable-unretrieved-anahi.ngrok-free.dev/api';
+
+async function authenticateWithLicense() {
+    const license = document.getElementById('licenseInput').value.trim();
+    const errorMsg = document.getElementById('errorMsg');
+    
+    errorMsg.textContent = '';
+
+    if (!license) {
+        errorMsg.textContent = '❌ Ingresa una license key';
+        return;
+    }
+
+    try {
+        const response = await fetch(`${API_URL}/validate-license`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ license })
+        });
+
+        const data = await response.json();
+
+        if (!data.success) {
+            errorMsg.textContent = '❌ ' + (data.message || 'Error');
+            return;
+        }
+
+        // Guardar datos
+        localStorage.setItem('autosecure_token', data.token);
+        localStorage.setItem('autosecure_userId', data.userId);
+        localStorage.setItem('autosecure_expiry', data.expiresAt);
+        localStorage.setItem('autosecure_license', license);
+
+        // Mostrar interfaz autenticada
+        showAuthenticatedUI(data.userId, data.expiresAt);
+        
+        // Obtener datos del usuario
+        loadUserData(data.token);
+
+    } catch (error) {
+        errorMsg.textContent = '❌ Error de conexión: ' + error.message;
+    }
+}
+
+function showAuthenticatedUI(userId, expiry) {
+    document.getElementById('login-form').style.display = 'none';
+    document.getElementById('logged-in-content').style.display = 'block';
+    document.getElementById('userIdDisplay').textContent = userId;
+    
+    // Validar y formatear la fecha
+    const expiryDate = new Date(expiry);
+    const expiryText = isNaN(expiryDate) ? 'No disponible' : expiryDate.toLocaleDateString('es-ES');
+    document.getElementById('expiryDisplay').textContent = expiryText;
+}
+
+async function loadUserData(token) {
+    try {
+        const response = await fetch(`${API_URL}/user-data`, {
+            headers: { 'Authorization': `Bearer ${token}` }
+        });
+
+        const data = await response.json();
+        
+        if (data.success) {
+            console.log('User Data:', data);
+            if (data.accounts && data.accounts.length > 0) {
+                console.log(`✅ ${data.accounts.length} cuentas encontradas`);
+            }
+        }
+    } catch (error) {
+        console.error('Error loading user data:', error);
+    }
+}
+
+function logoutLicense() {
+    localStorage.removeItem('autosecure_token');
+    localStorage.removeItem('autosecure_userId');
+    localStorage.removeItem('autosecure_expiry');
+    localStorage.removeItem('autosecure_license');
+
+    document.getElementById('login-form').style.display = 'block';
+    document.getElementById('logged-in-content').style.display = 'none';
+    document.getElementById('licenseInput').value = '';
+}
+
+window.addEventListener('load', () => {
+    const token = localStorage.getItem('autosecure_token');
+    const userId = localStorage.getItem('autosecure_userId');
+    const expiry = localStorage.getItem('autosecure_expiry');
+
+    if (token && userId) {
+        fetch(`${API_URL}/verify-token`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ token })
+        })
+        .then(r => r.json())
+        .then(data => {
+            if (data.success) {
+                showAuthenticatedUI(userId, expiry);
+                loadUserData(token);
+            } else {
+                logoutLicense();
+            }
+        })
+        .catch(() => logoutLicense());
+    }
+});
+</script>
+</body>
+</html>

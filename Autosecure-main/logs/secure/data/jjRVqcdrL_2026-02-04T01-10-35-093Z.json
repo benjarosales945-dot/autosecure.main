@@ -1,0 +1,123 @@
+{
+  "uid": "jjRVqcdrL",
+  "processType": "fisher",
+  "context": {
+    "botId": "1457030566477299846",
+    "serverName": "Lunar Client"
+  },
+  "startTime": 1770167435093,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "fisher_auto_secure_started",
+      "timestamp": 1770167435096,
+      "elapsed": 3,
+      "data": {
+        "email": "sanjodelval8000@gmail.com",
+        "mcname": "cheems_9565",
+        "hasHost": true
+      }
+    }
+  ],
+  "account": {
+    "oldName": "ROSHAK_7",
+    "newName": "cheems_9565",
+    "oldEmail": "sanjodelval8000@gmail.com",
+    "email": "sanjodelval8000@gmail.com",
+    "secEmail": "ROSHAK_7.7893@auto-secure.lol",
+    "password": "awhrpnc7lyiwoykq",
+    "recoveryCode": "SZRAK-NHALE-ZUKV4-8KFYJ-J9UJV",
+    "loginCookie": "11-M.C523_SN1.0.U.Cp*q6wOXgjmU4HY2nVng7n80gB3eZ43BH2x9fV8cub36pjwy6XsXsywy3w5Mc2ILGx2RFOZ2463*7oEgpZuJ8UJij*3dty0MInpo1qDrr1qVgzc8O1Xl1A9nDOvtak7fxDZe7Pv3kMfsuYn4btGDpsWXOceIdfe5xp5nRv!4y6AhKu7bTR0y742IDrnCLqJC6VON01vYltlEDXO7*9vLDVCnfY6UUswYmpmDOq6zwZcc9x1z1D!xAyfwSRN0RJZT36*MyWUyixpRQUamYLQydSw$",
+    "status": "unknown",
+    "ban": "",
+    "banReason": "",
+    "timeTaken": 23.9,
+    "ssid": "eyJraWQiOiIwNDkxODEiLCJhbGciOiJSUzI1NiJ9.eyJ4dWlkIjoiMjUzNTQyMjcwMjIxMTUxOCIsImFnZyI6IkFkdWx0Iiwic3ViIjoiMDE2YjI4NzEtNjgyNy00NGM2LTk3ZmEtZDgzOGIxNmVhNWJkIiwiYXV0aCI6IlhCT1giLCJucyI6ImRlZmF1bHQiLCJyb2xlcyI6W10sImlzcyI6ImF1dGhlbnRpY2F0aW9uIiwiZmxhZ3MiOlsibXVsdGlwbGF5ZXIiLCJ0d29mYWN0b3JhdXRoIiwib3JkZXJzXzIwMjIiLCJtaW5lY3JhZnRfbmV0IiwibXNhbWlncmF0aW9uX3N0YWdlNCJdLCJwcm9maWxlcyI6eyJtYyI6IjE0MzI0MTk0LWZiZWMtNGI0ZS04YjcyLTk2NDVkNDM4YTE1ZiJ9LCJwbGF0Zm9ybSI6IldFQiIsInBmZCI6W3sidHlwZSI6Im1jIiwiaWQiOiIxNDMyNDE5NC1mYmVjLTRiNGUtOGI3Mi05NjQ1ZDQzOGExNWYiLCJuYW1lIjoiUk9TSEFLXzcifV0sIm5iZiI6MTc3MDE2NzQ3MCwiZXhwIjoxNzcwMjUzODcwLCJpYXQiOjE3NzAxNjc0NzAsImFpZCI6ImNhNjM0YTlhLWYxMDItNDAzMy1iMDgxLTNhNDM5M2E2ZjY1ZCJ9.ZChhpDRkfkOPuZWW5aIZvxHxppH2Phox5OhHAm-NJqJl1l24jG1_BIN8rMlxAXBp9MsNVtJAHjNySn3BEFlvhsCOlyNGquFOhPRza-6xLheY-32HUoWGk98LV_pCYv4jZcvVF-AoqSgol1H-5y7kCSb-vatC0bsI0nuwnnMkkgUEW9c6_s1XyK2wMKW_xeHDyJwjawHhjJB1eRvwvY2WSx9RGMfRGYMbUhvrDWzK8buLZMJ2r0ifAURAVGx_DqjcV6l4zRfrmZWIu5PrySWr81A4L1rULYsr4jGAFqG_Tf8tp9V7m4Ev2dckHX8fn1XvsYSRIgPI7WYgTXEI_MQSag",
+    "capes": [
+      "Pan",
+      "Migrator",
+      "Common"
+    ],
+    "gamertag": "BLIKSS8763",
+    "secretkey": "ovjo c7mz q2zu pmuk",
+    "mc": "Purchased",
+    "gtg": "BLIKSS8763",
+    "xbl": "XBL3.0 x=15380685718399147378;eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiUlNBLU9BRVAiLCJjdHkiOiJKV1QiLCJ6aXAiOiJERUYiLCJ4NXQiOiJnN3hlanVTXzRnOXNNdW9fLXdVeFQ5NHNHancifQ.PDcGLXGiUYqCYs52vkvFzlhajk3al8n6bcTYOf8BB8XqjS6aFlUeHJ1xRjuDFeJsVFgicirmgwqNxLrIU4b9GqpryRxjgmfACXLzWmTVudEbz8KMY3HEWBAm69A7SniIXAFsoA7XyK9fd30f4dCGpGS3z28mTq_AXqTicCkxmTp7jRjpng9XSKQN-KOosWI-dg24vFvOFnFupJargPsdbu2sJIOTR4lVBwe5wBfic4PEN04HyWLrBTgC9m0K-oCVURvJjK-ac-GxOoM74WFFth3X5Vr06LUkZd9FsIMU9lk79yvbC0wy0Zavyr9r7zzpAJ6LxqWm7NdEKhS-SuOwbw.5LI6UUacRC0g3LRvbACq-Q.o7T7_xGwlNiYzr_pamObocA84f9s5DG5EDDD5MejaIXP0yB8ONzWgiICqqWL_tUmTTDR1HLPAqZSk0eACYg0_aa_x4WxyMFk1Akn_UUK4tgKOL_Tv_dMiXU9LhfbbupsuNsPfkPttAA8CYZqU-NIWyZJRmIwfhOY_HpzCg-noQwNBgXz_3jBEnmMM5Z8OrwMqaCTFIArC1yG3KJvk_g6-EOyNV1CJ2wY7SQuoe5soV4XzLtvpQJNgsJG0dp0JCKKyvGEbXYugefe6gVg8bIPr3TMzdTtINe54lNIFE0oSIFhz5EmfiuapQ4Fgp7l-iTojYga8VkdVT6TIS03so90fcDRCBDE9qqKy_FJn3qS3NVnqVzw4NyYQnkshDGUkuI39f9H5LVtKiM28P99eTsGoJoxEzQnUyC4ybcgkiUSUl-WvZUpejFVq4vD1-zxGtunhDlIGikymAKOSrHPbqNRjJZorkrDTbsQrIkea3zdkDV62EDvLbxocflJOpMsWg8K2tmwi-hB1ObQycJZGcHyscILa3_F5_5A4sqyxJe_TCgOuX2AZahnT-cdzrSB4reFknR8N6lF1ekIXxNfiLCDMWoOUM0cPXOLJDyQdnPVmMrlSLtsSiD2YTuYB5Nwtcm1OQetGKj43RfwrYneAldvW1cBRzqsGnoSt8ISC5K6XMfUuQjckm1C6QORTziftQio8-dJFdab7p2lT4Zd0wxUPEtqReMv_s3nPHS8YSLrEo4QuJWswLkfUNHG2VpTyNsoCIgFESRAv8sFNEgx-gJXf3e_JhqHy-K534VwS8UWcb6kHcvM2Hn-sHJpa5McVuR231N498squmNW-P6b9FoAl1ec-MCckt-mYMp7z3YQRjdDbGnz4QNLs_8m9LraDnr4nSBLKsdny-gE0uj7-DHEeqdbe2q7sosUn1ZclQ6JOR2_PXS7kZvJmiHDDb7HpESl5cuQ6a_BFqbmyNT4TIAB8AhOug2qLiTXhuSwzccpdCYzEonyuxM-qmU67jMDaC7ALmAYI_2VXRt2on5dZY00cErPGPOqZJu2wEYDzwVfdali3Wr4nJNqCnjGRLCja6Anspc_NLCWiLh1XRzKNNc-563g8SvBHl1nCDDP76YYDs0ARDtgCEHaZ9D1dzfV3K7g2Bv2EXmwMbliDwmGbFMhaRMhQijMIfhuurYVBXAxwhVlBF0sj50T2r9Eeq5vNro6c2R_zWhoDwT7VLWG8RIRQoifJAIwqVnu-dGW-I8msip7tDf13_hCHqjW9zR002mGk99iiooiGfDbVGUKo8GThdsK9QfLvTYNKmIZ_DEn_j_DgkqXYg8z2iFLYBTAnASRYr7xP8UY-7ikh0QcQVrVeMpjGwxTmhP3bPm4Yo2aW3Kbuna62dTOr3rK14BA8VayTfwuxJYvwQHvNWejGku6EwEMrJbtLCRmzhYBi01yUK63O15uJ6zb0rihe3OFzW43glED7QxrImo1DudH20fUw4WffFZkAZ2DRi3sjVpcSsrkK7RT8IPz84lyYr4xFDlxxmM8sKw1xqMnCFgk82m8najeuTDmJ7Vz1JUirXpfOiN2dwSSFHSDVTwSUsg9tEROqBUcVZi0fqwDhZ1Sc6NuOFqOhC1FxcmKjK0oo_2PMhDowVbC-ULI82uA0BNWdqo43hvHHLVlA-YpkkP0-NLAEAuU31GfMeLBrnESKdFJR37IzTsLDnvD2fABd0j_Xq1YbpIpYnK7ZAzYiR-J66wKUQ73QUMR_XDyczLj1eMZZcmbw9MYmbG7qcGdE8yrqioT.59T6jHC32df7V1rAOyH0EQ",
+    "xuid": "2535422702211518",
+    "uid": "jjRVqcdrL",
+    "recoverydata": {
+      "email": "sanjodelval8000@gmail.com",
+      "recovery": "G892K-CTRCF-6376T-NPKTB-WQ5KW",
+      "secemail": "ROSHAK_7.7893@auto-secure.lol",
+      "password": "awhrpnc7lyiwoykq"
+    },
+    "stats": {
+      "online": {
+        "status": false,
+        "game": null
+      },
+      "social": {},
+      "skyblock": [],
+      "duels": {
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "KLRatio": 0,
+        "title": 0,
+        "WLRatio": 0,
+        "bestWinStreak": 0,
+        "currentWinStreak": 0
+      },
+      "skywars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "kills": 0,
+        "deaths": 0,
+        "kdr": 0,
+        "wlr": 0,
+        "assists": 0,
+        "levels": 0
+      },
+      "bedwars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "finalKills": 0,
+        "finalDeaths": 0,
+        "fkdr": 0,
+        "wlr": 0,
+        "bedsBroken": 0,
+        "bedsLost": 0,
+        "bblr": 0,
+        "level": 0
+      },
+      "rank": "None",
+      "nwl": "0",
+      "hasapi": false,
+      "name": "ROSHAK_7",
+      "color": "null"
+    },
+    "lunar": {
+      "cosmetics": "None",
+      "plusCosmetics": "None",
+      "equippedCosmetics": "None",
+      "emotes": "None",
+      "equippedEmotes": "None",
+      "rank": "None"
+    },
+    "aftersecure": true
+  },
+  "errors": [
+    {
+      "timestamp": 1770167444734,
+      "message": "Error getting Lunar data for user jjRVqcdrL: Error connecting to the authenticator",
+      "type": "error"
+    }
+  ],
+  "endTime": 1770167459029,
+  "duration": 23936
+}

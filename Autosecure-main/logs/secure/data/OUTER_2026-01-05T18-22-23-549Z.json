@@ -1,0 +1,16 @@
+{
+  "uid": "OUTER",
+  "processType": "fisher",
+  "context": {
+    "test": true
+  },
+  "startTime": 1767637343549,
+  "status": "completed",
+  "steps": [],
+  "account": {
+    "status": "outer_done"
+  },
+  "errors": [],
+  "endTime": 1767637344683,
+  "duration": 1134
+}

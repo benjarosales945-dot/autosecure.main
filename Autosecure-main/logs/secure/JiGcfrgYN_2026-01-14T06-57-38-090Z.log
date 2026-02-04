@@ -1,0 +1,104 @@
+[2026-01-14T06:57:38.094Z] [SECURE_LOGGER] Started logging for UID: JiGcfrgYN, Type: fisher
+[2026-01-14T06:57:38.103Z] [STEP] fisher_auto_secure_started - {"email":"h34mjfam3ydy4pku@outlook.com","mcname":"eww","hasHost":true}
+[2026-01-14T06:57:38.104Z] [LOG] [DEBUG] submit.js: Calling secure()
+[2026-01-14T06:57:38.106Z] [LOG] [SECURE_LOGGER] Started logging for UID: JiGcfrgYN, Type: secure
+[2026-01-14T06:57:38.107Z] [LOG] [STEP] secure_started - {"hasHost":true,"hasSettings":true,"username":"eww","context":{"botId":"1455896108159991810","serverName":"Phinxzz's server"}}
+[2026-01-14T06:57:38.109Z] [LOG] [RECODE_SECURE] Starting secure process for UID: JiGcfrgYN, username: eww
+[2026-01-14T06:57:38.112Z] [LOG] [STEP] initialize_start - {}
+[2026-01-14T06:57:38.112Z] [LOG] [RECODE_SECURE] Initializing secure process...
+[2026-01-14T06:57:38.113Z] [LOG] [RECODE_SECURE] Account object created, login cookie set
+[2026-01-14T06:57:38.129Z] [LOG] [RECODE_SECURE] Axios instance initialized for UID: JiGcfrgYN
+[2026-01-14T06:57:38.133Z] [LOG] [RECODE_SECURE] Status updated: msauth for UID: JiGcfrgYN
+[2026-01-14T06:57:38.133Z] [LOG] Starting recode secure!
+[2026-01-14T06:57:38.133Z] [LOG] [RECODE_SECURE] Optional username provided: eww
+[2026-01-14T06:57:38.133Z] [LOG] [RECODE_SECURE] Getting cookies and authentication...
+[2026-01-14T06:57:38.917Z] [LOG] [RECODE_SECURE] Cookies retrieved: apiCanary=true, amsc=true, canary=true
+[2026-01-14T06:57:38.917Z] [LOG] [RECODE_SECURE] Polishing host with amsc...
+[2026-01-14T06:57:39.146Z] [LOG] [RECODE_SECURE] Host polished, msauth result: success
+[2026-01-14T06:57:39.147Z] [LOG] [RECODE_SECURE] Setting login cookies...
+[2026-01-14T06:57:39.147Z] [LOG] [RECODE_SECURE] Login cookies set successfully
+[2026-01-14T06:57:39.147Z] [LOG] [RECODE_SECURE] Starting login authentication...
+[2026-01-14T06:57:39.148Z] [LOG] Helping with login!
+[2026-01-14T06:57:39.858Z] [LOG] No link!
+[2026-01-14T06:57:39.859Z] [LOG] [RECODE_SECURE] Login helper result: authed
+[2026-01-14T06:57:39.860Z] [LOG] [RECODE_SECURE] Login successful, proceeding with authentication...
+[2026-01-14T06:57:39.860Z] [LOG] Logged in fully authed, should be able to get amrp now!
+[2026-01-14T06:57:39.860Z] [LOG] [THROTTLE] Waiting 1562ms before parallel auth requests...
+[2026-01-14T06:57:41.423Z] [LOG] Got loginCookie: 11-M.C501_SN1.0.U.CumoriN2MeXOuqVN03fG1Z3MWPYjggVtCYW0hlmluklqRaWmPmdVVJkMioGQZlARRnl6mI2SAuykhGJBAIWvGS4Ls5U3Oi8kzdIWUTMpXqmJ2CY3P94Gq2HXLnQcW8Pqdgu0e9kLMZJC6gtYjQ!X!etLZCAgks3Yvz8UFIa5TnuRdO0y2FcfkBmfDfVGNRd!p1*FyXqVA5MPwqKcMf59NbWlf0Rrb726thu42rn5G9MnoCjPbMmzcT0KRA5mkGzwIwtBMh94*u8QsfF8ShtkigYg1gSKRMRsL5*JupePhTg6uJY*SHSLZs7EnSpHAlo!Iw$$
+[2026-01-14T06:57:41.424Z] [LOG] Trying to get XBL! Retry: 0
+[2026-01-14T06:57:41.429Z] [LOG] [AMRP] Attempt 1/3
+[2026-01-14T06:57:41.433Z] [LOG] [AMC] Attempt 1/3
+[2026-01-14T06:57:42.086Z] [LOG] [AMRP] Got T token, posting...
+[2026-01-14T06:57:42.709Z] [LOG] [AMC] ✓ Got AMC cookie
+[2026-01-14T06:57:42.846Z] [LOG] [AMRP] ✓ Got AMRP cookie
+[2026-01-14T06:57:43.547Z] [LOG] Error: Access token not found in location URL.
+[2026-01-14T06:57:43.548Z] [LOG] Trying to get XBL! Retry: 1
+[2026-01-14T06:57:44.561Z] [LOG] Got AMRP
+[2026-01-14T06:57:44.562Z] [LOG] Got AMC
+[2026-01-14T06:57:44.562Z] [LOG] Got AMCJWT
+[2026-01-14T06:57:45.335Z] [LOG] Error: Access token not found in location URL.
+[2026-01-14T06:57:45.340Z] [LOG] Checking Minecraft account
+[2026-01-14T06:57:45.341Z] [LOG] [RECODE_SECURE] XBL result is null, likely timed out or failed
+[2026-01-14T06:57:45.344Z] [LOG] Setting mc as XBL Failed
+[2026-01-14T06:57:46.870Z] [LOG] No unverified emails found
+[2026-01-14T06:57:46.877Z] [LOG] Amrp: FACWCRRtL9q8rZJJVZtFVdSdLjUBEappmg5mAAAMgAAAEE2AasYmCXxNcjA7T5XgCrhACT1ZmMY%2B0%2BlQsSFmS5NaxmxUkQ87iX9fxccR5vQ6/EYSUF6ghDdvHImynSeKooDsFGIR/LUwirHQ/bEqIHhsZQxQnAryhTDZSJkQADUe2MhT4AIJr%2Bq6pIKqa86Pk/K9MJl%2BRKDYjNWlPm79UuYp0ZOIzQHgFt6PrG7jOzuZZUzotOENyknZY252HdEpHmCDss%2BZTNkT/oN%2BuuzX9NThbrJjOti4mDdHSouayLmMl5WpXLVXfuEZTaTAULhbK4F81ov9QvPrrFM2Zl9SUFun5jxHFB8OsvDC5IbqPXK1ST/TqRqpum0CrwxWhl5XlJZ8UFChzs3flz3uCc98GwpHbvg6TR4Acjm/BiIol6eXb%2Bf7MQBVLZGJA0HYBo4mG6cyOxIioRKjDHk%2BfK7f2ZqiyGiOED41V1muQeTUEEZXFHK39fX4PYDnZh0oFV6bMkBLT5WSPKVb9Zbu9KCNLbUi3qgZCvPeQf%2B4NyzQgh4GU7450BC36h0x4To4y5i6f/EnoSyHK%2B%2Bbw8VVenU/Z4I%2BtyPGcg21l344alyQ/ujjjrHPuMUqDbbeZPt9vfYWgEKq%2BX%2BTJacSPOEWfOtQahgAKJbgL6nZRNBmd/ZbKhZe%2BqS5Y%2BHDhTSNXAm/pLc5sbgWmCd9UY6LxwwS3R5LgSG5BSpD%2BuX0C9256Ef2TocMdPbNqgGQaPcpbn%2BegeDifjcXAW8pfMktf/zvsDBWoFCbPhwW/enKNRoT2GX86dBumJEo975gngu14K1uoTlGLemwRhAaTCm0IgiOyGZeSGxDebZDA4NOhr/rxtlrTOKCOsvkFtuiL47x6VOuGHFotRLlyLAordq39Cvx12NgmxlnnQghPceSpo962one83B1SIlD8mXtc59tHxaj%2BPu8UvE1%2BoAx32Clt6yrd7vd1Ya1bj%2BXlezdAIigvJtOGOteGrAIdQADmfstngksNkq%2BOR1o1Yw0IJeG1OdFQpUTCDDSwjrTQb/xf5ohjatAwplYC8CzNrHGbzkNxAH/pRdjP%2BQEAK08lQoHIdJx%2BUL4fVW26sVNxGoug1ez2zvr3QfhMo8RLKuOWUkOrvSOIteIXK2p/NsJXrmBxk2oClv%2BOdeuCTmTRWNtgWhc2UuYOg7eHC75IKMcrHxf59ZQ169Pnk/3gNMgjxGutaB08JTnzLpk0Sg/UpYAuEqcJUuccFeP%2BxT5FMGalPmn8d5oqHf9djfPcaFTIzeHx6%2B446Jq6sP40CVJ806kvkdj%2BxCpsiXRbqIDMZlTE4W5Zjx45r1xd2z4XsPgmpRJ2xEM61Ep4MBp7KaoEnhhu9rR/APNttKVumCMtAdLNZ7390%2B31u1yg7srOD6jOJ/mvUyfcIJ20h8/FrZDT90KzmDtcLKYyIyhhT0meQVjWGgMETtGPBb441wKXJxrYdkXaIx4mASbIhoyy/2MB4u7eEM1etXGCmAn8n1zhpA4eC2e15jp924F/Rgb%2BECEptxE6T4oIbrINvKT7PZYyw%2Bpc1l8K0usd8OmC/AWbwfm4O3JVtYVPu0nyddS5FWGzQ9THa/6KiOzwbe11LwHlgurEVbrgj4aGZCiKbWbaKbDqMsDOyysesh4O7k3dlBBa816znDEnuELJEEe/LumxVIqRSNPBgwr2LCyaaHpV1j5gERPWKv2QlqpNoqxZtgzInEMu1/4Iag5TJ3IqrWYbralJDRiH7lBDTVqYBTAjp4jpqLUohVRnF8MynEysqqfHX1Jr2Os8ma/ixF9/GsmGnAfV2XAF3ayZLFZsRZaMp8wsofA%2B6WgMt2edCHL7VKIPCVHIhqIt84Fm9FQRBv2siwkjYa4rhroPIKT1s4nw6QjN2FkRZtlF6tlplhF1t36F/sb19cIuaiisvRgCcvJFsVt0LNLUZ2MzqkIavTs%2BMM7W1gpXrftXpAHc8f0i7xUUOdLV%2BcHwhgFREAwfCF/UFC1S5PJjsFGY2Ow%2Bp5wczBevWjAB6NnstzyCjxsQoP8kuO/TH1q8eBjyY5kkEfLjAo/gjBocYOZvnTPJgXD/d4XeNEhM6yv26kcGNxBSgtvxEQObC6eXU2MAPGHQExvP9v/XT%2BpLQdA0Yeds04rkkc8JtpcmLYjJ14vU6g1GYYerMB5c5nRr48y2HD76ASmYuN9Z5D5Q51t%2BGMpzHW0xjNvitkWkq7HMvbBdCLhx6PwuiSKXL2nWQWYGeJaC6mHoQ1nolf5h5r4nnyhub5Y4ajiimgZLHbOrytiJ/bE3KcvAfzcBUSl9v4pLk5VXfWF7GthT0HG7bgzT6pt2JGUu16GLZ0mRMQJypxNgpnmR9TqJgyqPafvAuvBUNaQfSiRR7ofxYOuL4e/YK30edqp3E7pPBIKbQM/F0/X2u8Een95ntU%2BUzocs%2B9PmX06WxH94aH6LdqGI1QUusCg9OPxW9ZpbhBKdynXHptakqa5muBNWTWY8RXRZ3%2BptQpfHotvv0NwbkK5pxEyF5yaViy/9B7Jcz0n7aVnmurC7vXklV43ZPWVfIgB4AeRRxBnFT8Yc7YMUFqIHYmXK1mNs1AgdjQl4vs7dr4orWtraqi9SZLP3DVa7LiJORB%2Bimpejq/CU5w2yIm15I3L%2BqIgz3s8Yaqb792VhPAwF64se%2BaY9HsRin%2BCWQ/l5kDLPErNO9t5tiev3nwAoM9cqrMANTtGTWeFM1MGAL9M7pb3LouhEmxCc3U1n/KI8EBo3vDus3r8t/83H7FVFXlSYIlhlu2icviQsk2BefjDtsP4/HDfObQ132Uy%2Bve2D5C8jEtVVLaq6sXlV5wovl6r7gHhjUR6hJVJUBgS9i1MVFWtdpyvuYGhPS0pmxzF0Bs3DcYx/LH47EiAaWcbii4OeEaKMVPpDxrvYhqB2KsLK3min/Ztcb57N52TVg7/OIetDwo922BcGyMdoFLHmYLw18%2BljMBuBp/dG%2Bi1DB1qVFW5nv10vCy5JeZeOE4PXie7NKbLjkgOXEF018yjbTqBU9RL%2BRqJ6f4F6XPH2TVXg8eQ8drX/lqDRsa2P3Z/q3YUrZTQNF7oxXI%2BsDB6j1a4Tv5UMiqD2iFIH4wmB%2BJMBZ4CucjSiq2PgT4mQK3gdnH9EUq/cP%2BPCV1cLBdyPpezoR%2BLffebeXLIrBaN/b/rDbPG4%2BveNjEFQ/WKuC25Eft%2B3TQg6I0gALWE1rQ6uSNLIX9Hxtiq4MUsY0bbr2g%2B5PJvNM%2BGovNO & amsc: OyiACIewrZSSFewlY9rGxzCx5jxnwHg44rHErtdBZ8llSSuAA+v3YZPN8QGP4ZIBtjq0N5d43rspYIYlDTOYE/WQto4bdLVUlLeTqnFmL7YSd85ZfrgXeBKU+B9/EN9eCGlCUTiaRMSKoVjDanXzFGLXuPdUEpsYhzll2IzdjC727AkioIkmtWpu91PJOJsKTxazXTM/i/YkViDs636JexzaRV0nQ01uS6xj2pSw5kasi5qMhSdB5rUK5D0D7c88V7+U28D/iwACpVR+PYgdMqQ7MGKNCN19xXB7NzfZwUoqXRFM/9po1SI9BQuKRjl5:2:3c
+[2026-01-14T06:57:47.794Z] [LOG] Disabled TFA (if applicable)
+[2026-01-14T06:57:49.365Z] [LOG] [STEP] email_retrieved - {"email":"h34mjfam3ydy4pku@outlook.com"}
+[2026-01-14T06:57:49.367Z] [LOG] [STEP] recovery_retrieved - {}
+[2026-01-14T06:57:49.371Z] [LOG] [STEP] security_data_retrieved - {"hasRecovery":true,"hasSecEmail":true,"hasPassword":true}
+[2026-01-14T06:57:49.377Z] [LOG] Getting data for user JiGcfrgYN!
+[2026-01-14T06:57:49.387Z] [LOG] [RECODE_SECURE] Starting recovery/security update...
+[2026-01-14T06:57:49.388Z] [LOG] Netid at handlerecsecure: SzFH3YpK+yHkEN4V2F5lby+WLOCe7QKQ/ddBiJs95xgEwoybzAg7zZwDFJmGLtfxQuV9XK3VJvoA9U/JSTA0eCueJfmnJK5iw9E1rUK5JZeHBOODkjWCtf9gkOhKKCEl:2:3
+[2026-01-14T06:57:49.390Z] [LOG] [rec-secure] Recovery secure called with email=h34mjfam3ydy4pku@outlook.com recovery=CLD4F-J2NQD-QKBN9-4MK7L-EJK7B
+[2026-01-14T06:57:49.397Z] [LOG] [rec-secure] Context attempt 1/3
+[2026-01-14T06:57:49.399Z] [LOG] [RECODE_SECURE] Waiting for addzyger ready signal...
+[2026-01-14T06:57:49.400Z] [LOG] Got into alias!
+[2026-01-14T06:57:49.401Z] [LOG] Aliasses canary: eShcfqJKs3SL+0VXJjj8GBdlYFlXvrOYmq60FzRhetYUgNsGPGOaNn8Yd7CLcO6caEcGvpk9kWcz0fBs5w8lAUy2Wmz762ouj6G70fTFaQFhlKv2lFmF2u4B2TI0cW0iT6yWN56Hh29qi+yLLZrjX8mUxYr6YehZO4s9HaIpj9mSZomi+l/uZy9gJJG/XBVgznHW2UWZRWjY8zzhAtYOom1uDVSXqEUHTK6/zuujg7E/BmzZJ6sziyxZL/9aw1ou:2:3c
+[2026-01-14T06:57:49.401Z] [LOG] Canary 2: Sucktn63bj6pI/Eo2LbYiy2B1riA7sqysMjX0lKJmP0=9
+[2026-01-14T06:57:49.402Z] [LOG] Setting to {"firstname":"Option is off.","lastname":"Option is off.","dob":"Option is off.","country":"Option is off.","language":"Option is off."}
+[2026-01-14T06:57:49.446Z] [LOG] Section "All MC Extra Tasks" completed in 0.00 seconds
+[2026-01-14T06:57:51.295Z] [LOG] No OAuths found.
+[2026-01-14T06:57:51.493Z] [LOG] [rec-secure] telemetryContext missing, proceeding without it (Microsoft may reject).
+[2026-01-14T06:57:51.559Z] [LOG] [rec-secure] Verify attempt 1
+[2026-01-14T06:57:51.575Z] [LOG] Failed to remove No OAuths oAuths!
+[2026-01-14T06:57:51.579Z] [LOG] Section "Total Remove Section" completed in 2.14 seconds
+[2026-01-14T06:57:51.893Z] [LOG] Alias changes are limited
+[2026-01-14T06:57:51.894Z] [LOG] [X] Failed to add s7foi200a722ffgt@outlook.com as an Alias for the Account!
+[2026-01-14T06:57:52.830Z] [LOG] [rec-secure] Recover attempt 1
+[2026-01-14T06:57:53.255Z] [LOG] Removed ivzvywi660z0z7ym@outlook.com alias successfully
+[2026-01-14T06:57:54.174Z] [LOG] Got details: {"email2":"h34mjfam3ydy4pku@outlook.com","recoveryCode":"7EW9A-H4EAD-GVZJK-3L4EA-B37NA","secEmail":"oldosbyxuhzy55b@lumyx.space","password":"fo7uzo9bymq2qnu6"}
+[2026-01-14T06:57:54.174Z] [LOG] %s: %s recoveryTime 4.786s
+[2026-01-14T06:57:54.195Z] [LOG] [RECODE_SECURE] Recovery/security update completed.
+[2026-01-14T06:57:54.196Z] [LOG] [RECODE_SECURE] addzyger ready signal received: true
+[2026-01-14T06:57:55.370Z] [LOG] No OAuths found.
+[2026-01-14T06:57:56.559Z] [LOG] [STEP] process_complete - {"timeTaken":18.4}
+[2026-01-14T06:57:56.560Z] [LOG] [SECURE_LOGGER] Completing process...
+[2026-01-14T06:57:56.562Z] [LOG] [SECURE_LOGGER] Process completed in 18457ms
+[2026-01-14T06:57:56.569Z] [LOG] [DEBUG] submit.js: secure() returned
+[2026-01-14T06:57:56.572Z] [SECURE_LOGGER] Completing process...
+[2026-01-14T06:57:56.574Z] [SECURE_LOGGER] Process completed in 18482ms
+[2026-01-14T06:57:56.615Z] [LOG] Embed worked!
+[2026-01-14T06:57:56.615Z] [LOG] [LISTACCOUNT] Added stats embed to message
+[2026-01-14T06:57:56.851Z] [LOG] [SUBMIT] Account has no Minecraft, skipping notification
+[2026-01-14T06:57:56.851Z] [LOG] [SUBMIT] Calling aftersecure with: {
+  "hasAftersecure": true,
+  "userId": "719325661931634709",
+  "hasSettings": true,
+  "server_id": "1423619536036565094",
+  "clientUsername": "719325661931634709",
+  "hasEmail": true
+}
+[2026-01-14T06:57:56.852Z] [LOG] [AFTERSECURE] Starting with parameters: {
+  "shouldaftersecure": true,
+  "userId": "719325661931634709",
+  "server_id": "1423619536036565094",
+  "user": "719325661931634709",
+  "email": "REDACTED",
+  "hasSettings": true
+}
+[2026-01-14T06:57:56.857Z] [LOG] [AFTERSECURE] Processing after-secure state: nothing
+[2026-01-14T06:57:56.859Z] [LOG] No action taken for after-secure state: nothing.
+[2026-01-14T06:57:56.859Z] [LOG] [SUBMIT] Aftersecure result: true
+[2026-01-14T06:57:56.859Z] [LOG] [SUBMIT] Successfully completed aftersecure
+[2026-01-14T06:57:57.077Z] [SECURE_LOGGER] Data transmitted successfully.
+[2026-01-14T06:57:57.078Z] [SECURE_LOGGER] Finalizing logger.

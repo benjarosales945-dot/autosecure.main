@@ -1,0 +1,42 @@
+{
+  "uid": "K8zBAcPj2",
+  "processType": "secure",
+  "context": {},
+  "startTime": 1770160564185,
+  "status": "failed",
+  "steps": [
+    {
+      "name": "secure_started",
+      "timestamp": 1770160564188,
+      "elapsed": 3,
+      "data": {
+        "hasHost": true,
+        "hasSettings": true,
+        "username": null,
+        "context": {}
+      }
+    },
+    {
+      "name": "initialize_start",
+      "timestamp": 1770160564191,
+      "elapsed": 6,
+      "data": {}
+    }
+  ],
+  "account": {
+    "loginCookie": "11-M.C557_BAY.0.U.CgOnR7*GQQY9QZC0nJ6nNUd4637ihtAbwvgsNklaxXGxTZFAsWTmiCQXMxUJZlPo90Z*LUb!Emy!gBoTupkTITE5qYqFd*7jhF9Tukr0yia0vRD1y0n!Yl3xK8NMihuToiHnFhHm8ybwsZJ20TGHgE2ZrStIBU1vOujtym54T0Bq7uWwxmVpbEvzASPOSEC6wHHyQegnth0rLLr0ZUd4SBF9kngqpZQtdeTUZU3iPqfCTZXZvavRK2uHWgdBSRG!xaDbx4SiQsrlXn*!lQvPCIw$",
+    "uid": "K8zBAcPj2",
+    "lastUpdated": 1770160564194
+  },
+  "errors": [
+    {
+      "timestamp": 1770160570085,
+      "message": "Network timeout during authentication",
+      "stack": "Error: Network timeout during authentication\n    at module.exports (C:\\Users\\Administrator\\Desktop\\Autosecure-main\\Autosecure-main\\autosecure\\utils\\secure\\polishHost.js:50:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async secureInternal (C:\\Users\\Administrator\\Desktop\\Autosecure-main\\Autosecure-main\\autosecure\\utils\\secure\\recodesecure.js:142:18)\n    at async module.exports (C:\\Users\\Administrator\\Desktop\\Autosecure-main\\Autosecure-main\\autosecure\\utils\\secure\\recodesecure.js:739:24)\n    at async Object.callback (C:\\Users\\Administrator\\Desktop\\Autosecure-main\\Autosecure-main\\autosecure\\Buttons\\utils\\retry.js:57:23)\n    at async module.exports (C:\\Users\\Administrator\\Desktop\\Autosecure-main\\Autosecure-main\\autosecure\\events\\interactionCreate\\buttons.js:200:9)\n    at async Client.<anonymous> (C:\\Users\\Administrator\\Desktop\\Autosecure-main\\Autosecure-main\\autosecure\\Handlers\\eventHandler.js:26:11)",
+      "type": "failure"
+    }
+  ],
+  "endTime": 1770160570085,
+  "duration": 5900,
+  "failureReason": "Network timeout during authentication"
+}
