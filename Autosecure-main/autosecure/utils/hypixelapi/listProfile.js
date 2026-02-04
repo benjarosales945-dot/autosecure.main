@@ -54,8 +54,7 @@ module.exports = async (name, settings = { sensored: false, list: 'skyblock', pi
                 .setCustomId('p_216102874709495919')
                 .setLabel('Bedwars')
                 .setStyle(ButtonStyle.Secondary)
-                .setEmoji({ id: '1416130064608657572' }),
-            // Donut button eliminado
+                .setEmoji({ id: '1416130064608657572' })
         ),
         new ActionRowBuilder().addComponents(
             new ButtonBuilder()
