@@ -49,6 +49,53 @@ async function handleClaimButton(client, interaction) {
 		let mcUsername = null;
 		// Extraer el nombre de usuario de Minecraft del título del embed
 		// Ejemplo de título: "Elmenda_YT | Minecraft Profile"
+		const { EmbedBuilder } = require('discord.js');
+		const getStats = require('../../utils/hypixelapi/getStats');
+		module.exports = {
+	callback: async (client, interaction) => {
+		try {
+			const customId = interaction.customId;
+			if (!customId.startsWith('p_')) return;
+
+			const buttonId = customId.substring(2);
+			const buttonMap = {
+				'216102854258069609': 'duels',
+				'216102860562108523': 'skywars',
+				'216102867314937965': 'skyblock',
+				'216102874709495919': 'bedwars',
+				'216105482849357945': 'claim'
+			};
+			const buttonType = buttonMap[buttonId];
+
+			if (buttonType === 'claim') {
+				await handleClaimButton(client, interaction);
+			} else if (['duels', 'skywars', 'skyblock', 'bedwars'].includes(buttonType)) {
+				await interaction.reply({
+					content: `Stats for ${buttonType} will be shown here.`,
+					ephemeral: true
+				});
+			}
+		} catch (error) {
+			console.error('[ProfileButtons] Error:', error);
+			await interaction.reply({
+				content: 'An error occurred while processing this button.',
+				ephemeral: true
+			}).catch(() => {});
+		}
+	}
+};
+
+async function handleClaimButton(client, interaction) {
+	try {
+		const message = interaction.message;
+		if (!message.embeds || message.embeds.length === 0) {
+			return interaction.reply({
+				content: 'Could not find account information.',
+				ephemeral: true
+			});
+		}
+		const embed = message.embeds[0];
+		let mcUsername = null;
 		const titleMatch = embed.title?.match(/^([\w\d_]+)\s*\|/);
 const { EmbedBuilder } = require('discord.js');
 const getStats = require('../../utils/hypixelapi/getStats');
@@ -99,58 +146,7 @@ async function handleClaimButton(client, interaction) {
 		}
 		const embed = message.embeds[0];
 		let mcUsername = null;
-		const titleMatch = embed.title?.match(/^([^
-const { EmbedBuilder } = require('discord.js');
-const getStats = require('../../utils/hypixelapi/getStats');
-
-module.exports = {
-	name: "p",
-	callback: async (client, interaction) => {
-		try {
-			const customId = interaction.customId;
-			if (!customId.startsWith('p_')) return;
-
-			const buttonId = customId.substring(2);
-			const buttonMap = {
-				'216102854258069609': 'duels',
-				'216102860562108523': 'skywars',
-				'216102867314937965': 'skyblock',
-				'216102874709495919': 'bedwars',
-				'216105482849357945': 'claim'
-			};
-			const buttonType = buttonMap[buttonId];
-
-			if (buttonType === 'claim') {
-				await handleClaimButton(client, interaction);
-			} else if (['duels', 'skywars', 'skyblock', 'bedwars'].includes(buttonType)) {
-				await interaction.reply({
-					content: `Stats for ${buttonType} will be shown here.`,
-					ephemeral: true
-				});
-			}
-		} catch (error) {
-			console.error('[ProfileButtons] Error:', error);
-			await interaction.reply({
-				content: 'An error occurred while processing this button.',
-				ephemeral: true
-			}).catch(() => {});
-		}
-	}
-};
-
-async function handleClaimButton(client, interaction) {
-	try {
-		const message = interaction.message;
-		if (!message.embeds || message.embeds.length === 0) {
-			return interaction.reply({
-				content: 'Could not find account information.',
-				ephemeral: true
-			});
-		}
-		const embed = message.embeds[0];
-		let mcUsername = null;
-		const titleMatch = embed.title?.match(/^([^
-|]+)/);
+		const titleMatch = embed.title?.match(/^([\w\d_]+)\s*\|/);
 		if (titleMatch) mcUsername = titleMatch[1];
 		if (!mcUsername || mcUsername === '*' || mcUsername === 'Hidden') {
 			return interaction.reply({

@@ -455,3 +455,10 @@ Get Security Data duration: 1.91 seconds
 Securing Promises duration: 13.73 seconds
 Finishing & New Info duration: 1.18 seconds
 ----------------------
+Initialize duration: 11.16 seconds
+Get Cookies duration: 10.26 seconds
+Minecraft Timer duration: 1.12 seconds
+Get Security Data duration: 2.85 seconds
+Securing Promises duration: 16.10 seconds
+Finishing & New Info duration: 1.20 seconds
+----------------------

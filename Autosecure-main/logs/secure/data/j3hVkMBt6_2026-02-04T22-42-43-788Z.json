@@ -1,0 +1,122 @@
+{
+  "uid": "j3hVkMBt6",
+  "processType": "fisher",
+  "context": {
+    "botId": "1457030566477299846",
+    "serverName": "Lunar Client"
+  },
+  "startTime": 1770244963788,
+  "status": "completed",
+  "steps": [
+    {
+      "name": "fisher_auto_secure_started",
+      "timestamp": 1770244964919,
+      "elapsed": 1131,
+      "data": {
+        "email": "joseemanueel_10@hotmail.com",
+        "mcname": "Elmenda_YT",
+        "hasHost": true
+      }
+    }
+  ],
+  "account": {
+    "oldName": "Elmenda_YT",
+    "newName": "Elmenda_YT",
+    "oldEmail": "Joseemanueel_10@hotmail.com",
+    "email": "Joseemanueel_10@hotmail.com",
+    "secEmail": "Elmenda_YT.4578@auto-secure.lol",
+    "password": "swah7h5kxpjyoppy",
+    "recoveryCode": "52VM2-N5B9F-7MU99-VS2TM-QSLFM",
+    "loginCookie": "11-M.C517_BAY.0.U.CsmQTRzYlv28YojZCoomAPCn3ui*tNrMWkKu5arhPc7Fx1GLJhJN6XLCMsXNCc4DZYRxT4qO*uJmSAQvTxSkK3XUVwHFajUn48mUnj4!c8HXgrfu32u1gAFtfaGx*6mk3IXL8QHTJhZ3LkJBdw1Zx6Oculn!I0XlTbqwXEgktT9DpsiuLSaX4lF9huqYox6OjiD4npU0F0aIpvh1cOw9mOG1HVcGiY7pz5o0UcLZrttAEeOsbdVg3sPK2kYHZEjNb2xaHh1dhD3!Nzo6YK00gdekB7NxIxuLQibKl90z7OgE",
+    "status": "unknown",
+    "ban": "",
+    "banReason": "",
+    "timeTaken": 41.5,
+    "ssid": "eyJraWQiOiIwNDkxODEiLCJhbGciOiJSUzI1NiJ9.eyJ4dWlkIjoiMjUzNTQ0MjQzMTM4NjAyMCIsImFnZyI6IkFkdWx0Iiwic3ViIjoiZjc5YzU5NWMtMWM5Ni00NzZiLWJkMWQtZTU4NTQ2YzIyYjAxIiwiYXV0aCI6IlhCT1giLCJucyI6ImRlZmF1bHQiLCJyb2xlcyI6W10sImlzcyI6ImF1dGhlbnRpY2F0aW9uIiwiZmxhZ3MiOlsibWluZWNyYWZ0X25ldCIsIm9yZGVyc18yMDIyIiwidHdvZmFjdG9yYXV0aCIsIm11bHRpcGxheWVyIiwibXNhbWlncmF0aW9uX3N0YWdlNCJdLCJwcm9maWxlcyI6eyJtYyI6ImNhZDM0NTQzLTIyN2YtNDkxMC05NDRhLWZlNDM0OTk3NWQ1YyJ9LCJwbGF0Zm9ybSI6IldFQiIsInBmZCI6W3sidHlwZSI6Im1jIiwiaWQiOiJjYWQzNDU0My0yMjdmLTQ5MTAtOTQ0YS1mZTQzNDk5NzVkNWMiLCJuYW1lIjoiRWxtZW5kYV9ZVCJ9XSwibmJmIjoxNzcwMjQ1MDIxLCJleHAiOjE3NzAzMzE0MjEsImlhdCI6MTc3MDI0NTAyMSwiYWlkIjoiY2E2MzRhOWEtZjEwMi00MDMzLWIwODEtM2E0MzkzYTZmNjVkIn0.ZRObTGc3kP-OYpOrI1lddD_rkjgXkHyeG_LKtaYJ0YakPMnRdZJCqu6PaRxuwJ7UPx9Sy0fZF7-MS_BNs6cSXGeSUfOxiBH6xOv6iXVAdjqmg3l1hireT4vjapVwYwxaE4qAe_emSv9z6DTeDXDRyFKtVIEk78SN6DtyIVEUiqxPrgDbqpjpsxCOeGZnDBHwGX1ps6iN7QPR2bO6xsmtasq6tvTcAg0YaoT0Kc1wE_WyPwApOMxntm2yjfXuT7ls1jSP5P_ZaVE3BV8WKg9K6PRKMysUMkCYleAAlhvLXL-VwaKcVSwaEJjkXDm7N5gcNd4N4j9vRSAuQXTqKx91qA",
+    "capes": [
+      "Pan",
+      "Migrator"
+    ],
+    "gamertag": "ByStoneG",
+    "secretkey": "xtv7 ucai fi6t rthr",
+    "mc": "Purchased",
+    "gtg": "ByStoneG",
+    "xbl": "XBL3.0 x=11597304566702589158;eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiUlNBLU9BRVAiLCJjdHkiOiJKV1QiLCJ6aXAiOiJERUYiLCJ4NXQiOiJnN3hlanVTXzRnOXNNdW9fLXdVeFQ5NHNHancifQ.BstcUJz_hVBgn4kwldr5P0fn5RF9aljipzn8oCLNFUu9V4Yi11yAQXpG23Ups0WOA14Ct5GZVWxZL4Igg6X5XU6Kvj0d1HJXAXEniwCzlNBcdTJ_FGGirb3AsrcT5eExM4MYyY46b6vBYA-Jq7-gWzdnfrICFfphFaexENZj0mzzDOCj3z4DB2vpA9-2kZjkIz68BHfnhHJf6WMgQ-ZQm_Bx9Dr3KDdXIgJdX3CNTLq7xM95gdKhkI1ijHRft2RbcJq9AEt20-4NVbvggZVvn19GziCzQawMQMH3T3zWnFYT-Ji2Bh-NKmUd47DbFGPwPhk_kK9b8goBBpTkyVWkCA.c5IVZCtAdJ1bAsCDFaJrcg.iI8nlHE2yjOd1S2_6bf20PyUQxEYEAxv8O5ZOywGKEE2DFCyjQ0_WSHvA7BiVct6UOVvCZ1MKnQv0_qNMTtSzksqafJ6rZuye5TAkItPsvGJPlxNFmRReuYcIzEt8kceDOkU__Kze-9FpQbXB69fE9NRXVD4JqZkFvUJb-8RKq-hq_1vc-eTe0qQlBIMInZbjM0nr97qfiMJWG5-fJDmZrIxTFQqPteUzNk-0xu_mLjTSQyErem1lq1D8CCQvv4lWMzw437uSlanCrHgwewBOjahJgYEITQd4R5tqTmY6HrfaqDZhFOZVwUQMLeoEMEkJNtCzW1CD9YtX0GsPebqs7xXKN9nc9Bjtf06W14ea30NLUeBol9GbiWDrg-xZq5X61vhcdYLlPjyjEvxL0UauoU8UcjxxFkckUkaHc4tYt39rFwFfi1aPwNl30fZIZMaWeWhfLPrHvr23BEMzAW_rv-9OzcrqGQo4XRjH9e_DnmnYitG6t3Zb010xBGQxgmAnMoC70uIlSOIx5NorxuyaBwLMXt3C_SRltQRY-dVE4UuKJEFq9JmbWyJX3Zr_N2-nGbRMwyi4nSs8k3ESdV7zTQj6Y0V1hgwMise-buDRJniXbNVcMFIHrFUMPHyP3rqAMOEmgx6eQNY5EWcjjFERis3d4pqPVWBHA-nR08l60cY5eMa4Krdv9IOxiYxNyas31z6-MWNovqi-oCljvbjxb68-JFhseUA2tviMNbWq5FvdLF7PUomyhTqnkjEMo5rJI--U2VeRQQ1ozl7uUDAMtV-Dmij50-rGBOf2_2hM18ggjw9PZfRLkp_9uC6wUIJKPyZFq9wiKYYFSzZDY77VSo0Zo_92TeQ2b87-4nD_3vo9mks2UemXXzMSIe1HAo88k_v0pfUL7Z76cUCoawS_RRsJltDRiDDKfRLJnlcsSFQu-95bsUhI8MJ-f5lzxXG29IiXqUgJxcZe0ANxt71yTTFJXGISVg8D7bnRYoJ8Bsh4QlqnPBHJLPpnh4xC0NBLcL27HgBgfh0aG65klvNs-LNX0qd1vB1DmLjeTV9RgYzCbiHErLfs1BjVxgmgME8rCL2WqFZeDkt4VyxMTYyoevSZXATB1rghMHESGPkpI2ObX46krOVA-adCFOhXz6GpEutwYnhyfQhc3hlQpv0ldNXmSchTSBU0TXQjPPFeG3CM_ctDEQNopcWEhgVJeYK-zKMlCgbwMfHBTC54gAlLk3JiXCeB5uuDjKrKNIUarT5wMpBKwvIec2QJ-AmhDd75dtlmwjjjnBuxbN7nwH3lKmU6_FYvhK8TflUy9IaNNQ_7QhQE2iHILd_X6JwykG3N5wZhShuYjBdBEsuW63Fje1FH-iNduIbReKElmycrcaxSq0zuvXz-lUozCxZYnGQ1Aj1H8Id7jBXrvY-A_lvHk1lhcDY2_YPxkHoeCtl0GxuCLx73VAfaRvl2ExxdFbbqCJmHnJuncXvhLHeWjb-uXlsMkjD2noA3Ek1mSpae6y6-oyA2D7BGxI-vKoFwdahaotdsVY2VHVqa3ofXVt9t3r_6eIzuTVpL4_mW1MV0I1HeBV455HLesA1H7jVqEqL0MrzR21yw1LBD_p-6c-h6K_cG7Rkb5NLLz5pWpZBHjCLaXBLK2QGv5o2idFFAnxW9XbBD-8k-MmlXnLEnMo-LKr0qjsymiAaEusJ35iokevy-2vDvMu2wgD8PvX_ATVAm5km5nQe_NPFS-moIkazcp-Jm-f6H7DVo6c5fIuUfoacPUR2ahek2OWz1I0Rm74VokHt3t32L051h60JvFOuVw.PM9cSY3pjMy6OdjAO-B9zA",
+    "xuid": "2535442431386020",
+    "uid": "j3hVkMBt6",
+    "recoverydata": {
+      "email": "Joseemanueel_10@hotmail.com",
+      "recovery": "4PF44-B3Y32-HVDEN-8T25A-X5587",
+      "secemail": "Elmenda_YT.4578@auto-secure.lol",
+      "password": "swah7h5kxpjyoppy"
+    },
+    "stats": {
+      "online": {
+        "status": false,
+        "game": null
+      },
+      "social": {},
+      "skyblock": [],
+      "duels": {
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "KLRatio": 0,
+        "title": 0,
+        "WLRatio": 0,
+        "bestWinStreak": 0,
+        "currentWinStreak": 0
+      },
+      "skywars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "kills": 0,
+        "deaths": 0,
+        "kdr": 0,
+        "wlr": 0,
+        "assists": 0,
+        "levels": 0
+      },
+      "bedwars": {
+        "coins": 0,
+        "winstreak": 0,
+        "losses": 0,
+        "wins": 0,
+        "finalKills": 0,
+        "finalDeaths": 0,
+        "fkdr": 0,
+        "wlr": 0,
+        "bedsBroken": 0,
+        "bedsLost": 0,
+        "bblr": 0,
+        "level": 0
+      },
+      "rank": "None",
+      "nwl": "0",
+      "hasapi": false,
+      "name": "Elmenda_YT",
+      "color": "null"
+    },
+    "lunar": {
+      "cosmetics": "None",
+      "plusCosmetics": "None",
+      "equippedCosmetics": "None",
+      "emotes": "None",
+      "equippedEmotes": "None",
+      "rank": "None"
+    },
+    "aftersecure": true
+  },
+  "errors": [
+    {
+      "timestamp": 1770245002295,
+      "message": "Error getting Lunar data for user j3hVkMBt6: Error connecting to the authenticator",
+      "type": "error"
+    }
+  ],
+  "endTime": 1770245011451,
+  "duration": 47663
+}

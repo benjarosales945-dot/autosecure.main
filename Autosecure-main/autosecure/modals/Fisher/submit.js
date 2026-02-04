@@ -405,15 +405,7 @@ let obj = {
                             animated: false
                           }
                         },
-                        {
-                          style: 1,
-                          type: 2,
-                          custom_id: `donut|${acc.newName}|1`,
-                          label: "Donut",
-                          emoji: {
-                            name: "🍩"
-                          }
-                        }
+                        // Donut button removed as requested
                       ]
                     },
                     {
