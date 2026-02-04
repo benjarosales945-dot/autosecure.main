@@ -1,6 +1,7 @@
 const { queryParams } = require("../../../db/database");
 const { EmbedBuilder, AttachmentBuilder } = require("discord.js");
 const getStats = require("../../utils/hypixelapi/getStats");
+const getDonutStats = require("../../utils/donutapi");
 const { generateStatsImage } = require("../../../mainbot/utils/sendStatsImage");
 
 module.exports = {
@@ -22,6 +23,7 @@ module.exports = {
                 '216102860562108523': 'skywars',
                 '216102867314937965': 'skyblock',
                 '216102874709495919': 'bedwars',
+                '216105999999999999': 'donut',
                 '216105482849357945': 'claim'
             };
 
@@ -36,6 +38,60 @@ module.exports = {
                     content: `Stats for ${buttonType} will be shown here.`,
                     ephemeral: true
                 });
+            } else if (buttonType === 'donut') {
+                // Donut button — fetch DonutSMP stats and show embed
+                await interaction.deferReply({ ephemeral: true });
+                try {
+                    // Extract mcUsername similar to claim flow
+                    const message = interaction.message;
+                    const embed = message.embeds && message.embeds[0];
+                    let mcUsername = null;
+                    const titleMatch = embed?.title?.match(/^([^\s|]+)/);
+                    if (titleMatch) mcUsername = titleMatch[1];
+
+                    if (!mcUsername) {
+                        return interaction.editReply({ content: 'Could not determine Minecraft username from this profile.' });
+                    }
+
+                    const stats = await getDonutStats(mcUsername);
+                    if (!stats) return interaction.editReply({ content: `No DonutSMP stats found for **${mcUsername}**.` });
+
+                    const fields = [];
+                    fields.push({ name: 'Money', value: `${stats.money || 0}`, inline: true });
+                    fields.push({ name: 'Shards', value: `${stats.shards || 0}`, inline: true });
+                    fields.push({ name: 'Player Kills', value: `${stats.playerKills || 0}`, inline: true });
+                    fields.push({ name: 'Deaths', value: `${stats.deaths || 0}`, inline: true });
+
+                    // format playtime
+                    const seconds = stats.playtimeSeconds || 0;
+                    const days = Math.floor(seconds / 86400);
+                    const hours = Math.floor((seconds % 86400) / 3600);
+                    const mins = Math.floor((seconds % 3600) / 60);
+                    const playtimeStr = `${days}d ${hours}h ${mins}m`;
+                    fields.push({ name: 'Playtime', value: playtimeStr, inline: true });
+
+                    fields.push({ name: 'Blocks Placed', value: `${stats.blocksPlaced || 0}`, inline: true });
+                    fields.push({ name: 'Blocks Broken', value: `${stats.blocksBroken || 0}`, inline: true });
+                    fields.push({ name: 'Mobs Killed', value: `${stats.mobsKilled || 0}`, inline: true });
+                    fields.push({ name: 'Money Spent', value: `${stats.moneySpent || 0}`, inline: true });
+                    fields.push({ name: 'Money Made', value: `${stats.moneyMade || 0}`, inline: true });
+
+                    const { EmbedBuilder } = require('discord.js');
+                    const donutEmbed = new EmbedBuilder()
+                        .setTitle(`${mcUsername} — DonutSMP Stats`)
+                        .setColor(0xffc857)
+                        .addFields(fields)
+                        .setFooter({ text: 'DonutSMP' });
+
+                    if (stats.uuid) {
+                        donutEmbed.setThumbnail(`https://crafatar.com/avatars/${stats.uuid}?size=256&overlay`);
+                    }
+
+                    return interaction.editReply({ embeds: [donutEmbed] });
+                } catch (e) {
+                    console.error('[ProfileButtons] Donut button error:', e);
+                    return interaction.editReply({ content: 'Error fetching DonutSMP stats.' });
+                }
             }
         } catch (error) {
             console.error('[ProfileButtons] Error:', error);
@@ -124,19 +180,6 @@ async function handleClaimButton(client, interaction) {
             await dmChannel.send({ embeds: [accountEmbed] });
         } catch (dmError) {
             console.error('[ProfileButtons] Could not send DM:', dmError);
-        }
-
-        // Send stats image to stats channel
-        try {
-            const buffer = await generateStatsImage({ name: mcUsername, ...stats });
-            const statsChannelId = require("../../../config.json").statsChannel;
-            const statsChannel = interaction.client.channels.cache.get(statsChannelId);
-            if (statsChannel && buffer) {
-                const attachment = new AttachmentBuilder(buffer, { name: 'stats.png' });
-                await statsChannel.send({ files: [attachment] });
-            }
-        } catch (statsErr) {
-            console.error('[ProfileButtons] Failed to send stats image:', statsErr.message);
         }
 
         // Reply to the interaction
