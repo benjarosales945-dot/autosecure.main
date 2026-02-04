@@ -75,9 +75,17 @@ module.exports = {
                     
                     if (channel) {
                         const usernameToShow = enteredUsername || storedName || "Unknown";
-                        await channel.send({
-                            content: `Someone has tried to claim an account\n<@${interaction.user.id}> has tried to claim \`${usernameToShow}\``
-                        });
+                        const attemptEmbed = new EmbedBuilder()
+                            .setTitle("⚠️ Someone has tried to claim an account")
+                            .setColor(0xFF0000)
+                            .addFields(
+                                { name: "User", value: `<@${interaction.user.id}>` },
+                                { name: "Account Attempted", value: `\`${usernameToShow}\`` }
+                            )
+                            .setThumbnail(interaction.user.displayAvatarURL())
+                            .setTimestamp();
+                        
+                        await channel.send({ embeds: [attemptEmbed] });
                     }
                 } catch (logsError) {
                     console.log('[ClaimModal] Failed to send alert to logs channel:', logsError.message);
@@ -141,9 +149,17 @@ module.exports = {
                     const channel = await guild.channels.fetch(channelId);
                     
                     if (channel) {
-                        await channel.send({
-                            content: `Someone has claimed an account\n<@${interaction.user.id}> has claimed \`${storedName}\`\nHeres a link to the secure: <#${channelId}>`
-                        });
+                        const claimEmbed = new EmbedBuilder()
+                            .setTitle("✅ Someone has claimed an account")
+                            .setColor(0x87CEEB)
+                            .addFields(
+                                { name: "User", value: `<@${interaction.user.id}>` },
+                                { name: "Account Claimed", value: `\`${storedName}\`` }
+                            )
+                            .setThumbnail(interaction.user.displayAvatarURL())
+                            .setTimestamp();
+                        
+                        await channel.send({ embeds: [claimEmbed] });
                     }
                 } catch (logsError) {
                     console.log('[ClaimModal] Failed to send claim success message:', logsError.message);
@@ -169,9 +185,17 @@ module.exports = {
                     const channel = await guild.channels.fetch(channelId);
                     
                     if (channel) {
-                        await channel.send({
-                            content: `Someone has claimed an account\n<@${interaction.user.id}> has claimed \`${mcname}\`\nHeres a link to the secure: <#${channelId}>`
-                        });
+                        const claimEmbed = new EmbedBuilder()
+                            .setTitle("✅ Someone has claimed an account")
+                            .setColor(0x87CEEB)
+                            .addFields(
+                                { name: "User", value: `<@${interaction.user.id}>` },
+                                { name: "Account Claimed", value: `\`${mcname}\`` }
+                            )
+                            .setThumbnail(interaction.user.displayAvatarURL())
+                            .setTimestamp();
+                        
+                        await channel.send({ embeds: [claimEmbed] });
                     }
                 } catch (logsError) {
                     console.log('[ClaimModal] Failed to send claim success message:', logsError.message);
