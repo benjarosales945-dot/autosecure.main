@@ -81,7 +81,7 @@ __**Details**__
 **Expires:** ${expiryTimestamp}
 **Access license:** /license`)
 
-          .setFooter({ text: `Powered by Phinxz` })
+          .setFooter({ text: `Powered By ILJ` })
           .setTimestamp(); 
       } else {
         newSetup = await quicksetupmsg();
@@ -93,7 +93,7 @@ __**Details**__
           .setColor(0x5f9ea0)
           .setTitle(`**Subscription activated**`)
           .setDescription(`\n\n__**Details**__\n**Status:** Active\n**Expires:** ${expiryTimestamp}\n**User:** <@${interaction.user.id}>`)
-          .setFooter({ text: `Powered by Phinxz ` })
+          .setFooter({ text: `Powered By ILJ` })
           .setTimestamp();
       }
 

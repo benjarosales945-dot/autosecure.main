@@ -112,7 +112,7 @@ module.exports = {
         .setColor(0x5f9ea0)
         .setTitle(`✅ **Trial activated**`)
         .setDescription(`\n\n__**Details**__\n**Status:** Active\n**Expires:** <t:${expiryTimestamp}:R>\n**User:** <@${interaction.user.id}>`)
-        .setFooter({ text: `Powered by Phinxz` })
+        .setFooter({ text: `Powered By ILJ` })
         .setTimestamp();
 
       try {
