@@ -13,7 +13,12 @@ async function tryEndpoints(username) {
         `${API_BASE}/player/${encodeURIComponent(username)}`,
         `${API_BASE}/players/${encodeURIComponent(username)}`,
         `${API_BASE}/player/stats?username=${encodeURIComponent(username)}`,
-        `${API_BASE}/players/stats?username=${encodeURIComponent(username)}`
+        `${API_BASE}/players/stats?username=${encodeURIComponent(username)}`,
+        `${API_BASE}/api/player/${encodeURIComponent(username)}`,
+        `${API_BASE}/api/players/${encodeURIComponent(username)}`,
+        `${API_BASE}/stats/${encodeURIComponent(username)}`,
+        `${API_BASE}/player?username=${encodeURIComponent(username)}`,
+        `${API_BASE}/players?username=${encodeURIComponent(username)}`
     ];
 
     console.log(`[DONUT API] Trying endpoints for username: "${username}"`);
@@ -21,10 +26,12 @@ async function tryEndpoints(username) {
         try {
             console.log(`[DONUT API] Attempting: ${url}`);
             const res = await axios.get(url, { headers, timeout: 8000 });
-            console.log(`[DONUT API] Success (${res.status}):`, JSON.stringify(res.data).substring(0, 200));
+            console.log(`[DONUT API] Success (${res.status}): ${JSON.stringify(res.data).substring(0, 500)}`);
             if (res && res.status === 200 && res.data) return res.data;
         } catch (e) {
-            console.log(`[DONUT API] Failed (${e.response?.status || e.code}): ${url}`);
+            const status = e.response?.status || e.code || 'unknown';
+            const data = e.response?.data ? JSON.stringify(e.response.data).substring(0, 100) : '';
+            console.log(`[DONUT API] Failed (${status}): ${url} ${data}`);
         }
     }
     console.log(`[DONUT API] All endpoints failed for username: "${username}"`);
