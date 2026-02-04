@@ -103,6 +103,9 @@ try {
     } else if (action === "help") {
         await help.execute(interaction);
         return;
+    } else if (action === "p") {
+        // Handle profile buttons (p_xxx)
+        button = client.buttons.find((btn) => btn.name === "p");
     } else {
         button = client.buttons.find((btn) => btn.name === action);
     }
