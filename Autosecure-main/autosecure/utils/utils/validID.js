@@ -1,13 +1,15 @@
 const axios = require('axios');
-const config = require('../../../config.json');
-
-
-const BOT_TOKEN = config.tokens[0];
 
 async function validID(userId) {
+    const token = process.env.DISCORD_TOKEN;
+    if (!token) {
+        console.error('DISCORD_TOKEN not found in environment variables');
+        return false;
+    }
+
     const url = `https://discord.com/api/v10/users/${userId}`;
     const headers = {
-        Authorization: `Bot ${BOT_TOKEN}`,
+        Authorization: `Bot ${token}`,
     };
 
     try {
