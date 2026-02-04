@@ -2,7 +2,7 @@
   "tokens": [""],
   "domains": ["auto-secure.lol"],
   "owners": ["691361579417075846", "381961408327319555", "373598605245677578"],
-  "novps": true,
+  "novps": false,
   "useproxy": "false",
   "proxy": [],
   "discordServer": "https://discord.gg/sqTUqr5BEn",
