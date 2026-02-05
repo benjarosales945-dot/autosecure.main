@@ -80,21 +80,77 @@ async function generateStatsImage(acc) {
             };
         }
 
+        // Combine: Notch face as background, secured account face overlay, and all stats/texts
         const templatePath = path.join(__dirname, '../../assets/stats_template_new.png');
-        
         if (!fs.existsSync(templatePath)) {
             throw new Error('Template not found at ' + templatePath);
         }
-
         const template = await loadImage(templatePath);
         const width = 1522;
         const height = 856;
-
         const canvas = createCanvas(width, height);
         const ctx = canvas.getContext('2d');
-
-        // Draw template as base
+        // Draw Notch face as background (stretched to fit)
+        const notchUUID = '069a79f444e94726a5befca90e38aaf5';
+        const notchFaceUrl = `https://visage.surgeplay.com/face/${notchUUID}?size=1024`;
+        const notchFaceImg = await loadImage(notchFaceUrl);
+        ctx.drawImage(notchFaceImg, 0, 0, width, height);
+        // Draw template overlay
         ctx.drawImage(template, 0, 0, width, height);
+        // Overlay secured account face (centered, large square)
+        const uuid = await getMcUUID(acc.newName);
+        if (uuid) {
+            const userFaceUrl = `https://visage.surgeplay.com/face/${uuid}?size=400`;
+            const userFaceImg = await loadImage(userFaceUrl);
+            // Center the overlay (400x400)
+            const overlaySize = 400;
+            const x = (width - overlaySize) / 2;
+            const y = (height - overlaySize) / 2 - 100;
+            ctx.drawImage(userFaceImg, x, y, overlaySize, overlaySize);
+        }
+        // ...existing code for drawing stats and texts...
+        // Draw player name (masked: N***h)
+        const maskedName = maskPlayerName(acc.newName);
+        ctx.font = 'bold 72px Arial';
+        ctx.fillStyle = '#FFFFFF';
+        ctx.textAlign = 'center';
+        ctx.fillText(maskedName, width / 2, 120);
+        // Draw login info (top right)
+        const firstLogin = acc.firstLogin || 'Unknown';
+        const lastLogin = acc.lastLogin || 'Unknown';
+        ctx.font = '20px Arial';
+        ctx.fillStyle = '#FFD700';
+        ctx.textAlign = 'right';
+        ctx.fillText(`First Login: ${firstLogin}`, width - 80, 100);
+        ctx.fillStyle = '#FFFFFF';
+        ctx.fillText(`Last Login: ${lastLogin}`, width - 80, 140);
+        // Draw Skyblock stats
+        const sbLevel = playerStats.skyblock_level || 0;
+        const netWorth = playerStats.nw ? formatNumber(playerStats.nw) : '0';
+        const skillAvg = playerStats.skill_average || 0;
+        const catacombs = playerStats.catacomb_level || 0;
+        const coopMembers = playerStats.coop_members || 0;
+        ctx.font = 'bold 24px Arial';
+        ctx.fillStyle = '#FFFFFF';
+        ctx.textAlign = 'left';
+        ctx.fillText('Skyblock Level: ' + sbLevel, 400, 240);
+        ctx.fillStyle = '#FFD700';
+        ctx.fillText('Net Worth: ' + netWorth, 400, 270);
+        ctx.fillStyle = '#FFFFFF';
+        ctx.fillText('Skill Average: ' + skillAvg, 400, 300);
+        ctx.fillStyle = '#FF6347';
+        ctx.fillText('Catacombs: ' + catacombs, 400, 330);
+        // Draw Network Level
+        const networkLevel = playerStats.network_level || 0;
+        ctx.font = 'bold 24px Arial';
+        ctx.fillStyle = '#FFFFFF';
+        ctx.fillText('Network Level: ' + networkLevel, 850, 240);
+        ctx.fillStyle = '#00BFFF';
+        ctx.fillText('0 / 10,000', 850, 270);
+        // Draw Skywars stats
+        const skywarStars = playerStats.skywars_wins || 0;
+        const skywarKills = playerStats.skywars_kills || 0;
+        // ...existing code continues...
 
         // Draw Minecraft cape if available
         try {
